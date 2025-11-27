@@ -86,3 +86,43 @@
 The specification is complete, unambiguous, and ready for the next phase (`/speckit.clarify` or `/speckit.plan`).
 
 **Now includes**: Core PR tracking + Social research diagnostic capabilities + AI assistant workflow support
+
+### Architectural Enhancements (2025-11-27)
+
+**MVC Architecture Principles Added**:
+- Clear separation of Data Layer (Model), Presentation Layer (View), and Processing Layer (Controller)
+- Model can be updated independently from view generation
+- Views can be regenerated from model at any time
+- Periodic model persistence for crash recovery
+- Independent triggering of model updates vs view generation
+
+**Incremental Processing Strategy**:
+- Priority order: New PRs first → Unmerged PRs by freshness → Merged PRs only in force mode
+- Normal mode: Skip already-merged PRs for efficiency
+- Force mode: Re-analyze all PRs including merged ones
+- Freshness ordering: Most recently updated PRs processed first among unmerged PRs
+
+**Multi-Tool Support**:
+- Track codespell and shellcheck (and future tools) independently
+- Same repository can have separate PRs for different tools
+- Each tool contribution has independent lifecycle
+- Efficient incremental updates even with multiple tool PRs per repo
+
+**Version Control Integration**:
+- Informative git commit messages summarizing each update run
+- Commit messages include: new repos found, new PRs, newly merged PRs, newly closed PRs
+- Git history provides timeline of dashboard evolution
+- Human-readable change log through git log
+
+**New Requirements**:
+- FR-026 through FR-039: 14 new functional requirements
+- SC-013 through SC-020: 8 new success criteria
+- 7 new edge cases covering MVC separation and multi-tool scenarios
+- 3 new assumptions about git versioning, freshness definition, multi-tool tracking
+
+**Entity Updates**:
+- Pull Request: Added tool type, last updated timestamp, analysis status
+- Repository: Added per-tool PR tracking and per-tool acceptance rates
+- Discovery Run: Enhanced with detailed metrics and commit message generation
+
+**Current Totals**: 8 user stories | 39 functional requirements | 20 success criteria | 20+ edge cases

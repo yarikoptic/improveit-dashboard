@@ -157,6 +157,59 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
 - What defines "no response yet" if there are bot comments but no human maintainer comments?
 - How does the system categorize repositories with only one PR submitted vs those with multiple PRs for statistical significance?
 - What happens when a maintainer requests changes but the PR is then closed by the submitter - is this considered responsive or unresponsive?
+- What happens if view generation fails but model update succeeded - should the model update be preserved?
+- How does the system handle a repository that has a merged codespell PR and an open shellcheck PR - which freshness ordering applies?
+- What defines "freshness" when a PR has commits pushed but no new comments?
+- In force mode, what's the processing order for merged PRs - by original submission date or merge date?
+- How does the system handle periodic model persistence if processing is very fast (complete in seconds)?
+- What happens if a crash occurs between model persistence and view generation?
+- How does the system track which PRs were already analyzed to avoid redundant API calls in incremental mode?
+
+## Architectural Principles *(mandatory)*
+
+The system follows a clear separation of concerns pattern with three distinct layers:
+
+### Data Layer (Model)
+- **Purpose**: Persistent storage of all discovered PR data, metrics, and analysis results
+- **Format**: Structured data files (e.g., JSON) that represent the complete state of all tracked PRs and repositories
+- **Independence**: Model can be updated, queried, and persisted without any dependency on presentation format
+- **Crash Recovery**: Model is periodically saved during updates to ensure no data loss on system failures
+- **Incremental Updates**: Model supports efficient incremental updates without full reprocessing
+
+### Presentation Layer (View)
+- **Purpose**: Human-readable dashboard representation of the model data
+- **Format**: Generated markdown files (README.md and related documentation)
+- **Derivation**: Views are derived entirely from the model; views contain no unique data
+- **Independence**: View generation can be triggered independently from model updates
+- **Regeneration**: Views can be completely regenerated from the model at any time
+
+### Processing Layer (Controller)
+- **Purpose**: Orchestrates data discovery, model updates, and view generation
+- **Separation**: Updates the model independently from view generation
+- **Persistence**: Periodically dumps model to disk during processing for crash recovery
+- **Triggerable Steps**: Supports independent execution of:
+  - Model update (discovery + analysis)
+  - View generation (render dashboard from model)
+  - Full pipeline (update + generate)
+
+### Processing Strategy
+
+The system supports efficient incremental and batched operations:
+
+1. **Prioritized Processing Order**:
+   - First: Newly discovered PRs (never analyzed before)
+   - Second: Previously seen unmerged/open PRs, ordered by decreasing freshness (most recently updated first)
+   - Third: Merged PRs (only in "force" mode for reprocessing)
+
+2. **Multi-Tool Awareness**:
+   - Same repository may receive multiple independent PRs for different tools (codespell, shellcheck, future additions)
+   - Each tool contribution is tracked separately with its own lifecycle
+   - A repository can have one tool's PR merged while another tool's PR is still open
+   - Incremental updates efficiently handle repositories with multiple tool PRs
+
+3. **Force Mode**:
+   - Normal mode: Skip analysis of already-merged PRs (they're "done")
+   - Force mode: Re-analyze all PRs including merged ones (for data corrections or metric recalculation)
 
 ## Requirements *(mandatory)*
 
@@ -187,6 +240,20 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
 - **FR-023**: System MUST export PR data including discussion thread context in a format suitable for AI assistant processing
 - **FR-024**: System MUST calculate and display acceptance rates, average response times, and engagement metrics per repository for research analysis
 - **FR-025**: System MUST categorize repository behavior patterns based on response metrics (e.g., welcoming, selective, unresponsive)
+- **FR-026**: System MUST maintain clear separation between data storage (model) and presentation generation (view)
+- **FR-027**: System MUST allow model updates to execute independently from view generation
+- **FR-028**: System MUST allow view generation to execute independently from model updates
+- **FR-029**: System MUST periodically persist the model to disk during processing to prevent data loss on crashes or interruptions
+- **FR-030**: System MUST support complete regeneration of all views from the persisted model at any time
+- **FR-031**: System MUST process PRs in priority order: new discoveries first, then unmerged PRs by decreasing freshness, then merged PRs only in force mode
+- **FR-032**: System MUST track multiple improvement tool types (codespell, shellcheck, others) independently per repository
+- **FR-033**: System MUST recognize that a single repository may have separate PRs for different tools with different states (one merged, another open)
+- **FR-034**: System MUST support a "force mode" that re-analyzes previously processed merged PRs for data correction or metric recalculation
+- **FR-035**: System MUST support "normal mode" that skips re-analysis of merged PRs to optimize performance
+- **FR-036**: System MUST order unmerged PRs by their last update timestamp (freshness) when processing incrementally
+- **FR-037**: System MUST maintain efficiency of incremental updates even when repositories have PRs for multiple different tools
+- **FR-038**: System MUST create git commits with informative messages summarizing the changes discovered in each update (e.g., number of new repositories found, number of new PRs discovered, number of PRs newly merged, number of PRs closed)
+- **FR-039**: System MUST include sufficient detail in commit messages to understand the timeline and evolution of tracked PRs through git history
 
 ### Key Entities *(include if feature involves data)*
 
@@ -194,7 +261,9 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
   - Repository identifier (owner/name)
   - PR number, title, and URL
   - Author username
+  - Tool type (codespell, shellcheck, or other improvement tool)
   - Submission date
+  - Last updated timestamp (for freshness ordering)
   - Current status (open, merged, closed)
   - Merge date (if merged)
   - Close date (if closed without merge)
@@ -207,6 +276,7 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
   - Last actor (submitter or maintainer)
   - Days since last maintainer comment (for PRs awaiting submitter response)
   - Response status (awaiting submitter, awaiting maintainer, no response yet)
+  - Analysis status (never analyzed, analyzed, needs reanalysis)
 
 - **Comment**: Represents a comment on a PR with attributes including:
   - Author username
@@ -217,10 +287,11 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
 - **Repository**: Represents a target repository that received improveit PRs with attributes including:
   - Platform (GitHub, Codeberg, etc.)
   - Owner and name
-  - List of related PRs
+  - List of related PRs (may include multiple PRs for different tools)
+  - Per-tool PR tracking (separate lists for codespell PRs, shellcheck PRs, etc.)
   - Access status (public, private, deleted)
   - Average time-to-first-response (research metric)
-  - PR acceptance rate (merged / total submitted)
+  - PR acceptance rate (merged / total submitted, overall and per-tool)
   - Average engagement level (comments per PR)
   - Behavior pattern category (welcoming, selective, unresponsive, hostile)
 
@@ -233,10 +304,17 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
 
 - **Discovery Run**: Represents a single execution of the discovery process with attributes including:
   - Run timestamp
-  - Number of PRs discovered/updated
+  - Processing mode (normal or force)
+  - Number of new repositories discovered
+  - Number of new PRs discovered
+  - Number of PRs updated (status changes, new comments, etc.)
+  - Number of PRs newly merged since last run
+  - Number of PRs newly closed since last run
+  - Number of PRs processed (total in this run)
   - API calls made
   - Rate limit status
   - Errors encountered
+  - Commit message generated (summarizing above metrics)
 
 ## Success Criteria *(mandatory)*
 
@@ -254,6 +332,14 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
 - **SC-010**: Time-to-first-response metrics are accurate within 1 hour for at least 95% of PRs (validated against manual review)
 - **SC-011**: Repository behavior categorization provides meaningful differentiation between welcoming and unresponsive projects (validated through researcher review)
 - **SC-012**: Exported data for AI assistant processing includes sufficient context for at least 90% of PRs to generate appropriate responses without additional API calls
+- **SC-013**: Views can be completely regenerated from the model in under 2 minutes for up to 1000 tracked PRs
+- **SC-014**: Model updates and view generation can be executed independently without errors or data inconsistency
+- **SC-015**: System recovers from crashes without data loss by using the most recent persisted model (within last processing batch)
+- **SC-016**: Incremental updates in normal mode process 100 unmerged PRs in under 5 minutes (excluding merged PRs)
+- **SC-017**: Force mode successfully re-analyzes all PRs including merged ones, completing 100 PRs in under 15 minutes
+- **SC-018**: System correctly tracks and processes repositories with multiple tool PRs (codespell + shellcheck) without conflation
+- **SC-019**: Git commit messages provide clear summary of changes allowing humans to understand dashboard evolution from git log alone
+- **SC-020**: Processing order prioritizes new PRs, with all new discoveries analyzed before any previously-seen unmerged PRs
 
 ### Assumptions
 
@@ -266,6 +352,9 @@ As a busy researcher who submitted many improvement PRs, I need to quickly ident
 - Social research use case assumes that mass PR submissions serve as a legitimate diagnostic tool for measuring open source community health and responsiveness
 - AI assistant integration assumes external tools will consume exported data; the dashboard itself does not include AI capabilities
 - Behavior pattern categorization uses heuristics based on response metrics; manual researcher validation may be needed for nuanced cases
+- Model data and generated views are tracked in git, with commits serving as both versioning and change logging mechanism
+- "Freshness" is defined by last PR update timestamp (comments, commits, status changes, etc.) from the platform API
+- Multiple tools (codespell, shellcheck) can target the same repository; they are tracked as separate contributions even if submitted by the same user
 
 ### Out of Scope
 
