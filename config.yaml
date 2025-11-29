@@ -1,0 +1,38 @@
+# ImprovIt Dashboard Configuration
+# ================================
+# This file configures which users and PR types to track.
+# All settings can be overridden via environment variables.
+
+# Users whose PRs will be tracked
+tracked_users:
+  - yarikoptic
+  - DimitriPapadopoulos
+
+# Tool keywords for PR title matching
+# PRs with these keywords in the title will be tracked
+tool_keywords:
+  codespell:
+    - codespell
+    - codespellit
+  shellcheck:
+    - shellcheck
+    - shellcheckit
+
+# Code hosting platforms to query (future: codeberg, gitlab)
+platforms:
+  - github
+
+# Rate limit threshold - pause when remaining API calls fall below this
+# Default: 100 (out of 5000/hour for authenticated requests)
+rate_limit_threshold: 100
+
+# Number of PRs to process between model saves (crash recovery)
+batch_size: 10
+
+# Optional: Maximum PRs to process per run (for testing)
+# max_prs_per_run: 50
+
+# Paths (relative to repository root)
+# data_file: data/repositories.json
+# output_readme: README.md
+# output_readmes_dir: READMEs
