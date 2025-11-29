@@ -131,9 +131,7 @@ class TestAnalyzeEngagement:
         assert 23 < sample_pull_request.time_to_first_response_hours < 25
 
     @pytest.mark.ai_generated
-    def test_response_status_awaiting_submitter(
-        self, sample_pull_request: PullRequest
-    ) -> None:
+    def test_response_status_awaiting_submitter(self, sample_pull_request: PullRequest) -> None:
         """Test detecting awaiting submitter status."""
         comments_data = [
             {

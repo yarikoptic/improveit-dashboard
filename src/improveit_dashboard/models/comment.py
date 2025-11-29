@@ -32,9 +32,7 @@ class Comment:
         return errors
 
     @classmethod
-    def from_github_response(
-        cls, data: dict[str, Any], pr_author: str
-    ) -> "Comment":
+    def from_github_response(cls, data: dict[str, Any], pr_author: str) -> "Comment":
         """Create from GitHub API response.
 
         Args:

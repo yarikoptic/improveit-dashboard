@@ -58,9 +58,7 @@ class TestUserReports:
     """Tests for per-user report generation."""
 
     @pytest.mark.ai_generated
-    def test_generate_user_report(
-        self, tmp_path: Path, sample_repository: Repository
-    ) -> None:
+    def test_generate_user_report(self, tmp_path: Path, sample_repository: Repository) -> None:
         """Test generating user report."""
         output_dir = tmp_path / "READMEs"
         repositories = {sample_repository.full_name: sample_repository}

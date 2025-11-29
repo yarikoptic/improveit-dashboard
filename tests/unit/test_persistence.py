@@ -30,9 +30,7 @@ class TestPersistence:
         assert last_run is None
 
     @pytest.mark.ai_generated
-    def test_save_and_load_with_data(
-        self, tmp_path: Path, sample_repository: Repository
-    ) -> None:
+    def test_save_and_load_with_data(self, tmp_path: Path, sample_repository: Repository) -> None:
         """Test saving and loading model with data."""
         path = tmp_path / "data" / "repositories.json"
 

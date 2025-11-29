@@ -57,9 +57,7 @@ class TestGitHubClient:
         assert client.api_calls == 1
 
     @pytest.mark.ai_generated
-    def test_fetch_pr_not_modified(
-        self, client: GitHubClient, mock_response: Any
-    ) -> None:
+    def test_fetch_pr_not_modified(self, client: GitHubClient, mock_response: Any) -> None:
         """Test PR fetch with 304 response."""
         response = mock_response(status_code=304)
 
@@ -76,9 +74,7 @@ class TestGitHubClient:
         assert etag == 'W/"existing"'
 
     @pytest.mark.ai_generated
-    def test_fetch_pr_not_found(
-        self, client: GitHubClient, mock_response: Any
-    ) -> None:
+    def test_fetch_pr_not_found(self, client: GitHubClient, mock_response: Any) -> None:
         """Test PR fetch with 404 response."""
         response = mock_response(status_code=404)
 
@@ -93,9 +89,7 @@ class TestGitHubClient:
         assert pr_data is None
 
     @pytest.mark.ai_generated
-    def test_search_prs(
-        self, client: GitHubClient, mock_response: Any
-    ) -> None:
+    def test_search_prs(self, client: GitHubClient, mock_response: Any) -> None:
         """Test PR search."""
         search_results = {
             "total_count": 1,
@@ -119,9 +113,7 @@ class TestGitHubClient:
         assert results[0]["number"] == 123
 
     @pytest.mark.ai_generated
-    def test_search_prs_keyword_filter(
-        self, client: GitHubClient, mock_response: Any
-    ) -> None:
+    def test_search_prs_keyword_filter(self, client: GitHubClient, mock_response: Any) -> None:
         """Test PR search filters by keywords."""
         search_results = {
             "total_count": 2,

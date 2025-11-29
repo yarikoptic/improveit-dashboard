@@ -44,11 +44,13 @@ def sample_pr_data() -> dict[str, Any]:
 def sample_merged_pr_data(sample_pr_data: dict[str, Any]) -> dict[str, Any]:
     """Sample merged PR data."""
     data = sample_pr_data.copy()
-    data.update({
-        "state": "closed",
-        "merged": True,
-        "merged_at": "2025-01-20T14:30:00Z",
-    })
+    data.update(
+        {
+            "state": "closed",
+            "merged": True,
+            "merged_at": "2025-01-20T14:30:00Z",
+        }
+    )
     return data
 
 

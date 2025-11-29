@@ -152,9 +152,7 @@ class PullRequest:
             "days_awaiting_submitter": self.days_awaiting_submitter,
             "response_status": self.response_status,
             "etag": self.etag,
-            "last_fetched_at": (
-                self.last_fetched_at.isoformat() if self.last_fetched_at else None
-            ),
+            "last_fetched_at": (self.last_fetched_at.isoformat() if self.last_fetched_at else None),
             "last_developer_comment_body": self.last_developer_comment_body,
         }
 

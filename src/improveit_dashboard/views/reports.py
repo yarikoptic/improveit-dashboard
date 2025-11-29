@@ -85,21 +85,23 @@ def _generate_user_report(
 
     # Needs Response section
     needs_response = [
-        pr for pr in user_prs
+        pr
+        for pr in user_prs
         if pr.status in ("draft", "open") and pr.response_status == "awaiting_submitter"
     ]
     if needs_response:
-        lines.extend([
-            "## Needs Your Response",
-            "",
-            "PRs where maintainers have responded and are waiting for your action:",
-            "",
-        ])
+        lines.extend(
+            [
+                "## Needs Your Response",
+                "",
+                "PRs where maintainers have responded and are waiting for your action:",
+                "",
+            ]
+        )
         for pr in needs_response:
             days = pr.days_awaiting_submitter or 0
             lines.append(
-                f"- [{pr.repository}#{pr.number}]({pr.url}): {pr.title} "
-                f"(*waiting {days} days*)"
+                f"- [{pr.repository}#{pr.number}]({pr.url}): {pr.title} (*waiting {days} days*)"
             )
             if pr.last_developer_comment_body:
                 # Truncate long comments
@@ -111,37 +113,45 @@ def _generate_user_report(
 
     # Draft PRs
     if draft_prs:
-        lines.extend([
-            "## Draft PRs",
-            "",
-        ])
+        lines.extend(
+            [
+                "## Draft PRs",
+                "",
+            ]
+        )
         _add_pr_table(lines, draft_prs)
         lines.append("")
 
     # Open PRs
     if open_prs:
-        lines.extend([
-            "## Open PRs",
-            "",
-        ])
+        lines.extend(
+            [
+                "## Open PRs",
+                "",
+            ]
+        )
         _add_pr_table(lines, open_prs)
         lines.append("")
 
     # Merged PRs
     if merged_prs:
-        lines.extend([
-            "## Merged PRs",
-            "",
-        ])
+        lines.extend(
+            [
+                "## Merged PRs",
+                "",
+            ]
+        )
         _add_pr_table(lines, merged_prs, show_merged=True)
         lines.append("")
 
     # Closed PRs (without merge)
     if closed_prs:
-        lines.extend([
-            "## Closed PRs (Not Merged)",
-            "",
-        ])
+        lines.extend(
+            [
+                "## Closed PRs (Not Merged)",
+                "",
+            ]
+        )
         _add_pr_table(lines, closed_prs)
         lines.append("")
 
@@ -174,9 +184,7 @@ def _add_pr_table(
         lines.append(
             "| Repository | PR | Title | Tool | Created | Comments | Response | Automation |"
         )
-        lines.append(
-            "|------------|----|----|------|---------|----------|----------|------------|"
-        )
+        lines.append("|------------|----|----|------|---------|----------|----------|------------|")
 
     for pr in prs:
         created = pr.created_at.strftime("%Y-%m-%d")

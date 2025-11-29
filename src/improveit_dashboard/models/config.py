@@ -13,9 +13,7 @@ class Configuration:
     """Represents system configuration for discovery and processing."""
 
     # Discovery settings
-    tracked_users: list[str] = field(
-        default_factory=lambda: ["yarikoptic", "DimitriPapadopoulos"]
-    )
+    tracked_users: list[str] = field(default_factory=lambda: ["yarikoptic", "DimitriPapadopoulos"])
     tool_keywords: dict[str, list[str]] = field(
         default_factory=lambda: {
             "codespell": ["codespell", "codespellit"],

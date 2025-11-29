@@ -52,16 +52,14 @@ class RateLimitHandler:
         self.reset_timestamp = int(headers.get("X-RateLimit-Reset", 0))
 
         logger.debug(
-            f"Rate limit: {self.remaining}/{self.limit} remaining, "
-            f"resets at {self.reset_timestamp}"
+            f"Rate limit: {self.remaining}/{self.limit} remaining, resets at {self.reset_timestamp}"
         )
 
         # Critical threshold - abort
         if self.remaining < self.critical_threshold:
             wait_seconds = max(0, self.reset_timestamp - int(time.time()))
             raise RateLimitError(
-                f"Rate limit critically low ({self.remaining}), "
-                f"resets in {wait_seconds}s",
+                f"Rate limit critically low ({self.remaining}), resets in {wait_seconds}s",
                 reset_timestamp=self.reset_timestamp,
             )
 

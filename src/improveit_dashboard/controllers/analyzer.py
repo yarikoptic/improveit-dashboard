@@ -76,7 +76,9 @@ def analyze_engagement(
     # Find last comment and last maintainer comment
     last_comment = None
     last_maintainer_comment = None
-    last_developer_comment = None  # Non-submitter (can be bot for this field? No, spec says "developer")
+    last_developer_comment = (
+        None  # Non-submitter (can be bot for this field? No, spec says "developer")
+    )
 
     for comment in reversed(sorted_comments):
         if last_comment is None:
@@ -104,9 +106,7 @@ def analyze_engagement(
         pr.last_developer_comment_body = last_developer_comment.body
 
     # Determine response status
-    pr.response_status = _determine_response_status(
-        pr, last_comment, last_maintainer_comment
-    )
+    pr.response_status = _determine_response_status(pr, last_comment, last_maintainer_comment)
 
     # Calculate days awaiting submitter
     if pr.response_status == "awaiting_submitter" and last_maintainer_comment:

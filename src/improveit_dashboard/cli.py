@@ -34,12 +34,14 @@ def create_parser() -> argparse.ArgumentParser:
         help="Path to configuration file (default: config.yaml)",
     )
     parser.add_argument(
-        "-v", "--verbose",
+        "-v",
+        "--verbose",
         action="store_true",
         help="Enable verbose output",
     )
     parser.add_argument(
-        "-q", "--quiet",
+        "-q",
+        "--quiet",
         action="store_true",
         help="Suppress non-error output",
     )
@@ -235,20 +237,37 @@ def cmd_export(args: argparse.Namespace, config: Configuration) -> int:
             writer = csv.writer(buffer)
 
             # Header
-            writer.writerow([
-                "repository", "number", "title", "author", "status",
-                "tool", "created_at", "merged_at", "response_status",
-                "last_developer_comment_body"
-            ])
+            writer.writerow(
+                [
+                    "repository",
+                    "number",
+                    "title",
+                    "author",
+                    "status",
+                    "tool",
+                    "created_at",
+                    "merged_at",
+                    "response_status",
+                    "last_developer_comment_body",
+                ]
+            )
 
             # Data
             for pr in prs:
-                writer.writerow([
-                    pr.repository, pr.number, pr.title, pr.author, pr.status,
-                    pr.tool, pr.created_at.isoformat(),
-                    pr.merged_at.isoformat() if pr.merged_at else "",
-                    pr.response_status, pr.last_developer_comment_body or ""
-                ])
+                writer.writerow(
+                    [
+                        pr.repository,
+                        pr.number,
+                        pr.title,
+                        pr.author,
+                        pr.status,
+                        pr.tool,
+                        pr.created_at.isoformat(),
+                        pr.merged_at.isoformat() if pr.merged_at else "",
+                        pr.response_status,
+                        pr.last_developer_comment_body or "",
+                    ]
+                )
 
             content = buffer.getvalue()
 

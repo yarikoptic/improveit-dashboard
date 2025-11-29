@@ -6,9 +6,7 @@ from typing import Any, Literal
 
 from improveit_dashboard.models.pull_request import PullRequest
 
-BehaviorCategory = Literal[
-    "welcoming", "selective", "unresponsive", "hostile", "insufficient_data"
-]
+BehaviorCategory = Literal["welcoming", "selective", "unresponsive", "hostile", "insufficient_data"]
 
 
 @dataclass
@@ -185,9 +183,7 @@ class Repository:
             "full_name": self.full_name,
             "url": self.url,
             "accessible": self.accessible,
-            "last_checked_at": (
-                self.last_checked_at.isoformat() if self.last_checked_at else None
-            ),
+            "last_checked_at": (self.last_checked_at.isoformat() if self.last_checked_at else None),
             "repository_updated_at": (
                 self.repository_updated_at.isoformat() if self.repository_updated_at else None
             ),
