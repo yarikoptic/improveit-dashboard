@@ -173,70 +173,72 @@ specs/[###-feature]/
 
 ```text
 improveit-dashboard/
-├── src/
-│   ├── improveit_dashboard/
-│   │   ├── __init__.py
-│   │   ├── models/              # Data models (M in MVC)
+├── code/                        # All production code lives here
+│   ├── src/
+│   │   ├── improveit_dashboard/
 │   │   │   ├── __init__.py
-│   │   │   ├── pull_request.py  # PullRequest entity
-│   │   │   ├── repository.py    # Repository entity
-│   │   │   ├── comment.py       # Comment entity
-│   │   │   └── config.py        # Configuration entity
-│   │   ├── controllers/         # Processing logic (C in MVC)
-│   │   │   ├── __init__.py
-│   │   │   ├── discovery.py     # PR discovery orchestration
-│   │   │   ├── github_client.py # GitHub API wrapper
-│   │   │   ├── analyzer.py      # PR analysis (comments, automation types)
-│   │   │   └── persistence.py   # Model save/load operations
-│   │   ├── views/               # Dashboard generation (V in MVC)
-│   │   │   ├── __init__.py
-│   │   │   ├── dashboard.py     # Main README.md generator
-│   │   │   └── reports.py       # Per-user README generators
-│   │   ├── cli.py               # CLI implementation (entry point: improveit-dashboard)
-│   │   └── utils/
-│   │       ├── __init__.py
-│   │       ├── rate_limit.py    # Rate limit handling
-│   │       └── logging.py       # Logging configuration
-│   └── __main__.py
+│   │   │   ├── models/              # Data models (M in MVC)
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── pull_request.py  # PullRequest entity
+│   │   │   │   ├── repository.py    # Repository entity
+│   │   │   │   ├── comment.py       # Comment entity
+│   │   │   │   └── config.py        # Configuration entity
+│   │   │   ├── controllers/         # Processing logic (C in MVC)
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── discovery.py     # PR discovery orchestration
+│   │   │   │   ├── github_client.py # GitHub API wrapper
+│   │   │   │   ├── analyzer.py      # PR analysis (comments, automation types)
+│   │   │   │   └── persistence.py   # Model save/load operations
+│   │   │   ├── views/               # Dashboard generation (V in MVC)
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── dashboard.py     # Main README.md generator
+│   │   │   │   └── reports.py       # Per-user README generators
+│   │   │   ├── cli.py               # CLI implementation (entry point: improveit-dashboard)
+│   │   │   └── utils/
+│   │   │       ├── __init__.py
+│   │   │       ├── rate_limit.py    # Rate limit handling
+│   │   │       └── logging.py       # Logging configuration
+│   │   └── __main__.py
+│   │
+│   ├── tests/
+│   │   ├── unit/
+│   │   │   ├── test_models.py
+│   │   │   ├── test_discovery.py
+│   │   │   ├── test_analyzer.py
+│   │   │   ├── test_persistence.py
+│   │   │   └── test_views.py
+│   │   ├── integration/
+│   │   │   ├── test_github_api.py   # Tests against sample PRs
+│   │   │   └── test_end_to_end.py   # Full pipeline test
+│   │   └── conftest.py              # Pytest fixtures
+│   │
+│   ├── pyproject.toml               # Project metadata + dependencies (uv)
+│   ├── tox.ini                      # Tox configuration for testing
+│   ├── config.yaml                  # Dashboard configuration
+│   └── LICENSE                      # Open source license
 │
-├── tests/
-│   ├── unit/
-│   │   ├── test_models.py
-│   │   ├── test_discovery.py
-│   │   ├── test_analyzer.py
-│   │   ├── test_persistence.py
-│   │   └── test_views.py
-│   ├── integration/
-│   │   ├── test_github_api.py   # Tests against sample PRs
-│   │   └── test_end_to_end.py   # Full pipeline test
-│   └── conftest.py              # Pytest fixtures
-│
-├── data/                        # Generated data (gitignored except .gitkeep)
-│   ├── .gitkeep
+├── data/                        # Generated data (committed to track history)
 │   └── repositories.json        # Model storage (generated)
 │
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml               # Tox-based testing on PR
-│       └── update-dashboard.yml # Scheduled cron for updates
+│       ├── ci.yml               # Tox-based testing on PR (runs from code/)
+│       └── update-dashboard.yml # Scheduled cron for updates (runs from code/)
 │
-├── pyproject.toml               # Project metadata + dependencies (uv)
-├── tox.ini                      # Tox configuration for testing
 ├── README.md                    # Generated summary dashboard (V output)
 ├── READMEs/                     # Per-user detailed dashboards (V output)
 │   ├── yarikoptic.md            # Detailed PR list for yarikoptic
 │   └── DimitriPapadopoulos.md   # Detailed PR list for DimitriPapadopoulos
-├── LICENSE                      # Open source license
 └── .gitignore
 ```
 
-**Structure Decision**: Single Python CLI application following MVC architecture as specified in the feature requirements. The separation ensures:
-- **Models** (`src/improveit_dashboard/models/`) define data structures independent of storage or presentation
-- **Controllers** (`src/improveit_dashboard/controllers/`) handle discovery, API interaction, and orchestration
-- **Views** (`src/improveit_dashboard/views/`) generate markdown dashboards from model data
-- **Data persistence** in JSON files under `data/` directory (gitignored to avoid bloat, regenerable from processing)
+**Structure Decision**: Single Python CLI application following MVC architecture as specified in the feature requirements. Code is isolated in `code/` subdirectory to keep root clean for generated dashboard files. The separation ensures:
+- **Models** (`code/src/improveit_dashboard/models/`) define data structures independent of storage or presentation
+- **Controllers** (`code/src/improveit_dashboard/controllers/`) handle discovery, API interaction, and orchestration
+- **Views** (`code/src/improveit_dashboard/views/`) generate markdown dashboards from model data
+- **Data persistence** in JSON files under `data/` directory (committed to track PR history evolution)
 - **Testing** organized by type (unit vs integration) with pytest and tox
-- **Automation** via GitHub Actions workflows for CI and scheduled updates
+- **Automation** via GitHub Actions workflows for CI and scheduled updates (run from `code/` directory)
 
 ## Complexity Tracking
 

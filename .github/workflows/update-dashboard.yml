@@ -32,10 +32,12 @@ jobs:
         uses: astral-sh/setup-uv@v4
 
       - name: Install package
+        working-directory: code
         run: |
           uv pip install --system -e .
 
       - name: Run discovery update with commit
+        working-directory: code
         env:
           GITHUB_TOKEN: ${{ secrets.GH_DASHBOARD_TOKEN }}
         run: |

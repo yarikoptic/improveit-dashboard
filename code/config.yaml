@@ -32,7 +32,7 @@ batch_size: 10
 # Optional: Maximum PRs to process per run (for testing)
 # max_prs_per_run: 50
 
-# Paths (relative to repository root)
-# data_file: data/repositories.json
-# output_readme: README.md
-# output_readmes_dir: READMEs
+# Paths (relative to code/ directory, pointing to repo root)
+data_file: ../data/repositories.json
+output_readme: ../README.md
+output_readmes_dir: ../READMEs

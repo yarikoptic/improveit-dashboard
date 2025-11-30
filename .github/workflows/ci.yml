@@ -25,10 +25,12 @@ jobs:
         uses: astral-sh/setup-uv@v4
 
       - name: Install dependencies
+        working-directory: code
         run: |
           uv pip install --system tox tox-uv
 
       - name: Run tests
+        working-directory: code
         run: |
           tox -e py${{ matrix.python-version == '3.11' && '311' || '312' }}
 
@@ -52,10 +54,12 @@ jobs:
         uses: astral-sh/setup-uv@v4
 
       - name: Install dependencies
+        working-directory: code
         run: |
           uv pip install --system tox tox-uv
 
       - name: Run linting
+        working-directory: code
         run: |
           tox -e lint
 
@@ -73,10 +77,12 @@ jobs:
         uses: astral-sh/setup-uv@v4
 
       - name: Install dependencies
+        working-directory: code
         run: |
           uv pip install --system tox tox-uv
 
       - name: Run type checking
+        working-directory: code
         run: |
           tox -e type
 
@@ -95,10 +101,12 @@ jobs:
         uses: astral-sh/setup-uv@v4
 
       - name: Install dependencies
+        working-directory: code
         run: |
           uv pip install --system tox tox-uv
 
       - name: Run integration tests
+        working-directory: code
         env:
           GITHUB_TOKEN: ${{ secrets.GH_DASHBOARD_TOKEN }}
         run: |
