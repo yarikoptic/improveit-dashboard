@@ -35,35 +35,23 @@ jobs:
         run: |
           uv pip install --system -e .
 
-      - name: Run discovery update
+      - name: Run discovery update with commit
         env:
           GITHUB_TOKEN: ${{ secrets.GH_DASHBOARD_TOKEN }}
         run: |
-          if [ "${{ inputs.force }}" = "true" ]; then
-            improveit-dashboard update --force
-          else
-            improveit-dashboard update --incremental
-          fi
-
-      - name: Check for changes
-        id: check
-        run: |
-          if git diff --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit and push
-        if: steps.check.outputs.changed == 'true'
-        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "$(cat <<'EOF'
-          Update dashboard
+          if [ "${{ inputs.force }}" = "true" ]; then
+            improveit-dashboard update --force --commit
+          else
+            improveit-dashboard update --incremental --commit
+          fi
 
-          Automated update from GitHub Actions workflow.
-          EOF
-          )"
-          git push
+      - name: Push changes
+        run: |
+          # Only push if there are commits to push
+          if git log origin/$(git branch --show-current)..HEAD --oneline | grep -q .; then
+            git push
+          else
+            echo "No changes to push"
+          fi

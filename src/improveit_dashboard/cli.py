@@ -79,6 +79,11 @@ def create_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Skip view generation after update",
     )
+    update_parser.add_argument(
+        "--commit",
+        action="store_true",
+        help="Create git commit with summary of changes",
+    )
 
     # Generate command
     generate_parser = subparsers.add_parser(
@@ -151,13 +156,68 @@ def cmd_update(args: argparse.Namespace, config: Configuration) -> int:
         # Generate views unless --no-generate
         if not args.no_generate:
             logger.info("Generating dashboard views...")
-            return cmd_generate(args, config)
+            result = cmd_generate(args, config)
+            if result != 0:
+                return result
+
+        # Create git commit if requested
+        if args.commit:
+            logger.info("Creating git commit...")
+            result = _create_commit(run.to_commit_message())
+            if result != 0:
+                return result
 
         return 0
 
     except Exception as e:
         logger.error(f"Update failed: {e}")
         return 1
+
+
+def _create_commit(message: str) -> int:
+    """Create a git commit with the given message.
+
+    Returns 0 on success, 1 if no changes to commit, 2 on error.
+    """
+    import subprocess
+
+    try:
+        # Check if there are changes to commit
+        result = subprocess.run(
+            ["git", "diff", "--quiet"],
+            capture_output=True,
+        )
+        staged_result = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            capture_output=True,
+        )
+
+        # If both exit 0, there are no changes
+        if result.returncode == 0 and staged_result.returncode == 0:
+            print("No changes to commit")
+            return 0
+
+        # Stage all changes
+        subprocess.run(["git", "add", "-A"], check=True)
+
+        # Create commit
+        subprocess.run(
+            ["git", "commit", "-m", message],
+            check=True,
+        )
+
+        print("Created commit with summary:")
+        # Print first line of commit message
+        print(f"  {message.split(chr(10))[0]}")
+
+        return 0
+
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Git commit failed: {e}")
+        return 2
+    except FileNotFoundError:
+        logger.error("Git not found in PATH")
+        return 2
 
 
 def cmd_generate(args: argparse.Namespace, config: Configuration) -> int:
