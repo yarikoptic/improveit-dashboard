@@ -10,12 +10,16 @@ The data model follows the MVC architecture with clear separation between domain
 
 **Dashboard Structure**:
 - **Top-level README.md**: Summary table with per-user statistics with links to detailed dashboards
-  - Columns: User | Total PRs | Draft | Open | Merged | Closed | Link
-  - Each user row links to `READMEs/{user}.md`
-- **READMEs/{user}.md**: Detailed PR listings for each tracked user
-  - Organized by PR status (draft, open, merged, closed)
+  - Columns: User | Total PRs | Draft | Open | Merged | Closed
+  - Status counts link to `READMEs/{user}/{status}.md` files
+- **READMEs/{user}.md**: Summary for each tracked user
+  - Contains only "Needs Your Response" section (PRs awaiting submitter action)
+  - Links to per-status files for full listings
+- **READMEs/{user}/{status}.md**: Per-status PR tables (draft.md, open.md, merged.md, closed.md)
+  - Contains full PR tables for that status
   - Shows: PR title, repository, dates, commit count, files changed, comments, automation types
   - Includes engagement metrics: time-to-first-response, awaiting status
+  - Includes CI/merge status: has_conflicts, ci_status, main_branch_ci, codespell_workflow_ci
 
 ---
 
@@ -76,6 +80,12 @@ class PullRequest:
 
     # Context for AI assistant export
     last_developer_comment_body: str | None  # Text of last non-author comment
+
+    # CI and merge status
+    has_conflicts: bool                  # True if PR has merge conflicts
+    ci_status: str | None                # Overall CI status: "success", "failure", "pending", None
+    main_branch_ci: str | None           # CI status on main/master branch: "success", "failure", "pending", None
+    codespell_workflow_ci: str | None    # Codespell workflow status if present: "success", "failure", "pending", None
 ```
 
 **Validation Rules**:

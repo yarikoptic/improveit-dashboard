@@ -9,6 +9,14 @@ from improveit_dashboard.utils.logging import get_logger
 
 logger = get_logger(__name__)
 
+# Status display names and file names
+STATUS_INFO = {
+    "draft": {"display": "Draft", "file": "draft.md"},
+    "open": {"display": "Open", "file": "open.md"},
+    "merged": {"display": "Merged", "file": "merged.md"},
+    "closed": {"display": "Closed", "file": "closed.md"},
+}
+
 
 def generate_user_reports(
     repositories: dict[str, Repository],
@@ -29,26 +37,40 @@ def generate_user_reports(
     generated_paths: list[Path] = []
 
     for user in tracked_users:
-        path = output_dir / f"{user}.md"
-        _generate_user_report(repositories, path, user)
-        generated_paths.append(path)
+        paths = _generate_user_report(repositories, output_dir, user)
+        generated_paths.extend(paths)
 
     return generated_paths
 
 
 def _generate_user_report(
     repositories: dict[str, Repository],
-    output_path: Path,
+    output_dir: Path,
     username: str,
-) -> None:
+) -> list[Path]:
     """Generate detailed report for a single user.
+
+    Creates:
+    - {output_dir}/{username}.md - Summary with "Needs Your Response" section
+    - {output_dir}/{username}/draft.md - Draft PRs table
+    - {output_dir}/{username}/open.md - Open PRs table
+    - {output_dir}/{username}/merged.md - Merged PRs table
+    - {output_dir}/{username}/closed.md - Closed PRs table
 
     Args:
         repositories: Dict mapping full_name to Repository
-        output_path: Path to output file
+        output_dir: Directory for output files
         username: GitHub username
+
+    Returns:
+        List of generated file paths
     """
-    logger.info(f"Generating report for {username}: {output_path}")
+    logger.info(f"Generating reports for {username}")
+    generated_paths: list[Path] = []
+
+    # Create user subdirectory
+    user_dir = output_dir / username
+    user_dir.mkdir(parents=True, exist_ok=True)
 
     # Collect user's PRs
     user_prs: list[PullRequest] = []
@@ -58,37 +80,82 @@ def _generate_user_report(
                 user_prs.append(pr)
 
     # Group by status
-    draft_prs = [pr for pr in user_prs if pr.status == "draft"]
-    open_prs = [pr for pr in user_prs if pr.status == "open"]
-    merged_prs = [pr for pr in user_prs if pr.status == "merged"]
-    closed_prs = [pr for pr in user_prs if pr.status == "closed"]
+    prs_by_status: dict[str, list[PullRequest]] = {
+        "draft": [],
+        "open": [],
+        "merged": [],
+        "closed": [],
+    }
+
+    for pr in user_prs:
+        prs_by_status[pr.status].append(pr)
 
     # Sort each group by updated_at descending
-    for prs in [draft_prs, open_prs, merged_prs, closed_prs]:
+    for prs in prs_by_status.values():
         prs.sort(key=lambda p: p.updated_at, reverse=True)
 
-    # Generate markdown
+    # Generate main summary file
+    main_path = output_dir / f"{username}.md"
+    _generate_summary_file(main_path, username, prs_by_status, user_dir.name)
+    generated_paths.append(main_path)
+
+    # Generate per-status files
+    for status, prs in prs_by_status.items():
+        status_path = user_dir / STATUS_INFO[status]["file"]
+        _generate_status_file(status_path, username, status, prs)
+        generated_paths.append(status_path)
+
+    logger.info(f"Generated {len(generated_paths)} files for {username} with {len(user_prs)} PRs")
+    return generated_paths
+
+
+def _generate_summary_file(
+    output_path: Path,
+    username: str,
+    prs_by_status: dict[str, list[PullRequest]],
+    user_subdir: str,
+) -> None:
+    """Generate main user summary file with Needs Response section only.
+
+    Args:
+        output_path: Path to output file
+        username: GitHub username
+        prs_by_status: PRs grouped by status
+        user_subdir: Name of user subdirectory for links
+    """
+    total = sum(len(prs) for prs in prs_by_status.values())
+
     lines = [
         f"# PRs by {username}",
         "",
         f"*Last updated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M UTC')}*",
         "",
-        f"**Total**: {len(user_prs)} PRs | "
-        f"**Draft**: {len(draft_prs)} | "
-        f"**Open**: {len(open_prs)} | "
-        f"**Merged**: {len(merged_prs)} | "
-        f"**Closed**: {len(closed_prs)}",
-        "",
         "[< Back to Dashboard](../README.md)",
+        "",
+        "## Summary",
         "",
     ]
 
-    # Needs Response section
-    needs_response = [
-        pr
-        for pr in user_prs
-        if pr.status in ("draft", "open") and pr.response_status == "awaiting_submitter"
-    ]
+    # Status summary with links
+    for status in ["draft", "open", "merged", "closed"]:
+        count = len(prs_by_status[status])
+        display = STATUS_INFO[status]["display"]
+        file = STATUS_INFO[status]["file"]
+        if count > 0:
+            lines.append(f"- **[{display}]({user_subdir}/{file})**: {count} PRs")
+        else:
+            lines.append(f"- **{display}**: {count} PRs")
+
+    lines.append(f"- **Total**: {total} PRs")
+    lines.append("")
+
+    # Needs Response section (only active PRs awaiting submitter)
+    needs_response = []
+    for status in ["draft", "open"]:
+        for pr in prs_by_status[status]:
+            if pr.response_status == "awaiting_submitter":
+                needs_response.append(pr)
+
     if needs_response:
         lines.extend(
             [
@@ -100,8 +167,10 @@ def _generate_user_report(
         )
         for pr in needs_response:
             days = pr.days_awaiting_submitter or 0
+            status_icons = _get_status_icons(pr)
             lines.append(
-                f"- [{pr.repository}#{pr.number}]({pr.url}): {pr.title} (*waiting {days} days*)"
+                f"- [{pr.repository}#{pr.number}]({pr.url}): {pr.title} "
+                f"(*waiting {days} days*) {status_icons}"
             )
             if pr.last_developer_comment_body:
                 # Truncate long comments
@@ -110,55 +179,56 @@ def _generate_user_report(
                     comment += "..."
                 lines.append(f"  > {comment}")
         lines.append("")
-
-    # Draft PRs
-    if draft_prs:
+    else:
         lines.extend(
             [
-                "## Draft PRs",
+                "## Needs Your Response",
+                "",
+                "*No PRs currently awaiting your response.*",
                 "",
             ]
         )
-        _add_pr_table(lines, draft_prs)
-        lines.append("")
-
-    # Open PRs
-    if open_prs:
-        lines.extend(
-            [
-                "## Open PRs",
-                "",
-            ]
-        )
-        _add_pr_table(lines, open_prs)
-        lines.append("")
-
-    # Merged PRs
-    if merged_prs:
-        lines.extend(
-            [
-                "## Merged PRs",
-                "",
-            ]
-        )
-        _add_pr_table(lines, merged_prs, show_merged=True)
-        lines.append("")
-
-    # Closed PRs (without merge)
-    if closed_prs:
-        lines.extend(
-            [
-                "## Closed PRs (Not Merged)",
-                "",
-            ]
-        )
-        _add_pr_table(lines, closed_prs)
-        lines.append("")
 
     # Write output
     output_path.write_text("\n".join(lines) + "\n")
 
-    logger.info(f"Generated report for {username} with {len(user_prs)} PRs")
+
+def _generate_status_file(
+    output_path: Path,
+    username: str,
+    status: str,
+    prs: list[PullRequest],
+) -> None:
+    """Generate per-status file with full PR table.
+
+    Args:
+        output_path: Path to output file
+        username: GitHub username
+        status: PR status (draft, open, merged, closed)
+        prs: List of PRs with this status
+    """
+    display = STATUS_INFO[status]["display"]
+
+    lines = [
+        f"# {display} PRs by {username}",
+        "",
+        f"*Last updated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M UTC')}*",
+        "",
+        f"[< Back to {username} summary](../{username}.md) | [< Back to Dashboard](../../README.md)",
+        "",
+        f"**Total**: {len(prs)} PRs",
+        "",
+    ]
+
+    if not prs:
+        lines.append(f"*No {display.lower()} PRs.*")
+    else:
+        _add_pr_table(lines, prs, show_merged=(status == "merged"))
+
+    lines.append("")
+
+    # Write output
+    output_path.write_text("\n".join(lines) + "\n")
 
 
 def _add_pr_table(
@@ -171,7 +241,7 @@ def _add_pr_table(
     Args:
         lines: List to append to
         prs: List of PRs
-        show_merged: Include merged date column
+        show_merged: Include merged date column (for merged PRs)
     """
     if show_merged:
         lines.append(
@@ -182,9 +252,13 @@ def _add_pr_table(
         )
     else:
         lines.append(
-            "| Repository | PR | Title | Tool | Created | Comments | Response | Automation |"
+            "| Repository | PR | Title | Tool | Created | Comments | "
+            "Response | CI | Conflicts | Automation |"
         )
-        lines.append("|------------|----|----|------|---------|----------|----------|------------|")
+        lines.append(
+            "|------------|----|----|------|---------|----------|"
+            "----------|----|-----------|-----------| "
+        )
 
     for pr in prs:
         created = pr.created_at.strftime("%Y-%m-%d")
@@ -206,6 +280,8 @@ def _add_pr_table(
         else:
             comments = f"{pr.total_comments} ({pr.maintainer_comments})"
             response = _format_response_status(pr)
+            ci = _format_ci_status(pr)
+            conflicts = "Yes" if pr.has_conflicts else "-"
             lines.append(
                 f"| [{pr.repository}](https://github.com/{pr.repository}) "
                 f"| [#{pr.number}]({pr.url}) "
@@ -214,6 +290,8 @@ def _add_pr_table(
                 f"| {created} "
                 f"| {comments} "
                 f"| {response} "
+                f"| {ci} "
+                f"| {conflicts} "
                 f"| {automation} |"
             )
 
@@ -234,3 +312,47 @@ def _format_response_status(pr: PullRequest) -> str:
         return "Maintainer"
     else:
         return "No response"
+
+
+def _format_ci_status(pr: PullRequest) -> str:
+    """Format CI status for display."""
+    parts = []
+
+    # Overall CI
+    if pr.ci_status == "success":
+        parts.append("CI:OK")
+    elif pr.ci_status == "failure":
+        parts.append("CI:FAIL")
+    elif pr.ci_status == "pending":
+        parts.append("CI:...")
+
+    # Codespell workflow specifically
+    if pr.codespell_workflow_ci == "success":
+        parts.append("CS:OK")
+    elif pr.codespell_workflow_ci == "failure":
+        parts.append("CS:FAIL")
+    elif pr.codespell_workflow_ci == "pending":
+        parts.append("CS:...")
+
+    # Main branch CI
+    if pr.main_branch_ci == "success":
+        parts.append("Main:OK")
+    elif pr.main_branch_ci == "failure":
+        parts.append("Main:FAIL")
+
+    return " ".join(parts) if parts else "-"
+
+
+def _get_status_icons(pr: PullRequest) -> str:
+    """Get status indicator icons for a PR."""
+    icons = []
+
+    if pr.has_conflicts:
+        icons.append("[conflicts]")
+
+    if pr.ci_status == "failure":
+        icons.append("[CI failing]")
+    elif pr.ci_status == "pending":
+        icons.append("[CI pending]")
+
+    return " ".join(icons)

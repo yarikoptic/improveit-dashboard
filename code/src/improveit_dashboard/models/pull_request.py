@@ -9,6 +9,7 @@ AnalysisStatus = Literal["never_analyzed", "analyzed", "needs_reanalysis"]
 ResponseStatus = Literal["awaiting_submitter", "awaiting_maintainer", "no_response"]
 AdoptionLevel = Literal["full_automation", "config_only", "typo_fixes", "rejected"]
 ToolType = Literal["codespell", "shellcheck", "other"]
+CIStatus = Literal["success", "failure", "pending"]
 
 
 @dataclass
@@ -62,6 +63,12 @@ class PullRequest:
 
     # Context for AI assistant export
     last_developer_comment_body: str | None = None
+
+    # CI and merge status
+    has_conflicts: bool = False
+    ci_status: CIStatus | None = None
+    main_branch_ci: CIStatus | None = None
+    codespell_workflow_ci: CIStatus | None = None
 
     @property
     def is_active(self) -> bool:
@@ -154,6 +161,10 @@ class PullRequest:
             "etag": self.etag,
             "last_fetched_at": (self.last_fetched_at.isoformat() if self.last_fetched_at else None),
             "last_developer_comment_body": self.last_developer_comment_body,
+            "has_conflicts": self.has_conflicts,
+            "ci_status": self.ci_status,
+            "main_branch_ci": self.main_branch_ci,
+            "codespell_workflow_ci": self.codespell_workflow_ci,
         }
 
     @classmethod
@@ -196,4 +207,8 @@ class PullRequest:
             etag=data.get("etag"),
             last_fetched_at=parse_dt(data.get("last_fetched_at")),
             last_developer_comment_body=data.get("last_developer_comment_body"),
+            has_conflicts=data.get("has_conflicts", False),
+            ci_status=data.get("ci_status"),
+            main_branch_ci=data.get("main_branch_ci"),
+            codespell_workflow_ci=data.get("codespell_workflow_ci"),
         )

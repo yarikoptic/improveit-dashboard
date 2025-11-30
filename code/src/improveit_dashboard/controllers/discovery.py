@@ -308,6 +308,22 @@ def _process_pr(
     except Exception as e:
         logger.warning(f"Failed to analyze files for {repo_name}#{pr_number}: {e}")
 
+    # Fetch CI/merge status for active PRs
+    if pr.is_active:
+        try:
+            head_sha = pr_data.get("head", {}).get("sha")
+            if head_sha:
+                status_data = client.fetch_pr_status(repo.owner, repo.name, pr_number, head_sha)
+                pr.has_conflicts = status_data.get("has_conflicts", False)
+                pr.ci_status = status_data.get("ci_status")
+                pr.codespell_workflow_ci = status_data.get("codespell_workflow_ci")
+
+                # Fetch main branch CI status
+                main_branch_ci = client.fetch_branch_status(repo.owner, repo.name)
+                pr.main_branch_ci = main_branch_ci
+        except Exception as e:
+            logger.warning(f"Failed to fetch CI status for {repo_name}#{pr_number}: {e}")
+
     # Add PR to repository
     repo.add_pr(pr)
 

@@ -59,22 +59,36 @@ class TestUserReports:
 
     @pytest.mark.ai_generated
     def test_generate_user_report(self, tmp_path: Path, sample_repository: Repository) -> None:
-        """Test generating user report."""
+        """Test generating user report with per-status files."""
         output_dir = tmp_path / "READMEs"
         repositories = {sample_repository.full_name: sample_repository}
 
         paths = generate_user_reports(repositories, output_dir, ["yarikoptic"])
 
-        assert len(paths) == 1
-        assert paths[0].exists()
+        # Should generate 5 files: main + 4 status files
+        assert len(paths) == 5
+        assert all(p.exists() for p in paths)
 
-        content = paths[0].read_text()
+        # Check main summary file
+        main_path = output_dir / "yarikoptic.md"
+        assert main_path.exists()
+        content = main_path.read_text()
         assert "yarikoptic" in content
-        assert "kestra-io/kestra" in content
+
+        # Check per-status files exist
+        user_dir = output_dir / "yarikoptic"
+        assert (user_dir / "draft.md").exists()
+        assert (user_dir / "open.md").exists()
+        assert (user_dir / "merged.md").exists()
+        assert (user_dir / "closed.md").exists()
+
+        # PR should be in the open status file (sample_repository has an open PR)
+        open_content = (user_dir / "open.md").read_text()
+        assert "kestra-io/kestra" in open_content
 
     @pytest.mark.ai_generated
     def test_report_groups_by_status(self, tmp_path: Path) -> None:
-        """Test report groups PRs by status."""
+        """Test report creates separate files for each status."""
         output_dir = tmp_path / "READMEs"
 
         # Create PRs with different statuses
@@ -102,12 +116,27 @@ class TestUserReports:
                 pr.merged_at = datetime(2025, 1, 3, tzinfo=UTC)
             repo.add_pr(pr)
 
-        paths = generate_user_reports({repo.full_name: repo}, output_dir, ["testuser"])
+        generate_user_reports({repo.full_name: repo}, output_dir, ["testuser"])
 
-        content = paths[0].read_text()
-        assert "Open PRs" in content
-        assert "Merged PRs" in content
-        assert "Closed PRs" in content
+        # Main file should have links to per-status files
+        main_content = (output_dir / "testuser.md").read_text()
+        assert "testuser/open.md" in main_content
+        assert "testuser/merged.md" in main_content
+        assert "testuser/closed.md" in main_content
+
+        # Per-status files should have the PR tables
+        user_dir = output_dir / "testuser"
+        open_content = (user_dir / "open.md").read_text()
+        assert "Open PRs" in open_content
+        assert "PR 1" in open_content
+
+        merged_content = (user_dir / "merged.md").read_text()
+        assert "Merged PRs" in merged_content
+        assert "PR 2" in merged_content
+
+        closed_content = (user_dir / "closed.md").read_text()
+        assert "Closed PRs" in closed_content
+        assert "PR 3" in closed_content
 
     @pytest.mark.ai_generated
     def test_report_shows_needs_response(self, tmp_path: Path) -> None:

@@ -74,21 +74,33 @@ def generate_dashboard(
         [
             "## Contributors",
             "",
-            "| User | Total | Draft | Open | Merged | Closed | Details |",
-            "|------|-------|-------|------|--------|--------|---------|",
+            "| User | Total | Draft | Open | Merged | Closed |",
+            "|------|-------|-------|------|--------|--------|",
         ]
     )
 
     for user in sorted(tracked_users):
         stats = user_stats.get(user, {"total": 0, "draft": 0, "open": 0, "merged": 0, "closed": 0})
+
+        # Format counts as links if > 0
+        def link_count(count: int, status: str, username: str) -> str:
+            if count > 0:
+                return f"[{count}](READMEs/{username}/{status}.md)"
+            return str(count)
+
+        total_link = f"[{stats['total']}](READMEs/{user}.md)" if stats["total"] > 0 else "0"
+        draft_link = link_count(stats["draft"], "draft", user)
+        open_link = link_count(stats["open"], "open", user)
+        merged_link = link_count(stats["merged"], "merged", user)
+        closed_link = link_count(stats["closed"], "closed", user)
+
         lines.append(
             f"| [{user}](https://github.com/{user}) "
-            f"| {stats['total']} "
-            f"| {stats['draft']} "
-            f"| {stats['open']} "
-            f"| {stats['merged']} "
-            f"| {stats['closed']} "
-            f"| [View](READMEs/{user}.md) |"
+            f"| {total_link} "
+            f"| {draft_link} "
+            f"| {open_link} "
+            f"| {merged_link} "
+            f"| {closed_link} |"
         )
 
     lines.append("")

@@ -333,6 +333,164 @@ class GitHubClient:
         result: dict[str, Any] | None = response.json()
         return result
 
+    def fetch_pr_status(
+        self,
+        owner: str,
+        repo: str,
+        pr_number: int,
+        head_sha: str,
+    ) -> dict[str, Any]:
+        """Fetch CI/check status for a PR.
+
+        Args:
+            owner: Repository owner
+            repo: Repository name
+            pr_number: PR number
+            head_sha: SHA of the PR head commit
+
+        Returns:
+            Dict with ci_status, main_branch_ci, codespell_workflow_ci, has_conflicts
+        """
+        result: dict[str, Any] = {
+            "ci_status": None,
+            "main_branch_ci": None,
+            "codespell_workflow_ci": None,
+            "has_conflicts": False,
+        }
+
+        # Get combined status (legacy status API)
+        response = self._request(
+            "GET",
+            f"/repos/{owner}/{repo}/commits/{head_sha}/status",
+        )
+        self.rate_limit.check_and_wait(response)
+
+        if response.status_code == 200:
+            data = response.json()
+            state = data.get("state")
+            if state == "success":
+                result["ci_status"] = "success"
+            elif state == "failure" or state == "error":
+                result["ci_status"] = "failure"
+            elif state == "pending":
+                result["ci_status"] = "pending"
+
+        # Get check runs (GitHub Actions, etc.)
+        response = self._request(
+            "GET",
+            f"/repos/{owner}/{repo}/commits/{head_sha}/check-runs",
+            params={"per_page": 100},
+        )
+        self.rate_limit.check_and_wait(response)
+
+        if response.status_code == 200:
+            data = response.json()
+            check_runs = data.get("check_runs", [])
+
+            # Determine overall CI status from check runs
+            if check_runs:
+                conclusions = [cr.get("conclusion") for cr in check_runs if cr.get("conclusion")]
+                statuses = [cr.get("status") for cr in check_runs]
+
+                if all(c == "success" for c in conclusions if c):
+                    if result["ci_status"] != "failure":
+                        result["ci_status"] = "success"
+                elif any(c in ("failure", "cancelled", "timed_out") for c in conclusions):
+                    result["ci_status"] = "failure"
+                elif any(s in ("queued", "in_progress") for s in statuses):
+                    if result["ci_status"] is None:
+                        result["ci_status"] = "pending"
+
+                # Look for codespell workflow specifically
+                for cr in check_runs:
+                    name = cr.get("name", "").lower()
+                    if "codespell" in name:
+                        conclusion = cr.get("conclusion")
+                        if conclusion == "success":
+                            result["codespell_workflow_ci"] = "success"
+                        elif conclusion in ("failure", "cancelled", "timed_out"):
+                            result["codespell_workflow_ci"] = "failure"
+                        elif cr.get("status") in ("queued", "in_progress"):
+                            result["codespell_workflow_ci"] = "pending"
+                        break
+
+        # Get PR mergeable state (for conflicts)
+        response = self._request(
+            "GET",
+            f"/repos/{owner}/{repo}/pulls/{pr_number}",
+        )
+        self.rate_limit.check_and_wait(response)
+
+        if response.status_code == 200:
+            data = response.json()
+            # mergeable can be null if GitHub is still computing
+            mergeable = data.get("mergeable")
+            mergeable_state = data.get("mergeable_state")
+
+            if mergeable is False or mergeable_state == "dirty":
+                result["has_conflicts"] = True
+
+        return result
+
+    def fetch_branch_status(
+        self,
+        owner: str,
+        repo: str,
+        branch: str = "main",
+    ) -> str | None:
+        """Fetch CI status of a branch.
+
+        Args:
+            owner: Repository owner
+            repo: Repository name
+            branch: Branch name (default: main)
+
+        Returns:
+            CI status: "success", "failure", "pending", or None
+        """
+        # Get branch info to find head SHA
+        response = self._request(
+            "GET",
+            f"/repos/{owner}/{repo}/branches/{branch}",
+        )
+        self.rate_limit.check_and_wait(response)
+
+        if response.status_code == 404:
+            # Try "master" as fallback
+            if branch == "main":
+                return self.fetch_branch_status(owner, repo, "master")
+            return None
+
+        if response.status_code != 200:
+            return None
+
+        data = response.json()
+        head_sha = data.get("commit", {}).get("sha")
+        if not head_sha:
+            return None
+
+        # Get combined status
+        response = self._request(
+            "GET",
+            f"/repos/{owner}/{repo}/commits/{head_sha}/status",
+        )
+        self.rate_limit.check_and_wait(response)
+
+        if response.status_code != 200:
+            return None
+
+        data = response.json()
+        state = data.get("state")
+
+        if state == "success":
+            return "success"
+        elif state in ("failure", "error"):
+            return "failure"
+        elif state == "pending":
+            return "pending"
+
+        return None
+
     def get_rate_limit_status(self) -> dict[str, int]:
         """Get current rate limit status.
 
