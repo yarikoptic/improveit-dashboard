@@ -165,3 +165,74 @@ class TestGitHubClientIntegration:
         assert "limit" in status
         assert status["remaining"] > 0
         assert status["api_calls"] >= 1
+
+    @pytest.mark.integration
+    @pytest.mark.ai_generated
+    def test_fetch_merged_pr_has_merged_by(self, client: GitHubClient) -> None:
+        """Test that merged PRs have merged_by field."""
+        # pydicom/pydicom#2169 is a merged PR
+        pr_data, _, modified = client.fetch_pr_details(
+            owner="pydicom",
+            repo="pydicom",
+            pr_number=2169,
+        )
+
+        assert modified is True
+        assert pr_data is not None
+        assert pr_data["merged"] is True
+        assert "merged_by" in pr_data
+        assert pr_data["merged_by"] is not None
+        assert "login" in pr_data["merged_by"]
+
+    @pytest.mark.integration
+    @pytest.mark.ai_generated
+    def test_fetch_pr_status_for_open_pr(self, client: GitHubClient) -> None:
+        """Test fetching CI/merge status for an open PR (if one exists)."""
+        # Search for an open PR to test
+        results = client.search_user_prs(
+            username="yarikoptic",
+            keywords=["codespell"],
+        )
+
+        # Find an open PR
+        open_pr = None
+        for item in results:
+            if item.get("state") == "open":
+                # Extract repo from repository_url
+                repo_url = item.get("repository_url", "")
+                parts = repo_url.rstrip("/").split("/")
+                if len(parts) >= 2:
+                    owner = parts[-2]
+                    repo = parts[-1]
+                    pr_number = item["number"]
+
+                    # Fetch details to get head SHA
+                    pr_data, _, _ = client.fetch_pr_details(owner, repo, pr_number)
+                    if pr_data:
+                        open_pr = (owner, repo, pr_number, pr_data)
+                        break
+
+        if open_pr is None:
+            pytest.skip("No open PRs found to test CI status")
+
+        owner, repo, pr_number, pr_data = open_pr
+        head_sha = pr_data.get("head", {}).get("sha")
+
+        if head_sha:
+            status = client.fetch_pr_status(owner, repo, pr_number, head_sha)
+            assert "has_conflicts" in status
+            assert "ci_status" in status
+            # CI status should be one of success, failure, pending, or None
+            assert status["ci_status"] in ("success", "failure", "pending", None)
+
+    @pytest.mark.integration
+    @pytest.mark.ai_generated
+    def test_fetch_branch_status(self, client: GitHubClient) -> None:
+        """Test fetching main branch CI status."""
+        status = client.fetch_branch_status(
+            owner="pydicom",
+            repo="pydicom",
+        )
+
+        # Status should be success, failure, pending, or None
+        assert status in ("success", "failure", "pending", None)

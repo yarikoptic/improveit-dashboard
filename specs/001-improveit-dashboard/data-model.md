@@ -86,6 +86,9 @@ class PullRequest:
     ci_status: str | None                # Overall CI status: "success", "failure", "pending", None
     main_branch_ci: str | None           # CI status on main/master branch: "success", "failure", "pending", None
     codespell_workflow_ci: str | None    # Codespell workflow status if present: "success", "failure", "pending", None
+
+    # Closure information
+    closed_by: str | None                # GitHub username who merged or closed the PR
 ```
 
 **Validation Rules**:

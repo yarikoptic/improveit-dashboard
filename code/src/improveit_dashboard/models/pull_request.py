@@ -70,6 +70,9 @@ class PullRequest:
     main_branch_ci: CIStatus | None = None
     codespell_workflow_ci: CIStatus | None = None
 
+    # Closure information
+    closed_by: str | None = None  # GitHub username who merged or closed the PR
+
     @property
     def is_active(self) -> bool:
         """True if PR is draft or open (not merged/closed)."""
@@ -165,6 +168,7 @@ class PullRequest:
             "ci_status": self.ci_status,
             "main_branch_ci": self.main_branch_ci,
             "codespell_workflow_ci": self.codespell_workflow_ci,
+            "closed_by": self.closed_by,
         }
 
     @classmethod
@@ -211,4 +215,5 @@ class PullRequest:
             ci_status=data.get("ci_status"),
             main_branch_ci=data.get("main_branch_ci"),
             codespell_workflow_ci=data.get("codespell_workflow_ci"),
+            closed_by=data.get("closed_by"),
         )

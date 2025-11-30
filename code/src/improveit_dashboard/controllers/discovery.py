@@ -270,6 +270,18 @@ def _process_pr(
         elif new_status == "closed":
             run.newly_closed_prs += 1
 
+    # Determine who closed/merged the PR
+    closed_by = None
+    if new_status == "merged":
+        merged_by_data = pr_data.get("merged_by")
+        if merged_by_data:
+            closed_by = merged_by_data.get("login")
+    elif new_status == "closed":
+        # For closed PRs, the closer info is not directly in PR data
+        # We'd need to fetch timeline events, but for now we leave it None
+        # unless it was auto-closed (then it might be in the data)
+        pass
+
     # Create/update PR model
     now = datetime.now(UTC)
     pr = PullRequest(
@@ -290,6 +302,7 @@ def _process_pr(
         files_changed=pr_data.get("changed_files", 1),
         etag=new_etag,
         last_fetched_at=now,
+        closed_by=closed_by,
     )
 
     # Fetch and analyze comments

@@ -223,7 +223,7 @@ def _generate_status_file(
     if not prs:
         lines.append(f"*No {display.lower()} PRs.*")
     else:
-        _add_pr_table(lines, prs, show_merged=(status == "merged"))
+        _add_pr_table(lines, prs, status=status)
 
     lines.append("")
 
@@ -234,38 +234,51 @@ def _generate_status_file(
 def _add_pr_table(
     lines: list[str],
     prs: list[PullRequest],
-    show_merged: bool = False,
+    status: str = "open",
 ) -> None:
     """Add PR table to lines.
 
     Args:
         lines: List to append to
         prs: List of PRs
-        show_merged: Include merged date column (for merged PRs)
+        status: PR status (draft, open, merged, closed)
     """
-    if show_merged:
+    if status == "merged":
         lines.append(
-            "| Repository | PR | Title | Tool | Created | Merged | Commits | Files | Automation |"
+            "| Repository | PR | Title | Tool | Created | Merged | "
+            "Merged By | Commits | Files | Automation | Last Comment |"
         )
         lines.append(
-            "|------------|----|----|------|---------|--------|---------|-------|------------|"
+            "|------------|----|----|------|---------|--------|"
+            "----------|---------|-------|------------|--------------|"
+        )
+    elif status == "closed":
+        lines.append(
+            "| Repository | PR | Title | Tool | Created | Closed | "
+            "Closed By | Files | Last Comment |"
+        )
+        lines.append(
+            "|------------|----|----|------|---------|--------|----------|-------|--------------|"
         )
     else:
+        # draft or open
         lines.append(
-            "| Repository | PR | Title | Tool | Created | Comments | "
-            "Response | CI | Conflicts | Automation |"
+            "| Repository | PR | Title | Tool | Created | Files | Comments | "
+            "Response | CI | Conflicts | Automation | Last Comment |"
         )
         lines.append(
-            "|------------|----|----|------|---------|----------|"
-            "----------|----|-----------|-----------| "
+            "|------------|----|----|------|---------|-------|----------|"
+            "----------|----|-----------|-----------| --------------|"
         )
 
     for pr in prs:
         created = pr.created_at.strftime("%Y-%m-%d")
         automation = ", ".join(pr.automation_types) if pr.automation_types else "-"
+        last_comment = _truncate(pr.last_developer_comment_body or "-", 50)
 
-        if show_merged:
+        if status == "merged":
             merged = pr.merged_at.strftime("%Y-%m-%d") if pr.merged_at else "-"
+            merged_by = f"@{pr.closed_by}" if pr.closed_by else "-"
             lines.append(
                 f"| [{pr.repository}](https://github.com/{pr.repository}) "
                 f"| [#{pr.number}]({pr.url}) "
@@ -273,11 +286,28 @@ def _add_pr_table(
                 f"| {pr.tool} "
                 f"| {created} "
                 f"| {merged} "
+                f"| {merged_by} "
                 f"| {pr.commit_count} "
                 f"| {pr.files_changed} "
-                f"| {automation} |"
+                f"| {automation} "
+                f"| {last_comment} |"
+            )
+        elif status == "closed":
+            closed = pr.closed_at.strftime("%Y-%m-%d") if pr.closed_at else "-"
+            closed_by = f"@{pr.closed_by}" if pr.closed_by else "-"
+            lines.append(
+                f"| [{pr.repository}](https://github.com/{pr.repository}) "
+                f"| [#{pr.number}]({pr.url}) "
+                f"| {_truncate(pr.title, 40)} "
+                f"| {pr.tool} "
+                f"| {created} "
+                f"| {closed} "
+                f"| {closed_by} "
+                f"| {pr.files_changed} "
+                f"| {last_comment} |"
             )
         else:
+            # draft or open
             comments = f"{pr.total_comments} ({pr.maintainer_comments})"
             response = _format_response_status(pr)
             ci = _format_ci_status(pr)
@@ -288,11 +318,13 @@ def _add_pr_table(
                 f"| {_truncate(pr.title, 40)} "
                 f"| {pr.tool} "
                 f"| {created} "
+                f"| {pr.files_changed} "
                 f"| {comments} "
                 f"| {response} "
                 f"| {ci} "
                 f"| {conflicts} "
-                f"| {automation} |"
+                f"| {automation} "
+                f"| {last_comment} |"
             )
 
 

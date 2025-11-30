@@ -1,13 +1,15 @@
 """GitHub API client for PR discovery and data fetching."""
 
 from datetime import datetime
-from typing import Any
+from typing import Any, Literal
 from urllib.parse import urljoin
 
 import requests
 
 from improveit_dashboard.utils.logging import get_logger
 from improveit_dashboard.utils.rate_limit import RateLimitHandler
+
+CIStatus = Literal["success", "failure", "pending"]
 
 logger = get_logger(__name__)
 
@@ -437,7 +439,7 @@ class GitHubClient:
         owner: str,
         repo: str,
         branch: str = "main",
-    ) -> str | None:
+    ) -> CIStatus | None:
         """Fetch CI status of a branch.
 
         Args:
