@@ -501,8 +501,11 @@ def main(argv: list[str] | None = None) -> int:
             logger.error(f"Configuration error: {error}")
         return 1
 
-    # Check for token
-    if not config.github_token:
+    # Commands that require GitHub token
+    commands_requiring_token = {"update", "reanalyze"}
+
+    # Check for token only for commands that need it
+    if args.command in commands_requiring_token and not config.github_token:
         logger.error("GITHUB_TOKEN not set. Set it via environment variable or config file.")
         return 1
 

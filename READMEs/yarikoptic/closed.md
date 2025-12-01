@@ -1,6 +1,6 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2025-12-01 14:49 UTC*
+*Last updated: 2025-12-01 14:58 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -9,11 +9,9 @@
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
 | [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | [#1](https://github.com/neurolabusc/niivue-binder/pull/1) | Add codespell support (config, workfl... | codespell | 2025-11-27 | 2025-11-28 | - | 4 | @yarikoptic added your suggestion after resolvi... |
-| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | Add codespell: config, workflow (to a... | codespell | 2023-12-06 | 2025-11-21 | - | 73 | > is it the `swagger/` directories?
-> 
-> what... |
+| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | Add codespell: config, workflow (to a... | codespell | 2023-12-06 | 2025-11-21 | - | 73 | > is it the `swagger/` directories? > > what is... |
 | [Mergifyio/daiquiri](https://github.com/Mergifyio/daiquiri) | [#82](https://github.com/Mergifyio/daiquiri/pull/82) | Add codespell support (config, workfl... | codespell | 2024-10-29 | 2025-11-18 | - | 5 | - |
-| [hed-standard/CTagger](https://github.com/hed-standard/CTagger) | [#16](https://github.com/hed-standard/CTagger/pull/16) | add codespell: config, workflow and h... | codespell | 2023-09-20 | 2025-11-14 | - | 3 | Do not merge until exclusions are revised.  No ... |
+| [hed-standard/CTagger](https://github.com/hed-standard/CTagger) | [#16](https://github.com/hed-standard/CTagger/pull/16) | add codespell: config, workflow and h... | codespell | 2023-09-20 | 2025-11-14 | - | 3 | Do not merge until exclusions are revised. No d... |
 | [github/copilot-cli](https://github.com/github/copilot-cli) | [#200](https://github.com/github/copilot-cli/pull/200) | Add codespell support (config, workfl... | codespell | 2025-10-03 | 2025-11-12 | - | 3 | spam |
 | [Buffalo-Ontology-Group/MRI_Ontology](https://github.com/Buffalo-Ontology-Group/MRI_Ontology) | [#25](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/pull/25) | Fix 6 typos found by codespell | codespell | 2025-08-12 | 2025-10-30 | - | 24 | Hi Yaroslav, thanks for the PR. Definitely appr... |
 | [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | [#537](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/537) | Add codespell support (config, workfl... | codespell | 2025-05-15 | 2025-09-24 | - | 6 | It looks like all of these typos have already b... |
@@ -45,9 +43,7 @@
 | [litestar-org/litestar](https://github.com/litestar-org/litestar) | [#4068](https://github.com/litestar-org/litestar/pull/4068) | chore: tune up skips for codespell to... | codespell | 2025-03-24 | 2025-03-29 | - | 1 | Superseded by #4068; Move to a different spell ... |
 | [NDAR/nda-tools](https://github.com/NDAR/nda-tools) | [#72](https://github.com/NDAR/nda-tools/pull/72) | codespell: add config and action to c... | codespell | 2023-07-26 | 2025-03-19 | - | 9 | - |
 | [FantasticFiasco/action-update-license-year](https://github.com/FantasticFiasco/action-update-license-year) | [#627](https://github.com/FantasticFiasco/action-update-license-year/pull/627) | Add codespell support (config, workfl... | codespell | 2025-02-11 | 2025-02-19 | - | 4 | Thanks for asking, but none of them are typos i... |
-| [NERSC/podman-hpc](https://github.com/NERSC/podman-hpc) | [#138](https://github.com/NERSC/podman-hpc/pull/138) | Add codespell support (config, workfl... | codespell | 2025-01-07 | 2025-02-15 | - | 9 | I don't think anyone asked for this PR?
-
-Any ... |
+| [NERSC/podman-hpc](https://github.com/NERSC/podman-hpc) | [#138](https://github.com/NERSC/podman-hpc/pull/138) | Add codespell support (config, workfl... | codespell | 2025-01-07 | 2025-02-15 | - | 9 | I don't think anyone asked for this PR? Any kin... |
 | [open-webui/docs](https://github.com/open-webui/docs) | [#349](https://github.com/open-webui/docs/pull/349) | ci: add codespell support (config, wo... | codespell | 2025-01-03 | 2025-02-10 | - | 10 | - |
 | [psych-ds/psych-DS](https://github.com/psych-ds/psych-DS) | [#38](https://github.com/psych-ds/psych-DS/pull/38) | Add codespell to prevent some common ... | codespell | 2024-03-01 | 2025-02-07 | - | 2 | - |
 | [spatialaudio/python-sounddevice](https://github.com/spatialaudio/python-sounddevice) | [#573](https://github.com/spatialaudio/python-sounddevice/pull/573) | Add codespell support (config, workfl... | codespell | 2024-11-27 | 2025-02-05 | - | 4 | I've cherry-picked the actual spelling fixes to... |
