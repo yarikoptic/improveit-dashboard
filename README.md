@@ -4,7 +4,7 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Summary
 
-*Last updated: 2025-11-30 18:51 UTC*
+*Last updated: 2025-12-01 13:51 UTC*
 
 - **Repositories tracked**: 359
 - **Total PRs**: 394
@@ -20,14 +20,17 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Repository Responsiveness
 
-Based on response times and acceptance rates:
+Repositories are categorized based on their response patterns to improveit PRs.
+Categories are determined by response time (time to first maintainer comment) and
+acceptance rate (percentage of PRs merged vs closed without merge).
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| Welcoming | 4 | Fast response, high acceptance |
-| Selective | 19 | Slower response, moderate acceptance |
-| Unresponsive | 3 | Slow or no response |
-| Hostile | 1 | Quick rejection |
+| Welcoming | [4](Summaries/responsiveness/welcoming.md) | Fast response (<48h), high acceptance rate (>70%) |
+| Selective | [19](Summaries/responsiveness/selective.md) | Moderate response time, reviews carefully before accepting |
+| Unresponsive | [3](Summaries/responsiveness/unresponsive.md) | Slow or no response (>7 days average) |
+| Hostile | [1](Summaries/responsiveness/hostile.md) | Quick rejection without engagement |
+| Insufficient Data | [332](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
 
 ---
 

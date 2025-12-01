@@ -1,6 +1,6 @@
 # PRs by yarikoptic
 
-*Last updated: 2025-11-30 18:51 UTC*
+*Last updated: 2025-12-01 13:51 UTC*
 
 [< Back to Dashboard](../README.md)
 
@@ -28,7 +28,7 @@ It would be a great way to improve the website. I'll try to find some time to ap
 Thanks!
 - [nipy/nipype#3550](https://github.com/nipy/nipype/pull/3550): Add github action to shellcheck master on push and PRs (*waiting 619 days*) [CI failing]
   > @yarikoptic Reran so you can check the output.
-- [kestra-io/kestra#12912](https://github.com/kestra-io/kestra/pull/12912): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 11 days*) [CI pending]
+- [kestra-io/kestra#12912](https://github.com/kestra-io/kestra/pull/12912): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 12 days*) [CI pending]
   > Hey @loicmathieu, can you check if this makes sense once you get the chance?
 - [duckdb/duckdb#19817](https://github.com/duckdb/duckdb/pull/19817): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 10 days*) [CI failing]
   > Yes, looks good to me 

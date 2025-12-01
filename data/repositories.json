@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2025-11-30T18:51:22.565599Z",
+    "last_updated": "2025-12-01T13:51:13.716996Z",
     "last_run": {
       "started_at": "2025-11-30T18:19:46.246321+00:00",
       "completed_at": "2025-11-30T18:51:22.565320+00:00",
@@ -13082,7 +13082,7 @@
           "last_comment_is_maintainer": true,
           "last_maintainer_comment_at": "2025-11-19T07:26:04+00:00",
           "time_to_first_response_hours": 20.745833333333334,
-          "days_awaiting_submitter": 11,
+          "days_awaiting_submitter": 12,
           "response_status": "awaiting_submitter",
           "etag": "W/\"9120807b309476b041c1279c2d102cf35aad854f2114437dd2535372e27815f4\"",
           "last_fetched_at": "2025-11-30T18:43:00.148357+00:00",

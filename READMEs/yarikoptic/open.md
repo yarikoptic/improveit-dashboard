@@ -1,6 +1,6 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2025-11-30 18:51 UTC*
+*Last updated: 2025-12-01 13:51 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -10,7 +10,7 @@
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
 | [Lestropie/IP-freely](https://github.com/Lestropie/IP-freely) | [#12](https://github.com/Lestropie/IP-freely/pull/12) | Add codespell support (config, workfl... | codespell | 2025-06-21 | 5 | 4 (2) | Maintainer | CI:... | - | codespell-config, github-actions, pre-commit | Do you want to resolve the conflicts at your en... |
 | [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | [#7](https://github.com/BIC-MNI/mni-7t-dicom-to-bids/pull/7) | Add codespell support (config, workfl... | codespell | 2025-08-28 | 3 | 2 (1) | Maintainer | CI:... | - | github-actions | Hi, thank you for your PR. Sorry for not replyi... |
-| [kestra-io/kestra](https://github.com/kestra-io/kestra) | [#12912](https://github.com/kestra-io/kestra/pull/12912) | Add codespell support (config, workfl... | codespell | 2025-11-12 | 20 | 2 (2) | You (11d) | CI:... Main:OK | - | codespell-config, github-actions | Hey @loicmathieu, can you check if this makes s... |
+| [kestra-io/kestra](https://github.com/kestra-io/kestra) | [#12912](https://github.com/kestra-io/kestra/pull/12912) | Add codespell support (config, workfl... | codespell | 2025-11-12 | 20 | 2 (2) | You (12d) | CI:... Main:OK | - | codespell-config, github-actions | Hey @loicmathieu, can you check if this makes s... |
 | [SpikeInterface/spikeinterface-gui](https://github.com/SpikeInterface/spikeinterface-gui) | [#215](https://github.com/SpikeInterface/spikeinterface-gui/pull/215) | chore: add codespell support (config,... | codespell | 2025-11-24 | 15 | 0 (0) | No response | CI:OK | - | github-actions | - |
 | [simplefin/simplefin.github.com](https://github.com/simplefin/simplefin.github.com) | [#30](https://github.com/simplefin/simplefin.github.com/pull/30) | chore: add codespell support (config,... | codespell | 2025-11-24 | 5 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [duckdb/duckdb](https://github.com/duckdb/duckdb) | [#19817](https://github.com/duckdb/duckdb/pull/19817) | Add codespell support (config, workfl... | codespell | 2025-11-17 | 201 | 4 (3) | You (10d) | CI:FAIL | - | codespell-config, github-actions | Yes, looks good to me  |
