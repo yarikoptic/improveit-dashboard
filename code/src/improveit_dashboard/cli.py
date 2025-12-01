@@ -1,13 +1,19 @@
 """Command-line interface for improveit-dashboard."""
 
 import argparse
+import csv
+import io
+import json
 import logging
+import subprocess
 import sys
 from pathlib import Path
 
 from improveit_dashboard import __version__
+from improveit_dashboard.controllers.analyzer import analyze_engagement, classify_comments
 from improveit_dashboard.controllers.discovery import run_discovery
-from improveit_dashboard.controllers.persistence import load_model
+from improveit_dashboard.controllers.github_client import GitHubClient
+from improveit_dashboard.controllers.persistence import load_model, save_model
 from improveit_dashboard.models.config import Configuration
 from improveit_dashboard.utils.logging import get_logger, setup_logging
 from improveit_dashboard.views.dashboard import generate_dashboard, generate_responsiveness_reports
@@ -195,8 +201,6 @@ def _create_commit(message: str) -> int:
 
     Returns 0 on success, 1 if no changes to commit, 2 on error.
     """
-    import subprocess
-
     try:
         # Check if there are changes to commit
         result = subprocess.run(
@@ -283,8 +287,6 @@ def cmd_generate(args: argparse.Namespace, config: Configuration) -> int:
 
 def cmd_export(args: argparse.Namespace, config: Configuration) -> int:
     """Run the export command."""
-    import json
-
     logger.info("Exporting data...")
 
     try:
@@ -314,9 +316,6 @@ def cmd_export(args: argparse.Namespace, config: Configuration) -> int:
             content = json.dumps(output, indent=2)
         else:
             # CSV format
-            import csv
-            import io
-
             buffer = io.StringIO()
             writer = csv.writer(buffer)
 
@@ -372,9 +371,6 @@ def cmd_export(args: argparse.Namespace, config: Configuration) -> int:
 
 def cmd_reanalyze(args: argparse.Namespace, config: Configuration) -> int:
     """Force reanalysis of specific PRs."""
-    from improveit_dashboard.controllers.analyzer import analyze_engagement, classify_comments
-    from improveit_dashboard.controllers.github_client import GitHubClient
-
     logger.info(f"Reanalyzing {len(args.prs)} PRs...")
 
     # Initialize client
@@ -440,8 +436,6 @@ def cmd_reanalyze(args: argparse.Namespace, config: Configuration) -> int:
 
     if reanalyzed > 0:
         # Save updated model
-        from improveit_dashboard.controllers.persistence import save_model
-
         save_model(config.data_file, repositories, last_run)
         print(f"\nReanalyzed {reanalyzed} PRs")
 
