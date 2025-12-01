@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2025-12-01 14:44 UTC*
+*Last updated: 2025-12-01 14:49 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -249,7 +249,7 @@
 | [peak/s5cmd](https://github.com/peak/s5cmd) | 1 | 0 | 0 | - | - |
 | [PennLINC/babs](https://github.com/PennLINC/babs) | 1 | 1 | 0 | 100% | - |
 | [photoprism/photoprism](https://github.com/photoprism/photoprism) | 1 | 1 | 0 | 100% | 0h |
-| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | 1 | 0 | 0 | - | 0h |
+| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | 1 | 0 | 0 | - | - |
 | [physiopy/physiopy.github.io](https://github.com/physiopy/physiopy.github.io) | 1 | 0 | 0 | - | - |
 | [physiopy/physioqc](https://github.com/physiopy/physioqc) | 1 | 1 | 0 | 100% | 62.6d |
 | [planetmarshall/pillow-jpls](https://github.com/planetmarshall/pillow-jpls) | 1 | 0 | 0 | - | - |
