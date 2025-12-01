@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2025-12-01T13:51:13.716996Z",
+    "last_updated": "2025-12-01T14:44:36.806008Z",
     "last_run": {
       "started_at": "2025-11-30T18:19:46.246321+00:00",
       "completed_at": "2025-11-30T18:51:22.565320+00:00",
@@ -17887,14 +17887,14 @@
           "adoption_level": "full_automation",
           "total_comments": 1,
           "submitter_comments": 0,
-          "maintainer_comments": 1,
-          "bot_comments": 0,
+          "maintainer_comments": 0,
+          "bot_comments": 1,
           "last_comment_author": "CLAassistant",
-          "last_comment_is_maintainer": true,
+          "last_comment_is_maintainer": false,
           "last_maintainer_comment_at": "2025-01-06T14:34:00+00:00",
           "time_to_first_response_hours": 0.0019444444444444444,
           "days_awaiting_submitter": 328,
-          "response_status": "awaiting_submitter",
+          "response_status": "awaiting_maintainer",
           "etag": "W/\"f5a1fef5b5a7d81b20b8d8a8d6248047f3dceb2dc6aaa188fd53b1af639dc042\"",
           "last_fetched_at": "2025-11-30T18:45:09.022744+00:00",
           "last_developer_comment_body": "[![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/photoprism/photoprism-docs?pullRequest=191) <br/>All committers have signed the CLA.",

@@ -1,6 +1,6 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2025-12-01 13:51 UTC*
+*Last updated: 2025-12-01 14:44 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -50,7 +50,7 @@ I wasn'... |
 | [yarikoptic-gitmate/aspera-api-examples](https://github.com/yarikoptic-gitmate/aspera-api-examples) | [#1](https://github.com/yarikoptic-gitmate/aspera-api-examples/pull/1) | Add codespell support (config, workfl... | codespell | 2025-08-21 | 8 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [neurodatascience/NeuroCI](https://github.com/neurodatascience/NeuroCI) | [#5](https://github.com/neurodatascience/NeuroCI/pull/5) | Add codespell CI + fix one new typo  | codespell | 2024-03-12 | 3 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [conda-incubator/conda-store](https://github.com/conda-incubator/conda-store) | [#1107](https://github.com/conda-incubator/conda-store/pull/1107) | Add codespell support (config, workfl... | codespell | 2025-08-11 | 24 | 1 (0) | Maintainer | CI:FAIL Main:OK | - | codespell-config, github-actions, pre-commit | - |
-| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | Add codespell support (config, workfl... | codespell | 2025-01-06 | 10 | 1 (1) | You (328d) | CI:OK | - | codespell-config, github-actions | [![CLA assistant check](https://cla-assistant.i... |
+| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | Add codespell support (config, workfl... | codespell | 2025-01-06 | 10 | 1 (0) | Maintainer | CI:OK | - | codespell-config, github-actions | [![CLA assistant check](https://cla-assistant.i... |
 | [ourresearch/openalex-guts](https://github.com/ourresearch/openalex-guts) | [#53](https://github.com/ourresearch/openalex-guts/pull/53) | Add codespell support (config, workfl... | codespell | 2024-12-18 | 248 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [p2p-ld/numpydantic](https://github.com/p2p-ld/numpydantic) | [#54](https://github.com/p2p-ld/numpydantic/pull/54) | Add codespell support (config, workfl... | codespell | 2025-08-06 | 12 | 0 (0) | No response | CI:... | - | github-actions | - |
 | [schuetzgroup/fret-analysis](https://github.com/schuetzgroup/fret-analysis) | [#1](https://github.com/schuetzgroup/fret-analysis/pull/1) | Add codespell support (config, workfl... | codespell | 2025-07-31 | 6 | 2 (2) | You (121d) | CI:... | - | github-actions | Is there a reason to run `codespell-problem-mat... |

@@ -1,6 +1,6 @@
 # PRs by yarikoptic
 
-*Last updated: 2025-12-01 13:51 UTC*
+*Last updated: 2025-12-01 14:44 UTC*
 
 [< Back to Dashboard](../README.md)
 
@@ -55,8 +55,6 @@ I wasn't involved with the decision to set up the branches how they are now (See
   > > odd... not that much was ran overall. Some times github CI makes me wonder ;-)
 
 Me too me too, I'm a Gitlab CI kind of guy at work 😆 
-- [photoprism/photoprism-docs#191](https://github.com/photoprism/photoprism-docs/pull/191): Add codespell support (config, workflow to detect/not fix) and make it fix few typos (*waiting 328 days*) 
-  > [![CLA assistant check](https://cla-assistant.io/pull/badge/signed)](https://cla-assistant.io/photoprism/photoprism-docs?pullRequest=191) <br/>All committers have signed the CLA.
 - [schuetzgroup/fret-analysis#1](https://github.com/schuetzgroup/fret-analysis/pull/1): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 121 days*) [CI pending]
   > Is there a reason to run `codespell-problem-matcher` explicitly? From my (limited) understanding it seems like it is integrated into `actions-codespell` anyhow.
 - [NeuroML/Documentation#208](https://github.com/NeuroML/Documentation/pull/208): Add codespell support (config, workflow to detect/not fix) and make it fix few typos (*waiting 418 days*) [CI pending]
