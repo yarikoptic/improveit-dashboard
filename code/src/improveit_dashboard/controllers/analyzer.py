@@ -58,6 +58,14 @@ def analyze_engagement(
     pr.maintainer_comments = sum(1 for c in comments if c.author_type == "maintainer")
     pr.bot_comments = sum(1 for c in comments if c.author_type == "bot")
 
+    # Reset fields that may have stale values from previous analysis
+    pr.time_to_first_response_hours = None
+    pr.last_comment_author = None
+    pr.last_comment_is_maintainer = False
+    pr.last_maintainer_comment_at = None
+    pr.last_developer_comment_body = None
+    pr.days_awaiting_submitter = None
+
     # Sort comments by time
     sorted_comments = sorted(comments, key=lambda c: c.created_at)
 
