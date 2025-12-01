@@ -486,6 +486,49 @@ Version is stored in `meta.version` field for migration detection.
 
 ---
 
+## View Rendering
+
+### Markdown Sanitization for Tables
+
+When rendering GitHub comment text into markdown table cells, the content must be sanitized to prevent breaking table formatting. GitHub comments may contain:
+
+- Newlines (`\n`, `\r\n`) - break table rows
+- Pipe characters (`|`) - break table columns
+- Markdown formatting (`>`, `*`, `#`, etc.) - unintended rendering
+- HTML tags - potential rendering issues
+- Multiple consecutive spaces/whitespace
+
+**Sanitization Rules**:
+```python
+def sanitize_for_table(text: str) -> str:
+    """Sanitize text for safe inclusion in markdown table cells.
+
+    Transforms:
+    - Newlines → spaces
+    - Pipe characters → escaped or removed
+    - Multiple spaces → single space
+    - Leading/trailing whitespace → stripped
+    - Markdown block indicators (>, *, #) at line start → removed or escaped
+    """
+    # Replace newlines with spaces
+    text = text.replace('\r\n', ' ').replace('\n', ' ').replace('\r', ' ')
+
+    # Escape or remove pipe characters
+    text = text.replace('|', '\\|')
+
+    # Collapse multiple spaces
+    text = ' '.join(text.split())
+
+    return text.strip()
+```
+
+**Fields Requiring Sanitization**:
+- `last_developer_comment_body` - may contain full markdown from GitHub comments
+- `title` - typically clean but may contain special characters
+- Any user-generated text displayed in tables
+
+---
+
 ## Testing Data Model
 
 Unit tests validate:
@@ -495,6 +538,7 @@ Unit tests validate:
 - State transition logic
 - JSON serialization/deserialization
 - Behavior categorization logic
+- **Markdown sanitization for table cells**
 
 Integration tests validate:
 - Real GitHub API data maps correctly to model

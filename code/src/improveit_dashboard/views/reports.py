@@ -6,6 +6,7 @@ from pathlib import Path
 from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
 from improveit_dashboard.utils.logging import get_logger
+from improveit_dashboard.utils.markdown import sanitize_and_truncate
 
 logger = get_logger(__name__)
 
@@ -274,7 +275,10 @@ def _add_pr_table(
     for pr in prs:
         created = pr.created_at.strftime("%Y-%m-%d")
         automation = ", ".join(pr.automation_types) if pr.automation_types else "-"
-        last_comment = _truncate(pr.last_developer_comment_body or "-", 50)
+        # Sanitize comment text to prevent markdown from breaking table
+        last_comment = sanitize_and_truncate(pr.last_developer_comment_body or "-", 50)
+        # Also sanitize title in case it contains special characters
+        title = sanitize_and_truncate(pr.title, 40)
 
         if status == "merged":
             merged = pr.merged_at.strftime("%Y-%m-%d") if pr.merged_at else "-"
@@ -282,7 +286,7 @@ def _add_pr_table(
             lines.append(
                 f"| [{pr.repository}](https://github.com/{pr.repository}) "
                 f"| [#{pr.number}]({pr.url}) "
-                f"| {_truncate(pr.title, 40)} "
+                f"| {title} "
                 f"| {pr.tool} "
                 f"| {created} "
                 f"| {merged} "
@@ -298,7 +302,7 @@ def _add_pr_table(
             lines.append(
                 f"| [{pr.repository}](https://github.com/{pr.repository}) "
                 f"| [#{pr.number}]({pr.url}) "
-                f"| {_truncate(pr.title, 40)} "
+                f"| {title} "
                 f"| {pr.tool} "
                 f"| {created} "
                 f"| {closed} "
@@ -315,7 +319,7 @@ def _add_pr_table(
             lines.append(
                 f"| [{pr.repository}](https://github.com/{pr.repository}) "
                 f"| [#{pr.number}]({pr.url}) "
-                f"| {_truncate(pr.title, 40)} "
+                f"| {title} "
                 f"| {pr.tool} "
                 f"| {created} "
                 f"| {pr.files_changed} "
@@ -326,13 +330,6 @@ def _add_pr_table(
                 f"| {automation} "
                 f"| {last_comment} |"
             )
-
-
-def _truncate(text: str, max_len: int) -> str:
-    """Truncate text to max length."""
-    if len(text) <= max_len:
-        return text
-    return text[: max_len - 3] + "..."
 
 
 def _format_response_status(pr: PullRequest) -> str:

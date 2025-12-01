@@ -7,6 +7,11 @@ import pytest
 
 from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
+from improveit_dashboard.utils.markdown import (
+    sanitize_and_truncate,
+    sanitize_for_table,
+    truncate,
+)
 from improveit_dashboard.views.dashboard import generate_dashboard
 from improveit_dashboard.views.reports import generate_user_reports
 
@@ -172,3 +177,97 @@ class TestUserReports:
         content = paths[0].read_text()
         assert "Needs Your Response" in content
         assert "waiting 5 days" in content
+
+
+class TestMarkdownSanitization:
+    """Tests for markdown sanitization utilities."""
+
+    @pytest.mark.ai_generated
+    def test_sanitize_removes_newlines(self) -> None:
+        """Test that newlines are converted to spaces."""
+        text = "Line 1\nLine 2\r\nLine 3\rLine 4"
+        result = sanitize_for_table(text)
+        assert "\n" not in result
+        assert "\r" not in result
+        assert result == "Line 1 Line 2 Line 3 Line 4"
+
+    @pytest.mark.ai_generated
+    def test_sanitize_escapes_pipe_characters(self) -> None:
+        """Test that pipe characters are escaped."""
+        text = "Column 1 | Column 2 | Column 3"
+        result = sanitize_for_table(text)
+        assert result == "Column 1 \\| Column 2 \\| Column 3"
+
+    @pytest.mark.ai_generated
+    def test_sanitize_collapses_whitespace(self) -> None:
+        """Test that multiple spaces are collapsed."""
+        text = "Word1    Word2     Word3"
+        result = sanitize_for_table(text)
+        assert result == "Word1 Word2 Word3"
+
+    @pytest.mark.ai_generated
+    def test_sanitize_strips_leading_trailing(self) -> None:
+        """Test that leading/trailing whitespace is stripped."""
+        text = "  content  "
+        result = sanitize_for_table(text)
+        assert result == "content"
+
+    @pytest.mark.ai_generated
+    def test_sanitize_complex_markdown_comment(self) -> None:
+        """Test sanitization of complex markdown from GitHub comment."""
+        # Real-world example with blockquotes, newlines, and markdown
+        text = "> > * Sign DCO\r\n> \r\n> done\r\n\r\nThanks"
+        result = sanitize_for_table(text)
+        # Should be single line with no newlines
+        assert "\n" not in result
+        assert "\r" not in result
+        # Should preserve the content
+        assert "Sign DCO" in result
+        assert "done" in result
+        assert "Thanks" in result
+
+    @pytest.mark.ai_generated
+    def test_truncate_short_text(self) -> None:
+        """Test truncation of short text does nothing."""
+        text = "short"
+        result = truncate(text, 10)
+        assert result == "short"
+
+    @pytest.mark.ai_generated
+    def test_truncate_long_text(self) -> None:
+        """Test truncation adds ellipsis."""
+        text = "this is a very long text"
+        result = truncate(text, 10)
+        assert result == "this is..."
+        assert len(result) == 10
+
+    @pytest.mark.ai_generated
+    def test_truncate_exact_length(self) -> None:
+        """Test text at exact max length is not truncated."""
+        text = "exactly10!"
+        result = truncate(text, 10)
+        assert result == "exactly10!"
+
+    @pytest.mark.ai_generated
+    def test_sanitize_and_truncate_combined(self) -> None:
+        """Test combined sanitization and truncation."""
+        text = "Line 1\nLine 2 | more content here that is long"
+        result = sanitize_and_truncate(text, 20)
+        # Should be sanitized and truncated
+        assert "\n" not in result
+        assert len(result) <= 20
+        assert result.endswith("...")
+
+    @pytest.mark.ai_generated
+    def test_sanitize_empty_string(self) -> None:
+        """Test sanitization of empty string."""
+        result = sanitize_for_table("")
+        assert result == ""
+
+    @pytest.mark.ai_generated
+    def test_sanitize_preserves_markdown_links(self) -> None:
+        """Test that markdown links are preserved but made safe."""
+        # Links in comments should work but | inside would break tables
+        text = "[link](https://example.com)"
+        result = sanitize_for_table(text)
+        assert result == "[link](https://example.com)"

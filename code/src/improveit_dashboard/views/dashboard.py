@@ -6,6 +6,7 @@ from pathlib import Path
 from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
 from improveit_dashboard.utils.logging import get_logger
+from improveit_dashboard.utils.markdown import sanitize_and_truncate
 
 logger = get_logger(__name__)
 
@@ -328,12 +329,8 @@ def generate_responsiveness_reports(
                     else:
                         response_time = "-"
 
-                    # Last comment (truncated)
-                    last_comment = "-"
-                    if pr.last_developer_comment_body:
-                        last_comment = pr.last_developer_comment_body[:40]
-                        if len(pr.last_developer_comment_body) > 40:
-                            last_comment += "..."
+                    # Last comment (sanitized and truncated)
+                    last_comment = sanitize_and_truncate(pr.last_developer_comment_body or "-", 40)
 
                     lines.append(
                         f"| [{repo.full_name}](https://github.com/{repo.full_name}) "
