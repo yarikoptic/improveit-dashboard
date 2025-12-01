@@ -35,6 +35,7 @@ class Configuration:
     data_file: Path = field(default_factory=lambda: Path("data/repositories.json"))
     output_readme: Path = field(default_factory=lambda: Path("README.md"))
     output_readmes_dir: Path = field(default_factory=lambda: Path("READMEs"))
+    output_summaries_dir: Path = field(default_factory=lambda: Path("Summaries"))
 
     def __post_init__(self) -> None:
         """Post-initialization processing."""
@@ -49,6 +50,8 @@ class Configuration:
             self.output_readme = Path(self.output_readme)
         if isinstance(self.output_readmes_dir, str):
             self.output_readmes_dir = Path(self.output_readmes_dir)
+        if isinstance(self.output_summaries_dir, str):
+            self.output_summaries_dir = Path(self.output_summaries_dir)
 
     @classmethod
     def from_file(cls, path: Path) -> "Configuration":

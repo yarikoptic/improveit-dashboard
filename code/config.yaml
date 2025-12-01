@@ -36,3 +36,4 @@ batch_size: 10
 data_file: ../data/repositories.json
 output_readme: ../README.md
 output_readmes_dir: ../READMEs
+output_summaries_dir: ../Summaries

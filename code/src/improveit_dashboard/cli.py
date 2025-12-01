@@ -10,7 +10,7 @@ from improveit_dashboard.controllers.discovery import run_discovery
 from improveit_dashboard.controllers.persistence import load_model
 from improveit_dashboard.models.config import Configuration
 from improveit_dashboard.utils.logging import get_logger, setup_logging
-from improveit_dashboard.views.dashboard import generate_dashboard
+from improveit_dashboard.views.dashboard import generate_dashboard, generate_responsiveness_reports
 from improveit_dashboard.views.reports import generate_user_reports
 
 logger = get_logger(__name__)
@@ -118,6 +118,22 @@ def create_parser() -> argparse.ArgumentParser:
         choices=["all", "needs-response", "open", "merged"],
         default="all",
         help="Filter PRs to export",
+    )
+
+    # Reanalyze command
+    reanalyze_parser = subparsers.add_parser(
+        "reanalyze",
+        help="Force reanalysis of specific PRs",
+    )
+    reanalyze_parser.add_argument(
+        "prs",
+        nargs="+",
+        help="PRs to reanalyze in format 'owner/repo#number' (e.g., 'kestra-io/kestra#12912')",
+    )
+    reanalyze_parser.add_argument(
+        "--commit",
+        action="store_true",
+        help="Create git commit with changes",
     )
 
     return parser
@@ -250,6 +266,14 @@ def cmd_generate(args: argparse.Namespace, config: Configuration) -> int:
         for path in user_reports:
             print(f"Generated: {path}")
 
+        # Generate responsiveness reports
+        responsiveness_reports = generate_responsiveness_reports(
+            repositories=repositories,
+            output_dir=config.output_summaries_dir,
+        )
+        for path in responsiveness_reports:
+            print(f"Generated: {path}")
+
         return 0
 
     except Exception as e:
@@ -346,6 +370,111 @@ def cmd_export(args: argparse.Namespace, config: Configuration) -> int:
         return 1
 
 
+def cmd_reanalyze(args: argparse.Namespace, config: Configuration) -> int:
+    """Force reanalysis of specific PRs."""
+    from improveit_dashboard.controllers.analyzer import analyze_engagement, classify_comments
+    from improveit_dashboard.controllers.github_client import GitHubClient
+
+    logger.info(f"Reanalyzing {len(args.prs)} PRs...")
+
+    # Initialize client
+    client = GitHubClient(
+        token=config.github_token,
+        rate_limit_threshold=config.rate_limit_threshold,
+    )
+
+    # Load existing model
+    repositories, last_run = load_model(config.data_file)
+
+    reanalyzed = 0
+    for pr_spec in args.prs:
+        try:
+            # Parse PR spec: owner/repo#number
+            if "#" not in pr_spec:
+                logger.error(f"Invalid PR format: {pr_spec} (expected owner/repo#number)")
+                continue
+
+            repo_part, number_part = pr_spec.rsplit("#", 1)
+            pr_number = int(number_part)
+
+            if "/" not in repo_part:
+                logger.error(f"Invalid repo format: {repo_part} (expected owner/repo)")
+                continue
+
+            owner, repo_name = repo_part.split("/", 1)
+            full_name = f"{owner}/{repo_name}"
+
+            # Find PR in model
+            if full_name not in repositories:
+                logger.warning(f"Repository {full_name} not found in model")
+                continue
+
+            repo = repositories[full_name]
+            if pr_number not in repo.prs:
+                logger.warning(f"PR {pr_spec} not found in model")
+                continue
+
+            pr = repo.prs[pr_number]
+            logger.info(f"Reanalyzing {pr_spec}: {pr.title}")
+
+            # Fetch and reclassify comments
+            comments_data = client.fetch_pr_comments(owner, repo_name, pr_number)
+            comments = classify_comments(comments_data, pr.author)
+            analyze_engagement(comments, pr)
+
+            print(f"  Reanalyzed {pr_spec}:")
+            print(f"    Total comments: {pr.total_comments}")
+            print(f"    Bot comments: {pr.bot_comments}")
+            print(f"    Maintainer comments: {pr.maintainer_comments}")
+            print(f"    Response status: {pr.response_status}")
+            if pr.last_developer_comment_body:
+                snippet = pr.last_developer_comment_body[:100]
+                if len(pr.last_developer_comment_body) > 100:
+                    snippet += "..."
+                print(f"    Last developer comment: {snippet}")
+
+            reanalyzed += 1
+
+        except Exception as e:
+            logger.error(f"Failed to reanalyze {pr_spec}: {e}")
+
+    if reanalyzed > 0:
+        # Save updated model
+        from improveit_dashboard.controllers.persistence import save_model
+
+        save_model(config.data_file, repositories, last_run)
+        print(f"\nReanalyzed {reanalyzed} PRs")
+
+        # Regenerate views
+        logger.info("Regenerating views...")
+        generate_dashboard(
+            repositories=repositories,
+            output_path=config.output_readme,
+            tracked_users=config.tracked_users,
+        )
+        generate_user_reports(
+            repositories=repositories,
+            output_dir=config.output_readmes_dir,
+            tracked_users=config.tracked_users,
+        )
+        generate_responsiveness_reports(
+            repositories=repositories,
+            output_dir=config.output_summaries_dir,
+        )
+
+        # Commit if requested
+        if args.commit:
+            pr_list = ", ".join(args.prs[:3])
+            if len(args.prs) > 3:
+                pr_list += f" (+{len(args.prs) - 3} more)"
+            message = f"Reanalyze PRs: {pr_list}\n\nForced reanalysis with updated bot detection."
+            result = _create_commit(message)
+            if result != 0:
+                return result
+
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     """Main entry point."""
     parser = create_parser()
@@ -390,6 +519,8 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_generate(args, config)
     elif args.command == "export":
         return cmd_export(args, config)
+    elif args.command == "reanalyze":
+        return cmd_reanalyze(args, config)
     else:
         parser.print_help()
         return 0

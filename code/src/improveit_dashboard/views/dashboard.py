@@ -3,10 +3,40 @@
 from datetime import UTC, datetime
 from pathlib import Path
 
+from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
 from improveit_dashboard.utils.logging import get_logger
 
 logger = get_logger(__name__)
+
+# Behavior category metadata
+BEHAVIOR_INFO = {
+    "welcoming": {
+        "display": "Welcoming",
+        "description": "Fast response (<48h), high acceptance rate (>70%)",
+        "file": "welcoming.md",
+    },
+    "selective": {
+        "display": "Selective",
+        "description": "Moderate response time, reviews carefully before accepting",
+        "file": "selective.md",
+    },
+    "unresponsive": {
+        "display": "Unresponsive",
+        "description": "Slow or no response (>7 days average)",
+        "file": "unresponsive.md",
+    },
+    "hostile": {
+        "display": "Hostile",
+        "description": "Quick rejection without engagement",
+        "file": "hostile.md",
+    },
+    "insufficient_data": {
+        "display": "Insufficient Data",
+        "description": "Not enough PRs to categorize reliably",
+        "file": "insufficient_data.md",
+    },
+}
 
 
 def generate_dashboard(
@@ -121,17 +151,25 @@ def generate_dashboard(
             [
                 "## Repository Responsiveness",
                 "",
-                "Based on response times and acceptance rates:",
+                "Repositories are categorized based on their response patterns to improveit PRs.",
+                "Categories are determined by response time (time to first maintainer comment) and",
+                "acceptance rate (percentage of PRs merged vs closed without merge).",
                 "",
                 "| Category | Count | Description |",
                 "|----------|-------|-------------|",
-                f"| Welcoming | {behavior_counts['welcoming']} | Fast response, high acceptance |",
-                f"| Selective | {behavior_counts['selective']} | Slower response, moderate acceptance |",
-                f"| Unresponsive | {behavior_counts['unresponsive']} | Slow or no response |",
-                f"| Hostile | {behavior_counts['hostile']} | Quick rejection |",
-                "",
             ]
         )
+
+        for category in ["welcoming", "selective", "unresponsive", "hostile", "insufficient_data"]:
+            count = behavior_counts[category]
+            info = BEHAVIOR_INFO[category]
+            if count > 0:
+                link = f"[{count}](Summaries/responsiveness/{info['file']})"
+            else:
+                link = str(count)
+            lines.append(f"| {info['display']} | {link} | {info['description']} |")
+
+        lines.append("")
 
     # Footer
     lines.extend(
@@ -147,3 +185,173 @@ def generate_dashboard(
     output_path.write_text("\n".join(lines) + "\n")
 
     logger.info(f"Generated dashboard with {len(tracked_users)} users, {total_prs} PRs")
+
+
+def generate_responsiveness_reports(
+    repositories: dict[str, Repository],
+    output_dir: Path,
+) -> list[Path]:
+    """Generate per-category responsiveness detail files.
+
+    Creates:
+    - {output_dir}/responsiveness/welcoming.md
+    - {output_dir}/responsiveness/selective.md
+    - {output_dir}/responsiveness/unresponsive.md
+    - {output_dir}/responsiveness/hostile.md
+    - {output_dir}/responsiveness/insufficient_data.md
+
+    Args:
+        repositories: Dict mapping full_name to Repository
+        output_dir: Base output directory (e.g., Summaries/)
+
+    Returns:
+        List of generated file paths
+    """
+    responsiveness_dir = output_dir / "responsiveness"
+    responsiveness_dir.mkdir(parents=True, exist_ok=True)
+    generated_paths: list[Path] = []
+
+    # Group repositories by behavior category
+    repos_by_category: dict[str, list[Repository]] = {
+        "welcoming": [],
+        "selective": [],
+        "unresponsive": [],
+        "hostile": [],
+        "insufficient_data": [],
+    }
+
+    for repo in repositories.values():
+        repos_by_category[repo.behavior_category].append(repo)
+
+    # Sort repos in each category by name
+    for repos in repos_by_category.values():
+        repos.sort(key=lambda r: r.full_name.lower())
+
+    # Generate a file for each category
+    for category, repos in repos_by_category.items():
+        info = BEHAVIOR_INFO[category]
+        output_path = responsiveness_dir / info["file"]
+
+        lines = [
+            f"# {info['display']} Repositories",
+            "",
+            f"*Last updated: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M UTC')}*",
+            "",
+            "[< Back to Dashboard](../../README.md)",
+            "",
+            f"**Category**: {info['display']}",
+            f"**Description**: {info['description']}",
+            f"**Count**: {len(repos)} repositories",
+            "",
+        ]
+
+        if not repos:
+            lines.append("*No repositories in this category.*")
+        else:
+            # Repository table
+            lines.extend(
+                [
+                    "## Repositories",
+                    "",
+                    "| Repository | PRs | Merged | Closed | Acceptance | Avg Response |",
+                    "|------------|-----|--------|--------|------------|--------------|",
+                ]
+            )
+
+            for repo in repos:
+                merged = repo.merged_count
+                closed = sum(1 for pr in repo.prs.values() if pr.status == "closed")
+                total = len(repo.prs)
+
+                # Calculate acceptance rate
+                decided = merged + closed
+                if decided > 0:
+                    acceptance = f"{(merged / decided * 100):.0f}%"
+                else:
+                    acceptance = "-"
+
+                # Calculate average response time
+                response_times = [
+                    pr.time_to_first_response_hours
+                    for pr in repo.prs.values()
+                    if pr.time_to_first_response_hours is not None
+                ]
+                if response_times:
+                    avg_hours = sum(response_times) / len(response_times)
+                    if avg_hours < 24:
+                        avg_response = f"{avg_hours:.0f}h"
+                    else:
+                        avg_response = f"{avg_hours / 24:.1f}d"
+                else:
+                    avg_response = "-"
+
+                lines.append(
+                    f"| [{repo.full_name}](https://github.com/{repo.full_name}) "
+                    f"| {total} | {merged} | {closed} | {acceptance} | {avg_response} |"
+                )
+
+            lines.append("")
+
+            # PR details section
+            lines.extend(
+                [
+                    "## PRs in These Repositories",
+                    "",
+                ]
+            )
+
+            # Collect all PRs from repos in this category
+            all_prs: list[tuple[Repository, PullRequest]] = []
+            for repo in repos:
+                for pr in repo.prs.values():
+                    all_prs.append((repo, pr))
+
+            # Sort by updated_at descending
+            all_prs.sort(key=lambda x: x[1].updated_at, reverse=True)
+
+            if all_prs:
+                lines.extend(
+                    [
+                        "| Repository | PR | Status | Tool | Response Time | Last Comment |",
+                        "|------------|----|--------|------|---------------|--------------|",
+                    ]
+                )
+
+                for repo, pr in all_prs[:50]:  # Limit to 50 most recent
+                    # Response time
+                    if pr.time_to_first_response_hours is not None:
+                        hours = pr.time_to_first_response_hours
+                        if hours < 24:
+                            response_time = f"{hours:.0f}h"
+                        else:
+                            response_time = f"{hours / 24:.1f}d"
+                    else:
+                        response_time = "-"
+
+                    # Last comment (truncated)
+                    last_comment = "-"
+                    if pr.last_developer_comment_body:
+                        last_comment = pr.last_developer_comment_body[:40]
+                        if len(pr.last_developer_comment_body) > 40:
+                            last_comment += "..."
+
+                    lines.append(
+                        f"| [{repo.full_name}](https://github.com/{repo.full_name}) "
+                        f"| [#{pr.number}]({pr.url}) "
+                        f"| {pr.status} "
+                        f"| {pr.tool} "
+                        f"| {response_time} "
+                        f"| {last_comment} |"
+                    )
+
+                if len(all_prs) > 50:
+                    lines.append(f"\n*Showing 50 of {len(all_prs)} PRs*")
+
+        lines.append("")
+
+        # Write output
+        output_path.write_text("\n".join(lines) + "\n")
+        generated_paths.append(output_path)
+        logger.info(f"Generated {output_path} with {len(repos)} repositories")
+
+    return generated_paths

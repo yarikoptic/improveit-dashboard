@@ -6,6 +6,50 @@ from typing import Any, Literal
 
 AuthorType = Literal["submitter", "maintainer", "bot"]
 
+# Known bot usernames that may not have [bot] suffix
+KNOWN_BOT_USERNAMES = frozenset(
+    {
+        "codecov",
+        "coveralls",
+        "dependabot",
+        "renovate",
+        "greenkeeper",
+        "snyk-bot",
+        "imgbot",
+        "stale",
+        "allcontributors",
+        "semantic-release-bot",
+        "github-actions",
+        "CLAassistant",
+        "cla-bot",
+        "linux-foundation-easycla",
+        "easycla",
+    }
+)
+
+# Bot message patterns (case-insensitive prefixes/contains)
+BOT_MESSAGE_PATTERNS = [
+    "all committers have signed the cla",
+    "cla check",
+    "cla signature",
+    "contributor license agreement",
+    "coverage report",
+    "codecov report",
+    "this pull request has been automatically marked as stale",
+    "codacy",
+    "sonarcloud",
+    "thank you for your contribution",  # Generic bot message
+]
+
+
+def _is_bot_message(body: str) -> bool:
+    """Check if comment body matches known bot message patterns."""
+    body_lower = body.lower().strip()
+    for pattern in BOT_MESSAGE_PATTERNS:
+        if pattern in body_lower:
+            return True
+    return False
+
 
 @dataclass
 class Comment:
@@ -42,9 +86,15 @@ class Comment:
         user = data["user"]
         login = user["login"]
         user_type = user.get("type", "User")
+        body = data.get("body", "")
 
-        # Determine if bot
-        is_bot = user_type == "Bot" or login.endswith("[bot]")
+        # Determine if bot (multiple detection methods)
+        is_bot = (
+            user_type == "Bot"
+            or login.endswith("[bot]")
+            or login.lower() in KNOWN_BOT_USERNAMES
+            or _is_bot_message(body)
+        )
 
         # Determine author type
         if is_bot:
@@ -62,7 +112,7 @@ class Comment:
             id=data["id"],
             author=login,
             author_type=author_type,
-            body=data.get("body", ""),
+            body=body,
             created_at=created_at,
             is_bot=is_bot,
         )
