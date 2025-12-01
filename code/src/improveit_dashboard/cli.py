@@ -253,11 +253,19 @@ def cmd_generate(args: argparse.Namespace, config: Configuration) -> int:
             print("No PR data found. Run 'improveit-dashboard update' first.")
             return 0
 
+        # Build behavior overrides map from config
+        behavior_overrides: dict[str, str] = {}
+        for repo_name, override in config.repository_overrides.items():
+            behavior_overrides[repo_name] = override.category
+            if override.note:
+                logger.info(f"Override {repo_name}: {override.category} ({override.note})")
+
         # Generate main dashboard
         generate_dashboard(
             repositories=repositories,
             output_path=config.output_readme,
             tracked_users=config.tracked_users,
+            behavior_overrides=behavior_overrides,
         )
         print(f"Generated: {config.output_readme}")
 
@@ -274,6 +282,7 @@ def cmd_generate(args: argparse.Namespace, config: Configuration) -> int:
         responsiveness_reports = generate_responsiveness_reports(
             repositories=repositories,
             output_dir=config.output_summaries_dir,
+            behavior_overrides=behavior_overrides,
         )
         for path in responsiveness_reports:
             print(f"Generated: {path}")

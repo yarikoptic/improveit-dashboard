@@ -254,6 +254,11 @@ class Configuration:
     output_readme: Path                  # Path to generated summary README.md
     output_readmes_dir: Path             # Directory for per-user READMEs/{user}.md
 
+    # Manual overrides for repository behavior categories
+    # Key: repository full_name (e.g., "owner/repo")
+    # Value: dict with "category" and optional "note"
+    repository_overrides: dict[str, RepositoryOverride]
+
     @classmethod
     def from_file(cls, path: Path) -> "Configuration":
         """Load from YAML/JSON config file."""
@@ -263,6 +268,24 @@ class Configuration:
     def from_env(cls) -> "Configuration":
         """Load from environment variables."""
         pass
+
+@dataclass
+class RepositoryOverride:
+    """Manual override for repository behavior category."""
+    category: str                        # "welcoming", "selective", "unresponsive", "hostile", "insufficient_data"
+    note: str | None = None              # Optional reason for override
+```
+
+**Override Configuration Example**:
+```yaml
+# In config.yaml
+repository_overrides:
+  "owner/repo":
+    category: welcoming
+    note: "PRs were closed but maintainer redid changes themselves - very responsive"
+  "another/repo":
+    category: selective
+    note: "Accepts only well-documented PRs"
 ```
 
 **Default Values**:

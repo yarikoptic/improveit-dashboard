@@ -255,6 +255,9 @@ The system supports efficient incremental and batched operations:
 - **FR-038**: System MUST create git commits with informative messages summarizing the changes discovered in each update (e.g., number of new repositories found, number of new PRs discovered, number of PRs newly merged, number of PRs closed)
 - **FR-039**: System MUST include sufficient detail in commit messages to understand the timeline and evolution of tracked PRs through git history
 - **FR-040**: View generation (`generate`) and data export (`export`) commands MUST NOT require GitHub API credentials since they operate only on local persisted data
+- **FR-041**: System MUST support manual overrides for repository behavior categories via configuration file
+- **FR-042**: Manual overrides MUST take precedence over automatically calculated behavior categories
+- **FR-043**: System SHOULD support optional notes/reasons for manual overrides to document why the override was applied
 
 ### Key Entities *(include if feature involves data)*
 

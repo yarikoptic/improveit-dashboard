@@ -3,9 +3,33 @@
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal, cast
 
 import yaml
+
+# Valid behavior categories
+BehaviorCategory = Literal["welcoming", "selective", "unresponsive", "hostile", "insufficient_data"]
+VALID_BEHAVIOR_CATEGORIES: frozenset[str] = frozenset(
+    ["welcoming", "selective", "unresponsive", "hostile", "insufficient_data"]
+)
+
+
+@dataclass
+class RepositoryOverride:
+    """Manual override for repository behavior category."""
+
+    category: BehaviorCategory
+    note: str | None = None
+
+    def validate(self) -> list[str]:
+        """Validate override. Returns list of error messages."""
+        errors: list[str] = []
+        if self.category not in VALID_BEHAVIOR_CATEGORIES:
+            errors.append(
+                f"Invalid category '{self.category}'. "
+                f"Must be one of: {', '.join(sorted(VALID_BEHAVIOR_CATEGORIES))}"
+            )
+        return errors
 
 
 @dataclass
@@ -36,6 +60,9 @@ class Configuration:
     output_readme: Path = field(default_factory=lambda: Path("README.md"))
     output_readmes_dir: Path = field(default_factory=lambda: Path("READMEs"))
     output_summaries_dir: Path = field(default_factory=lambda: Path("Summaries"))
+
+    # Manual overrides for repository behavior categories
+    repository_overrides: dict[str, RepositoryOverride] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         """Post-initialization processing."""
@@ -128,6 +155,30 @@ class Configuration:
         if "output_readmes_dir" in data:
             kwargs["output_readmes_dir"] = Path(data["output_readmes_dir"])
 
+        if "output_summaries_dir" in data:
+            kwargs["output_summaries_dir"] = Path(data["output_summaries_dir"])
+
+        if "repository_overrides" in data:
+            overrides: dict[str, RepositoryOverride] = {}
+            for repo_name, override_data in data["repository_overrides"].items():
+                if isinstance(override_data, dict):
+                    # Cast is safe - validation will catch invalid categories
+                    category = cast(
+                        BehaviorCategory,
+                        override_data.get("category", "insufficient_data"),
+                    )
+                    overrides[repo_name] = RepositoryOverride(
+                        category=category,
+                        note=override_data.get("note"),
+                    )
+                elif isinstance(override_data, str):
+                    # Allow shorthand: repo_name: category
+                    # Cast is safe - validation will catch invalid categories
+                    overrides[repo_name] = RepositoryOverride(
+                        category=cast(BehaviorCategory, override_data)
+                    )
+            kwargs["repository_overrides"] = overrides
+
         return cls(**kwargs)
 
     def validate(self) -> list[str]:
@@ -149,7 +200,24 @@ class Configuration:
         if self.max_prs_per_run is not None and self.max_prs_per_run < 1:
             errors.append("max_prs_per_run must be at least 1 if set")
 
+        # Validate repository overrides
+        for repo_name, override in self.repository_overrides.items():
+            override_errors = override.validate()
+            for err in override_errors:
+                errors.append(f"repository_overrides[{repo_name}]: {err}")
+
         return errors
+
+    def get_behavior_override(self, repo_full_name: str) -> RepositoryOverride | None:
+        """Get manual override for a repository's behavior category.
+
+        Args:
+            repo_full_name: Repository full name (e.g., "owner/repo")
+
+        Returns:
+            RepositoryOverride if override exists, None otherwise
+        """
+        return self.repository_overrides.get(repo_full_name)
 
     def get_all_keywords(self) -> list[str]:
         """Get flat list of all tool keywords."""

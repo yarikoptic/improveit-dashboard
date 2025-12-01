@@ -37,3 +37,11 @@ data_file: ../data/repositories.json
 output_readme: ../README.md
 output_readmes_dir: ../READMEs
 output_summaries_dir: ../Summaries
+
+# Manual overrides for repository behavior categories
+# Override auto-calculated categories when they don't reflect actual behavior
+repository_overrides:
+  # PRs were closed but maintainer implemented the changes themselves - very responsive
+  inrupt/solid-common-vocab-rdf:
+    category: welcoming
+    note: "Maintainer thanked contributor and implemented changes themselves"

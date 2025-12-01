@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 from improveit_dashboard.models.comment import Comment
-from improveit_dashboard.models.config import Configuration
+from improveit_dashboard.models.config import Configuration, RepositoryOverride
 from improveit_dashboard.models.discovery_run import DiscoveryRun
 from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
@@ -245,6 +245,99 @@ class TestConfiguration:
         """Test loading from missing file returns defaults."""
         config = Configuration.from_file(tmp_path / "nonexistent.yaml")
         assert "yarikoptic" in config.tracked_users
+
+    @pytest.mark.ai_generated
+    def test_repository_override_from_dict(self, tmp_path: Path) -> None:
+        """Test loading repository overrides from config file."""
+        config_content = """
+tracked_users:
+  - testuser
+
+repository_overrides:
+  owner/repo:
+    category: welcoming
+    note: "Very responsive maintainer"
+  another/repo:
+    category: selective
+"""
+        config_file = tmp_path / "config.yaml"
+        config_file.write_text(config_content)
+
+        config = Configuration.from_file(config_file)
+
+        assert "owner/repo" in config.repository_overrides
+        assert config.repository_overrides["owner/repo"].category == "welcoming"
+        assert config.repository_overrides["owner/repo"].note == "Very responsive maintainer"
+
+        assert "another/repo" in config.repository_overrides
+        assert config.repository_overrides["another/repo"].category == "selective"
+        assert config.repository_overrides["another/repo"].note is None
+
+    @pytest.mark.ai_generated
+    def test_repository_override_shorthand(self, tmp_path: Path) -> None:
+        """Test loading repository overrides with shorthand syntax."""
+        config_content = """
+tracked_users:
+  - testuser
+
+repository_overrides:
+  owner/repo: welcoming
+"""
+        config_file = tmp_path / "config.yaml"
+        config_file.write_text(config_content)
+
+        config = Configuration.from_file(config_file)
+
+        assert "owner/repo" in config.repository_overrides
+        assert config.repository_overrides["owner/repo"].category == "welcoming"
+        assert config.repository_overrides["owner/repo"].note is None
+
+    @pytest.mark.ai_generated
+    def test_repository_override_validation(self) -> None:
+        """Test validation of repository overrides."""
+        config = Configuration(
+            repository_overrides={
+                "owner/repo": RepositoryOverride(category="invalid_category"),  # type: ignore
+            }
+        )
+        errors = config.validate()
+        assert any("invalid_category" in e for e in errors)
+
+    @pytest.mark.ai_generated
+    def test_get_behavior_override(self) -> None:
+        """Test getting behavior override for a repository."""
+        config = Configuration(
+            repository_overrides={
+                "owner/repo": RepositoryOverride(category="welcoming", note="Very responsive"),
+            }
+        )
+
+        override = config.get_behavior_override("owner/repo")
+        assert override is not None
+        assert override.category == "welcoming"
+        assert override.note == "Very responsive"
+
+        # Non-existent repo returns None
+        assert config.get_behavior_override("other/repo") is None
+
+
+class TestRepositoryOverride:
+    """Tests for RepositoryOverride model."""
+
+    @pytest.mark.ai_generated
+    def test_valid_override(self) -> None:
+        """Test valid override validates successfully."""
+        override = RepositoryOverride(category="welcoming", note="Test note")
+        errors = override.validate()
+        assert errors == []
+
+    @pytest.mark.ai_generated
+    def test_invalid_category(self) -> None:
+        """Test invalid category fails validation."""
+        override = RepositoryOverride(category="invalid")  # type: ignore
+        errors = override.validate()
+        assert len(errors) == 1
+        assert "invalid" in errors[0].lower()
 
 
 class TestDiscoveryRun:

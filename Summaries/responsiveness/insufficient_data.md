@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2025-12-01 14:49 UTC*
+*Last updated: 2025-12-01 15:17 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -349,30 +349,29 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
-| [Lestropie/IP-freely](https://github.com/Lestropie/IP-freely) | [#12](https://github.com/Lestropie/IP-freely/pull/12) | open | codespell | 79.0d | Do you want to resolve the conflicts at ... |
-| [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | [#7](https://github.com/BIC-MNI/mni-7t-dicom-to-bids/pull/7) | open | codespell | 23.5d | Hi, thank you for your PR. Sorry for not... |
-| [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | [#1](https://github.com/neurolabusc/niivue-binder/pull/1) | closed | codespell | 1.8d | @yarikoptic added your suggestion after ... |
+| [Lestropie/IP-freely](https://github.com/Lestropie/IP-freely) | [#12](https://github.com/Lestropie/IP-freely/pull/12) | open | codespell | 79.0d | Do you want to resolve the conflicts ... |
+| [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | [#7](https://github.com/BIC-MNI/mni-7t-dicom-to-bids/pull/7) | open | codespell | 23.5d | Hi, thank you for your PR. Sorry for ... |
+| [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | [#1](https://github.com/neurolabusc/niivue-binder/pull/1) | closed | codespell | 1.8d | @yarikoptic added your suggestion aft... |
 | [neurospin/neurospin_to_bids](https://github.com/neurospin/neurospin_to_bids) | [#64](https://github.com/neurospin/neurospin_to_bids/pull/64) | merged | codespell | - | - |
-| [kestra-io/kestra](https://github.com/kestra-io/kestra) | [#12912](https://github.com/kestra-io/kestra/pull/12912) | open | codespell | 21h | Hey @loicmathieu, can you check if this ... |
+| [kestra-io/kestra](https://github.com/kestra-io/kestra) | [#12912](https://github.com/kestra-io/kestra/pull/12912) | open | codespell | 21h | Hey @loicmathieu, can you check if th... |
 | [whitphx/stlite](https://github.com/whitphx/stlite) | [#1726](https://github.com/whitphx/stlite/pull/1726) | merged | codespell | - | - |
 | [zotero/zotero-google-docs-integration](https://github.com/zotero/zotero-google-docs-integration) | [#86](https://github.com/zotero/zotero-google-docs-integration/pull/86) | merged | codespell | - | - |
 | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx) | [#13992](https://github.com/sphinx-doc/sphinx/pull/13992) | merged | codespell | - | - |
 | [SpikeInterface/spikeinterface-gui](https://github.com/SpikeInterface/spikeinterface-gui) | [#215](https://github.com/SpikeInterface/spikeinterface-gui/pull/215) | open | codespell | - | - |
 | [simplefin/simplefin.github.com](https://github.com/simplefin/simplefin.github.com) | [#30](https://github.com/simplefin/simplefin.github.com/pull/30) | open | codespell | - | - |
 | [actualbudget/actual](https://github.com/actualbudget/actual) | [#6237](https://github.com/actualbudget/actual/pull/6237) | merged | codespell | - | - |
-| [duckdb/duckdb](https://github.com/duckdb/duckdb) | [#19817](https://github.com/duckdb/duckdb/pull/19817) | open | codespell | 1.6d | Yes, looks good to me  |
-| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | closed | codespell | 0h | > is it the `swagger/` directories?
-> ... |
+| [duckdb/duckdb](https://github.com/duckdb/duckdb) | [#19817](https://github.com/duckdb/duckdb/pull/19817) | open | codespell | 1.6d | Yes, looks good to me |
+| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | closed | codespell | 0h | > is it the `swagger/` directories? >... |
 | [stratusadv/dandy](https://github.com/stratusadv/dandy) | [#75](https://github.com/stratusadv/dandy/pull/75) | open | codespell | - | - |
 | [dask/distributed](https://github.com/dask/distributed) | [#9145](https://github.com/dask/distributed/pull/9145) | merged | codespell | - | - |
 | [brain-bican/bkbit](https://github.com/brain-bican/bkbit) | [#71](https://github.com/brain-bican/bkbit/pull/71) | merged | codespell | - | - |
-| [aristidb/aws](https://github.com/aristidb/aws) | [#291](https://github.com/aristidb/aws/pull/291) | open | codespell | 371.8d | FWIW, I have cherry-picked the two commi... |
+| [aristidb/aws](https://github.com/aristidb/aws) | [#291](https://github.com/aristidb/aws/pull/291) | open | codespell | 371.8d | FWIW, I have cherry-picked the two co... |
 | [Mergifyio/daiquiri](https://github.com/Mergifyio/daiquiri) | [#82](https://github.com/Mergifyio/daiquiri/pull/82) | closed | codespell | - | - |
 | [MouseLand/facemap](https://github.com/MouseLand/facemap) | [#170](https://github.com/MouseLand/facemap/pull/170) | open | codespell | - | - |
-| [astewartau/dicompare](https://github.com/astewartau/dicompare) | [#17](https://github.com/astewartau/dicompare/pull/17) | merged | codespell | 46.3d | Thanks for that!  |
-| [zauberzeug/nicegui](https://github.com/zauberzeug/nicegui) | [#5368](https://github.com/zauberzeug/nicegui/pull/5368) | merged | codespell | 0h | @yarikoptic Is it really a good idea to ... |
-| [hed-standard/CTagger](https://github.com/hed-standard/CTagger) | [#16](https://github.com/hed-standard/CTagger/pull/16) | closed | codespell | 12.3d | Do not merge until exclusions are revise... |
-| [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | open | codespell | 0h | can you attach a full run with these set... |
+| [astewartau/dicompare](https://github.com/astewartau/dicompare) | [#17](https://github.com/astewartau/dicompare/pull/17) | merged | codespell | 46.3d | Thanks for that! |
+| [zauberzeug/nicegui](https://github.com/zauberzeug/nicegui) | [#5368](https://github.com/zauberzeug/nicegui/pull/5368) | merged | codespell | 0h | @yarikoptic Is it really a good idea ... |
+| [hed-standard/CTagger](https://github.com/hed-standard/CTagger) | [#16](https://github.com/hed-standard/CTagger/pull/16) | closed | codespell | 12.3d | Do not merge until exclusions are rev... |
+| [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | open | codespell | 0h | can you attach a full run with these ... |
 | [zotero/zotero-connectors](https://github.com/zotero/zotero-connectors) | [#590](https://github.com/zotero/zotero-connectors/pull/590) | merged | codespell | 11h | Thanks! |
 | [github/copilot-cli](https://github.com/github/copilot-cli) | [#200](https://github.com/github/copilot-cli/pull/200) | closed | codespell | 39.7d | spam |
 | [physiopy/physiopy.github.io](https://github.com/physiopy/physiopy.github.io) | [#72](https://github.com/physiopy/physiopy.github.io/pull/72) | open | codespell | - | - |
@@ -380,25 +379,23 @@
 | [sullo/nikto](https://github.com/sullo/nikto) | [#880](https://github.com/sullo/nikto/pull/880) | merged | codespell | - | - |
 | [magland/qp](https://github.com/magland/qp) | [#1](https://github.com/magland/qp/pull/1) | merged | codespell | - | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | open | codespell | - | - |
-| [con/nwb2bids](https://github.com/con/nwb2bids) | [#4](https://github.com/con/nwb2bids/pull/4) | merged | codespell | 568.6d | @yarikoptic You can ignore any pings you... |
+| [con/nwb2bids](https://github.com/con/nwb2bids) | [#4](https://github.com/con/nwb2bids/pull/4) | merged | codespell | 568.6d | @yarikoptic You can ignore any pings ... |
 | [derailed/k9s](https://github.com/derailed/k9s) | [#3604](https://github.com/derailed/k9s/pull/3604) | open | codespell | - | - |
 | [openMetadataInitiative/bids2openminds](https://github.com/openMetadataInitiative/bids2openminds) | [#80](https://github.com/openMetadataInitiative/bids2openminds/pull/80) | merged | codespell | - | - |
 | [mkitti/simple_image_formats](https://github.com/mkitti/simple_image_formats) | [#1](https://github.com/mkitti/simple_image_formats/pull/1) | open | codespell | - | - |
-| [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | [#3602](https://github.com/hakimel/reveal.js/pull/3602) | merged | codespell | 354.6d | Good addition, thanks! I'll rebuild the ... |
+| [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | [#3602](https://github.com/hakimel/reveal.js/pull/3602) | merged | codespell | 354.6d | Good addition, thanks! I'll rebuild t... |
 | [planetmarshall/pillow-jpls](https://github.com/planetmarshall/pillow-jpls) | [#18](https://github.com/planetmarshall/pillow-jpls/pull/18) | open | codespell | - | - |
-| [OSC/ondemand](https://github.com/OSC/ondemand) | [#4671](https://github.com/OSC/ondemand/pull/4671) | merged | codespell | 0h | > FWIW, what helps me at times is to go ... |
+| [OSC/ondemand](https://github.com/OSC/ondemand) | [#4671](https://github.com/OSC/ondemand/pull/4671) | merged | codespell | 0h | > FWIW, what helps me at times is to ... |
 | [yarikoptic/ondemand](https://github.com/yarikoptic/ondemand) | [#1](https://github.com/yarikoptic/ondemand/pull/1) | open | codespell | - | - |
 | [SpikeInterface/probeinterface](https://github.com/SpikeInterface/probeinterface) | [#370](https://github.com/SpikeInterface/probeinterface/pull/370) | merged | codespell | 2.8d | j'ai mal. |
-| [github/github-mcp-server](https://github.com/github/github-mcp-server) | [#1072](https://github.com/github/github-mcp-server/pull/1072) | open | codespell | 8.7d | في خميس، 18 سبتمبر، 2025 في 1:59 م، كتب ... |
-| [cortex-lab/phy](https://github.com/cortex-lab/phy) | [#1354](https://github.com/cortex-lab/phy/pull/1354) | merged | codespell | 2.0d | I support this in general, but I would s... |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | [#1072](https://github.com/github/github-mcp-server/pull/1072) | open | codespell | 8.7d | في خميس، 18 سبتمبر، 2025 في 1:59 م، ك... |
+| [cortex-lab/phy](https://github.com/cortex-lab/phy) | [#1354](https://github.com/cortex-lab/phy/pull/1354) | merged | codespell | 2.0d | I support this in general, but I woul... |
 | [rustyrussell/ccan](https://github.com/rustyrussell/ccan) | [#99](https://github.com/rustyrussell/ccan/pull/99) | open | codespell | - | - |
 | [mlflow/mlflow](https://github.com/mlflow/mlflow) | [#10683](https://github.com/mlflow/mlflow/pull/10683) | open | codespell | - | - |
 | [fsfe/reuse-website](https://github.com/fsfe/reuse-website) | [#108](https://github.com/fsfe/reuse-website/pull/108) | open | codespell | - | - |
-| [makeplane/plane](https://github.com/makeplane/plane) | [#7864](https://github.com/makeplane/plane/pull/7864) | merged | codespell | 0h | @yarikoptic 
-
-Can you please sign the ... |
-| [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | [#537](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/537) | closed | codespell | 131.9d | It looks like all of these typos have al... |
-| [dh-tech/hugo-bibliography](https://github.com/dh-tech/hugo-bibliography) | [#41](https://github.com/dh-tech/hugo-bibliography/pull/41) | merged | codespell | 31.1d | Hi @yarikoptic, sorry for the delay here... |
+| [makeplane/plane](https://github.com/makeplane/plane) | [#7864](https://github.com/makeplane/plane/pull/7864) | merged | codespell | 0h | @yarikoptic Can you please sign the CLA? |
+| [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | [#537](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/537) | closed | codespell | 131.9d | It looks like all of these typos have... |
+| [dh-tech/hugo-bibliography](https://github.com/dh-tech/hugo-bibliography) | [#41](https://github.com/dh-tech/hugo-bibliography/pull/41) | merged | codespell | 31.1d | Hi @yarikoptic, sorry for the delay h... |
 | [talmolab/sleap](https://github.com/talmolab/sleap) | [#1610](https://github.com/talmolab/sleap/pull/1610) | closed | codespell | - | - |
 | [Australian-Epilepsy-Project/protocol_qc](https://github.com/Australian-Epilepsy-Project/protocol_qc) | [#44](https://github.com/Australian-Epilepsy-Project/protocol_qc/pull/44) | open | codespell | - | - |
 | [UNFmontreal/forbids](https://github.com/UNFmontreal/forbids) | [#69](https://github.com/UNFmontreal/forbids/pull/69) | open | codespell | - | - |

@@ -44,6 +44,7 @@ def generate_dashboard(
     repositories: dict[str, Repository],
     output_path: Path,
     tracked_users: list[str],
+    behavior_overrides: dict[str, str] | None = None,
 ) -> None:
     """Generate the main README.md dashboard.
 
@@ -51,7 +52,9 @@ def generate_dashboard(
         repositories: Dict mapping full_name to Repository
         output_path: Path to output README.md
         tracked_users: List of tracked usernames
+        behavior_overrides: Optional dict mapping repo full_name to behavior category override
     """
+    overrides = behavior_overrides or {}
     logger.info(f"Generating dashboard: {output_path}")
 
     # Collect stats per user
@@ -136,7 +139,7 @@ def generate_dashboard(
 
     lines.append("")
 
-    # Repository behavior summary
+    # Repository behavior summary (with overrides applied)
     behavior_counts: dict[str, int] = {
         "welcoming": 0,
         "selective": 0,
@@ -145,7 +148,9 @@ def generate_dashboard(
         "insufficient_data": 0,
     }
     for repo in repositories.values():
-        behavior_counts[repo.behavior_category] += 1
+        # Use override if present, otherwise use calculated category
+        category = overrides.get(repo.full_name, repo.behavior_category)
+        behavior_counts[category] += 1
 
     if any(v > 0 for k, v in behavior_counts.items() if k != "insufficient_data"):
         lines.extend(
@@ -191,6 +196,7 @@ def generate_dashboard(
 def generate_responsiveness_reports(
     repositories: dict[str, Repository],
     output_dir: Path,
+    behavior_overrides: dict[str, str] | None = None,
 ) -> list[Path]:
     """Generate per-category responsiveness detail files.
 
@@ -204,15 +210,17 @@ def generate_responsiveness_reports(
     Args:
         repositories: Dict mapping full_name to Repository
         output_dir: Base output directory (e.g., Summaries/)
+        behavior_overrides: Optional dict mapping repo full_name to behavior category override
 
     Returns:
         List of generated file paths
     """
+    overrides = behavior_overrides or {}
     responsiveness_dir = output_dir / "responsiveness"
     responsiveness_dir.mkdir(parents=True, exist_ok=True)
     generated_paths: list[Path] = []
 
-    # Group repositories by behavior category
+    # Group repositories by behavior category (with overrides applied)
     repos_by_category: dict[str, list[Repository]] = {
         "welcoming": [],
         "selective": [],
@@ -222,7 +230,9 @@ def generate_responsiveness_reports(
     }
 
     for repo in repositories.values():
-        repos_by_category[repo.behavior_category].append(repo)
+        # Use override if present, otherwise use calculated category
+        category = overrides.get(repo.full_name, repo.behavior_category)
+        repos_by_category[category].append(repo)
 
     # Sort repos in each category by name
     for repos in repos_by_category.values():
