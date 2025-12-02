@@ -11,6 +11,7 @@ from improveit_dashboard.utils.markdown import (
     sanitize_and_truncate,
     sanitize_for_table,
     truncate,
+    write_if_changed,
 )
 from improveit_dashboard.views.dashboard import generate_dashboard
 from improveit_dashboard.views.reports import generate_user_reports
@@ -271,3 +272,58 @@ class TestMarkdownSanitization:
         text = "[link](https://example.com)"
         result = sanitize_for_table(text)
         assert result == "[link](https://example.com)"
+
+
+class TestWriteIfChanged:
+    """Tests for write_if_changed utility."""
+
+    @pytest.mark.ai_generated
+    def test_write_new_file(self, tmp_path: Path) -> None:
+        """Test writing a new file always succeeds."""
+        file_path = tmp_path / "new.md"
+        content = "# Title\n\n*Last updated: 2025-01-01 12:00 UTC*\n\nContent\n"
+
+        result = write_if_changed(file_path, content)
+
+        assert result is True
+        assert file_path.exists()
+        assert file_path.read_text() == content
+
+    @pytest.mark.ai_generated
+    def test_skip_when_only_timestamp_changed(self, tmp_path: Path) -> None:
+        """Test file is not written when only timestamp changed."""
+        file_path = tmp_path / "test.md"
+        original = "# Title\n\n*Last updated: 2025-01-01 12:00 UTC*\n\nContent\n"
+        file_path.write_text(original)
+
+        new_content = "# Title\n\n*Last updated: 2025-12-02 18:30 UTC*\n\nContent\n"
+        result = write_if_changed(file_path, new_content)
+
+        assert result is False
+        # File should still have original content
+        assert file_path.read_text() == original
+
+    @pytest.mark.ai_generated
+    def test_write_when_content_changed(self, tmp_path: Path) -> None:
+        """Test file is written when actual content changed."""
+        file_path = tmp_path / "test.md"
+        original = "# Title\n\n*Last updated: 2025-01-01 12:00 UTC*\n\nOld content\n"
+        file_path.write_text(original)
+
+        new_content = "# Title\n\n*Last updated: 2025-12-02 18:30 UTC*\n\nNew content\n"
+        result = write_if_changed(file_path, new_content)
+
+        assert result is True
+        assert file_path.read_text() == new_content
+
+    @pytest.mark.ai_generated
+    def test_creates_parent_directories(self, tmp_path: Path) -> None:
+        """Test parent directories are created if they don't exist."""
+        file_path = tmp_path / "nested" / "dir" / "file.md"
+        content = "# Content\n"
+
+        result = write_if_changed(file_path, content)
+
+        assert result is True
+        assert file_path.exists()
+        assert file_path.read_text() == content

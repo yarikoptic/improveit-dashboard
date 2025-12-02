@@ -6,7 +6,7 @@ from pathlib import Path
 from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
 from improveit_dashboard.utils.logging import get_logger
-from improveit_dashboard.utils.markdown import sanitize_and_truncate
+from improveit_dashboard.utils.markdown import sanitize_and_truncate, write_if_changed
 
 logger = get_logger(__name__)
 
@@ -186,9 +186,8 @@ def generate_dashboard(
         ]
     )
 
-    # Write output
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(lines) + "\n")
+    # Write output only if there are meaningful changes
+    write_if_changed(output_path, "\n".join(lines) + "\n")
 
     logger.info(f"Generated dashboard with {len(tracked_users)} users, {total_prs} PRs")
 
@@ -356,9 +355,9 @@ def generate_responsiveness_reports(
 
         lines.append("")
 
-        # Write output
-        output_path.write_text("\n".join(lines) + "\n")
-        generated_paths.append(output_path)
-        logger.info(f"Generated {output_path} with {len(repos)} repositories")
+        # Write output only if there are meaningful changes
+        if write_if_changed(output_path, "\n".join(lines) + "\n"):
+            generated_paths.append(output_path)
+            logger.info(f"Generated {output_path} with {len(repos)} repositories")
 
     return generated_paths

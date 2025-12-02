@@ -6,7 +6,7 @@ from pathlib import Path
 from improveit_dashboard.models.pull_request import PullRequest
 from improveit_dashboard.models.repository import Repository
 from improveit_dashboard.utils.logging import get_logger
-from improveit_dashboard.utils.markdown import sanitize_and_truncate
+from improveit_dashboard.utils.markdown import sanitize_and_truncate, write_if_changed
 
 logger = get_logger(__name__)
 
@@ -190,8 +190,8 @@ def _generate_summary_file(
             ]
         )
 
-    # Write output
-    output_path.write_text("\n".join(lines) + "\n")
+    # Write output only if there are meaningful changes
+    write_if_changed(output_path, "\n".join(lines) + "\n")
 
 
 def _generate_status_file(
@@ -228,8 +228,8 @@ def _generate_status_file(
 
     lines.append("")
 
-    # Write output
-    output_path.write_text("\n".join(lines) + "\n")
+    # Write output only if there are meaningful changes
+    write_if_changed(output_path, "\n".join(lines) + "\n")
 
 
 def _add_pr_table(
