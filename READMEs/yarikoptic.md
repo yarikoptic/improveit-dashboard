@@ -1,6 +1,6 @@
 # PRs by yarikoptic
 
-*Last updated: 2025-12-01 15:17 UTC*
+*Last updated: 2025-12-02 19:01 UTC*
 
 [< Back to Dashboard](../README.md)
 
@@ -8,9 +8,9 @@
 
 - **[Draft](yarikoptic/draft.md)**: 11 PRs
 - **[Open](yarikoptic/open.md)**: 118 PRs
-- **[Merged](yarikoptic/merged.md)**: 149 PRs
+- **[Merged](yarikoptic/merged.md)**: 150 PRs
 - **[Closed](yarikoptic/closed.md)**: 61 PRs
-- **Total**: 339 PRs
+- **Total**: 340 PRs
 
 ## Needs Your Response
 
@@ -28,7 +28,7 @@ It would be a great way to improve the website. I'll try to find some time to ap
 Thanks!
 - [nipy/nipype#3550](https://github.com/nipy/nipype/pull/3550): Add github action to shellcheck master on push and PRs (*waiting 619 days*) [CI failing]
   > @yarikoptic Reran so you can check the output.
-- [kestra-io/kestra#12912](https://github.com/kestra-io/kestra/pull/12912): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 12 days*) [CI pending]
+- [kestra-io/kestra#12912](https://github.com/kestra-io/kestra/pull/12912): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 13 days*) [CI pending]
   > Hey @loicmathieu, can you check if this makes sense once you get the chance?
 - [duckdb/duckdb#19817](https://github.com/duckdb/duckdb/pull/19817): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 10 days*) [CI failing]
   > Yes, looks good to me 
@@ -38,15 +38,6 @@ Thanks!
 As far as the github actions stuff goes, I avoid using github to that extent (use is limited to typing in text boxes like this o...
 - [google/styleguide#951](https://github.com/google/styleguide/pull/951): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 15 days*) 
   > can you attach a full run with these settings against the existing docs ?  or are they all clean other than the fixes you included ?
-- [github/github-mcp-server#1072](https://github.com/github/github-mcp-server/pull/1072): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 73 days*) [CI pending]
-  > في خميس، 18 سبتمبر، 2025 في 1:59 م، كتب punnamtharun-ux <
-***@***.***>:
-
-> ***@***.**** approved this pull request.
->
-> —
-> Reply to this email directly, view it on GitHub
-> <https://github.com...
 - [paperwm/PaperWM#1071](https://github.com/paperwm/PaperWM/pull/1071): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 63 days*) [CI failing]
   > Yes, all PRs should go to `develop`.
 

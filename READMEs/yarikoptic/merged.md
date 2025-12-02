@@ -1,13 +1,14 @@
 # Merged PRs by yarikoptic
 
-*Last updated: 2025-12-01 15:17 UTC*
+*Last updated: 2025-12-02 19:01 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 149 PRs
+**Total**: 150 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [mritogether/mritogether.github.io](https://github.com/mritogether/mritogether.github.io) | [#99](https://github.com/mritogether/mritogether.github.io/pull/99) | Add codespell support (config, workfl... | codespell | 2024-10-23 | 2025-12-01 | @patsycle | 3 | 18 | codespell-config, github-actions | - |
 | [whitphx/stlite](https://github.com/whitphx/stlite) | [#1726](https://github.com/whitphx/stlite/pull/1726) | chore: add codespell support (config,... | codespell | 2025-11-27 | 2025-11-27 | @whitphx | 7 | 7 | codespell-config, github-actions | - |
 | [zotero/zotero-google-docs-integration](https://github.com/zotero/zotero-google-docs-integration) | [#86](https://github.com/zotero/zotero-google-docs-integration/pull/86) | Add codespell support (config, workfl... | codespell | 2025-11-12 | 2025-11-25 | @adomasven | 4 | 7 | codespell-config, github-actions | - |
 | [actualbudget/actual](https://github.com/actualbudget/actual) | [#6237](https://github.com/actualbudget/actual/pull/6237) | Fix 2 typos codespell found | codespell | 2025-11-24 | 2025-11-24 | @matt-fidd | 1 | 2 | - | - |
