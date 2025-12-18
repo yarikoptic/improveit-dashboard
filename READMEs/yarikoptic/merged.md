@@ -1,13 +1,16 @@
 # Merged PRs by yarikoptic
 
-*Last updated: 2025-12-02 19:01 UTC*
+*Last updated: 2025-12-18 06:23 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 150 PRs
+**Total**: 153 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [Annotation-Garden/HEDit](https://github.com/Annotation-Garden/HEDit) | [#51](https://github.com/Annotation-Garden/HEDit/pull/51) | Add codespell support (config, workfl... | codespell | 2025-12-16 | 2025-12-16 | @neuromechanist | 3 | 3 | github-actions | - |
+| [datalad/datalad-extension-template](https://github.com/datalad/datalad-extension-template) | [#95](https://github.com/datalad/datalad-extension-template/pull/95) | Move codespell config into pyproject.... | codespell | 2025-02-05 | 2025-12-09 | @yarikoptic | 3 | 4 | codespell-config | - |
+| [HarmonizedMRI/PulCeq](https://github.com/HarmonizedMRI/PulCeq) | [#7](https://github.com/HarmonizedMRI/PulCeq/pull/7) | codespell: add config, workflow + hav... | codespell | 2023-08-31 | 2025-12-07 | @jfnielsen | 4 | 9 | codespell-config, github-actions | Excellent, thanks! |
 | [mritogether/mritogether.github.io](https://github.com/mritogether/mritogether.github.io) | [#99](https://github.com/mritogether/mritogether.github.io/pull/99) | Add codespell support (config, workfl... | codespell | 2024-10-23 | 2025-12-01 | @patsycle | 3 | 18 | codespell-config, github-actions | - |
 | [whitphx/stlite](https://github.com/whitphx/stlite) | [#1726](https://github.com/whitphx/stlite/pull/1726) | chore: add codespell support (config,... | codespell | 2025-11-27 | 2025-11-27 | @whitphx | 7 | 7 | codespell-config, github-actions | - |
 | [zotero/zotero-google-docs-integration](https://github.com/zotero/zotero-google-docs-integration) | [#86](https://github.com/zotero/zotero-google-docs-integration/pull/86) | Add codespell support (config, workfl... | codespell | 2025-11-12 | 2025-11-25 | @adomasven | 4 | 7 | codespell-config, github-actions | - |

@@ -1,13 +1,15 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2025-12-02 19:01 UTC*
+*Last updated: 2025-12-18 06:23 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 61 PRs
+**Total**: 62 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [jquast/blessed](https://github.com/jquast/blessed) | [#278](https://github.com/jquast/blessed/pull/278) | Add codespell support (config, workfl... | codespell | 2024-12-13 | 2025-09-15 | - | 13 | followed up by #293 and merged, thanks |
+| [derailed/k9s](https://github.com/derailed/k9s) | [#3604](https://github.com/derailed/k9s/pull/3604) | Add codespell support (config, workfl... | codespell | 2025-10-03 | 2025-12-12 | - | 3 | - |
 | [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | [#1](https://github.com/neurolabusc/niivue-binder/pull/1) | Add codespell support (config, workfl... | codespell | 2025-11-27 | 2025-11-28 | - | 4 | @yarikoptic added your suggestion after resolvi... |
 | [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | Add codespell: config, workflow (to a... | codespell | 2023-12-06 | 2025-11-21 | - | 73 | > is it the `swagger/` directories? > > what is... |
 | [Mergifyio/daiquiri](https://github.com/Mergifyio/daiquiri) | [#82](https://github.com/Mergifyio/daiquiri/pull/82) | Add codespell support (config, workfl... | codespell | 2024-10-29 | 2025-11-18 | - | 5 | - |
@@ -17,7 +19,6 @@
 | [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | [#537](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/537) | Add codespell support (config, workfl... | codespell | 2025-05-15 | 2025-09-24 | - | 6 | It looks like all of these typos have already b... |
 | [talmolab/sleap](https://github.com/talmolab/sleap) | [#1610](https://github.com/talmolab/sleap/pull/1610) | Add codespell config, workflow and ge... | codespell | 2023-11-28 | 2025-10-01 | - | 39 | - |
 | [fwupd/fwupd](https://github.com/fwupd/fwupd) | [#9310](https://github.com/fwupd/fwupd/pull/9310) | Fixup detected typos with codespell a... | codespell | 2025-09-29 | 2025-09-29 | - | 8 | Moved to https://github.com/fwupd/fwupd/pull/93... |
-| [jquast/blessed](https://github.com/jquast/blessed) | [#278](https://github.com/jquast/blessed/pull/278) | Add codespell support (config, workfl... | codespell | 2024-12-13 | 2025-09-15 | - | 13 | followed up by #293 and merged, thanks |
 | [google-deepmind/alphafold](https://github.com/google-deepmind/alphafold) | [#889](https://github.com/google-deepmind/alphafold/pull/889) | Add codespell config + workflow to de... | codespell | 2024-01-23 | 2025-08-22 | - | 11 | Fixed in https://github.com/google-deepmind/alp... |
 | [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | [#117](https://github.com/mcp-use/mcp-use/pull/117) | Add codespell support (config, workfl... | codespell | 2025-06-08 | 2025-08-17 | - | 7 | Is this going to GPL mcp-use ? |
 | [bats-core/bats-assert](https://github.com/bats-core/bats-assert) | [#61](https://github.com/bats-core/bats-assert/pull/61) | Codespell: config and github action | codespell | 2023-04-06 | 2025-08-15 | - | 2 | What is codespell and why would we want it? |

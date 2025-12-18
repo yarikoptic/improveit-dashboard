@@ -4,19 +4,19 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Summary
 
-*Last updated: 2025-12-02 20:57 UTC*
+*Last updated: 2025-12-18 06:23 UTC*
 
-- **Repositories tracked**: 360
-- **Total PRs**: 395
-- **Merged**: 194
-- **Open**: 124
+- **Repositories tracked**: 364
+- **Total PRs**: 400
+- **Merged**: 197
+- **Open**: 125
 
 ## Contributors
 
 | User | Total | Draft | Open | Merged | Closed |
 |------|-------|-------|------|--------|--------|
 | [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [55](READMEs/DimitriPapadopoulos.md) | 0 | [6](READMEs/DimitriPapadopoulos/open.md) | [44](READMEs/DimitriPapadopoulos/merged.md) | [5](READMEs/DimitriPapadopoulos/closed.md) |
-| [yarikoptic](https://github.com/yarikoptic) | [340](READMEs/yarikoptic.md) | [11](READMEs/yarikoptic/draft.md) | [118](READMEs/yarikoptic/open.md) | [150](READMEs/yarikoptic/merged.md) | [61](READMEs/yarikoptic/closed.md) |
+| [yarikoptic](https://github.com/yarikoptic) | [345](READMEs/yarikoptic.md) | [11](READMEs/yarikoptic/draft.md) | [119](READMEs/yarikoptic/open.md) | [153](READMEs/yarikoptic/merged.md) | [62](READMEs/yarikoptic/closed.md) |
 
 ## Repository Responsiveness
 
@@ -26,11 +26,11 @@ acceptance rate (percentage of PRs merged vs closed without merge).
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| Welcoming | [4](Summaries/responsiveness/welcoming.md) | Fast response (<48h), high acceptance rate (>70%) |
+| Welcoming | [5](Summaries/responsiveness/welcoming.md) | Fast response (<48h), high acceptance rate (>70%) |
 | Selective | [19](Summaries/responsiveness/selective.md) | Moderate response time, reviews carefully before accepting |
-| Unresponsive | [3](Summaries/responsiveness/unresponsive.md) | Slow or no response (>7 days average) |
-| Hostile | [1](Summaries/responsiveness/hostile.md) | Quick rejection without engagement |
-| Insufficient Data | [333](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
+| Unresponsive | [4](Summaries/responsiveness/unresponsive.md) | Slow or no response (>7 days average) |
+| Hostile | 0 | Quick rejection without engagement |
+| Insufficient Data | [336](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
 
 ---
 

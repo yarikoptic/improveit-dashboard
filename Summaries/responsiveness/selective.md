@@ -1,6 +1,6 @@
 # Selective Repositories
 
-*Last updated: 2025-12-02 19:01 UTC*
+*Last updated: 2025-12-18 06:23 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -16,7 +16,7 @@
 | [Buffalo-Ontology-Group/MRI_Ontology](https://github.com/Buffalo-Ontology-Group/MRI_Ontology) | 2 | 1 | 1 | 50% | 42.9d |
 | [codespell-project/codespell](https://github.com/codespell-project/codespell) | 2 | 1 | 1 | 50% | - |
 | [datalad/datalad](https://github.com/datalad/datalad) | 3 | 3 | 0 | 100% | 15.2d |
-| [datalad/datalad-extension-template](https://github.com/datalad/datalad-extension-template) | 3 | 1 | 0 | 100% | 0h |
+| [datalad/datalad-extension-template](https://github.com/datalad/datalad-extension-template) | 3 | 2 | 0 | 100% | 0h |
 | [expyriment/expyriment](https://github.com/expyriment/expyriment) | 4 | 4 | 0 | 100% | - |
 | [FZJ-INM1-BDA/siibra-python](https://github.com/FZJ-INM1-BDA/siibra-python) | 2 | 1 | 1 | 50% | 8.2d |
 | [imr-framework/pypulseq](https://github.com/imr-framework/pypulseq) | 2 | 1 | 1 | 50% | 25.0d |
@@ -36,6 +36,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [datalad/datalad-extension-template](https://github.com/datalad/datalad-extension-template) | [#95](https://github.com/datalad/datalad-extension-template/pull/95) | merged | codespell | - | - |
 | [Buffalo-Ontology-Group/MRI_Ontology](https://github.com/Buffalo-Ontology-Group/MRI_Ontology) | [#27](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/pull/27) | merged | codespell | 6.9d | Beautiful! Especially appreciate the ... |
 | [Buffalo-Ontology-Group/MRI_Ontology](https://github.com/Buffalo-Ontology-Group/MRI_Ontology) | [#25](https://github.com/Buffalo-Ontology-Group/MRI_Ontology/pull/25) | closed | codespell | 78.9d | Hi Yaroslav, thanks for the PR. Defin... |
 | [ReproNim/reprostim](https://github.com/ReproNim/reprostim) | [#187](https://github.com/ReproNim/reprostim/pull/187) | merged | shellcheck | - | - |
@@ -63,7 +64,6 @@
 | [neurospin-cloud/pycaravel](https://github.com/neurospin-cloud/pycaravel) | [#29](https://github.com/neurospin-cloud/pycaravel/pull/29) | merged | codespell | - | - |
 | [psych-ds/psych-DS](https://github.com/psych-ds/psych-DS) | [#58](https://github.com/psych-ds/psych-DS/pull/58) | merged | codespell | - | - |
 | [psych-ds/psych-DS](https://github.com/psych-ds/psych-DS) | [#38](https://github.com/psych-ds/psych-DS/pull/38) | closed | codespell | - | - |
-| [datalad/datalad-extension-template](https://github.com/datalad/datalad-extension-template) | [#95](https://github.com/datalad/datalad-extension-template/pull/95) | open | codespell | - | - |
 | [datalad/datalad-extension-template](https://github.com/datalad/datalad-extension-template) | [#58](https://github.com/datalad/datalad-extension-template/pull/58) | merged | codespell | - | - |
 | [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | [#30660](https://github.com/scikit-learn/scikit-learn/pull/30660) | merged | codespell | 1h | Side-comment maybe we should enable c... |
 | [ReproNim/reprostim](https://github.com/ReproNim/reprostim) | [#127](https://github.com/ReproNim/reprostim/pull/127) | merged | codespell | - | - |
