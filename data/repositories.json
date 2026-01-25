@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-01-25T01:11:17.539024Z",
+    "last_updated": "2026-01-25T06:20:40.808164Z",
     "last_run": {
-      "started_at": "2026-01-25T01:11:17.309222+00:00",
-      "completed_at": "2026-01-25T01:11:17.538915+00:00",
+      "started_at": "2026-01-25T06:20:40.589573+00:00",
+      "completed_at": "2026-01-25T06:20:40.808064+00:00",
       "mode": "normal",
       "new_repositories": 0,
       "new_prs": 0,
@@ -15,8 +15,8 @@
       "api_calls_made": 2,
       "rate_limit_remaining": 5000,
       "errors": [
-        "Failed to search PRs for yarikoptic: 401 Client Error: Unauthorized for url: https://api.github.com/search/issues?q=is%3Apr+author%3Ayarikoptic+updated%3A%3E2026-01-24&per_page=100&page=1&sort=updated&order=desc",
-        "Failed to search PRs for DimitriPapadopoulos: 401 Client Error: Unauthorized for url: https://api.github.com/search/issues?q=is%3Apr+author%3ADimitriPapadopoulos+updated%3A%3E2026-01-24&per_page=100&page=1&sort=updated&order=desc"
+        "Failed to search PRs for yarikoptic: 401 Client Error: Unauthorized for url: https://api.github.com/search/issues?q=is%3Apr+author%3Ayarikoptic+updated%3A%3E2026-01-25&per_page=100&page=1&sort=updated&order=desc",
+        "Failed to search PRs for DimitriPapadopoulos: 401 Client Error: Unauthorized for url: https://api.github.com/search/issues?q=is%3Apr+author%3ADimitriPapadopoulos+updated%3A%3E2026-01-25&per_page=100&page=1&sort=updated&order=desc"
       ]
     }
   },
