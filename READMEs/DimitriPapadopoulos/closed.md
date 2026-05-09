@@ -1,13 +1,14 @@
 # Closed PRs by DimitriPapadopoulos
 
-*Last updated: 2025-12-02 19:01 UTC*
+*Last updated: 2026-05-09 00:54 UTC*
 
 [< Back to DimitriPapadopoulos summary](../DimitriPapadopoulos.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 5 PRs
+**Total**: 6 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [en-wl/wordlist](https://github.com/en-wl/wordlist) | [#464](https://github.com/en-wl/wordlist/pull/464) | Fix typos found by codespell | codespell | 2026-02-02 | 2026-02-16 | - | 4 | Understood. For the new `v2` branch, I want to ... |
 | [pypa/setuptools-scm](https://github.com/pypa/setuptools-scm) | [#1187](https://github.com/pypa/setuptools-scm/pull/1187) | Fix typos found by codespell | codespell | 2025-08-04 | 2025-08-05 | - | 4 | superseded by #1188 where the pre-commit hooks ... |
 | [geteduroam/ionic-app](https://github.com/geteduroam/ionic-app) | [#124](https://github.com/geteduroam/ionic-app/pull/124) | Fix typos found by codespell | codespell | 2023-11-15 | 2025-06-25 | - | 9 | - |
 | [Blosc/c-blosc](https://github.com/Blosc/c-blosc) | [#388](https://github.com/Blosc/c-blosc/pull/388) | Fix typo found by codespell | codespell | 2024-12-06 | 2025-04-03 | - | 1 | - |

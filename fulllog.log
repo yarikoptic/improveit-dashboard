@@ -1,0 +1,147 @@
+❯ source /home/yoh/.codebergtoken
+ CODEBERG_TOKEN=$CODEBERG_RO_TOKEN improveit-dashboard update --commit
+2026-04-02 23:35:41 [INFO] improveit_dashboard.cli: Starting PR discovery...
+2026-04-02 23:35:41 [WARNING] improveit_dashboard.controllers.discovery: No token configured for forge 'github', skipping
+2026-04-02 23:35:41 [WARNING] improveit_dashboard.controllers.discovery: No token configured for forge 'datalad-hub', skipping
+2026-04-02 23:35:41 [INFO] improveit_dashboard.controllers.persistence: No existing model at ../data/repositories.json, starting fresh
+2026-04-02 23:35:55 [INFO] improveit_dashboard.controllers.discovery: Discovered 47 candidate repos for yarikoptic on codeberg
+2026-04-02 23:35:58 [INFO] improveit_dashboard.controllers.gitea_client: Found 2 PRs by yarikoptic in forgejo/forgejo on codeberg
+2026-04-02 23:36:00 [INFO] improveit_dashboard.controllers.gitea_client: Found 1 PRs by yarikoptic in forgejo/docs on codeberg
+2026-04-02 23:36:01 [INFO] improveit_dashboard.controllers.gitea_client: Found 1 PRs by yarikoptic in MIRAPIE/MIRAPIE on codeberg
+2026-04-02 23:36:03 [INFO] improveit_dashboard.controllers.gitea_client: Found 1 PRs by yarikoptic in schilytools/schilytools on codeberg
+2026-04-02 23:36:04 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in git-pages/git-pages on codeberg
+2026-04-02 23:36:05 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in datalad/datasalad on codeberg
+2026-04-02 23:36:06 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in datalad/datalad-core on codeberg
+2026-04-02 23:36:06 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in datalad/git-lad on codeberg
+2026-04-02 23:36:07 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in datalad/datalad-handbook on codeberg
+2026-04-02 23:36:08 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in datalad/datalad-handbook-artwork on codeberg
+2026-04-02 23:36:09 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in gentoo/gentoo on codeberg
+2026-04-02 23:36:09 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in rzacharias/fileclaw on codeberg
+2026-04-02 23:36:10 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in fhs/katawa-shoujo-re-engineered on codeberg
+2026-04-02 23:36:11 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in christopher-besch/docker_setups on codeberg
+2026-04-02 23:36:11 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in mikf/gallery-dl on codeberg
+2026-04-02 23:36:12 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in parsley-creature/additional-gallery-dl-extractors on codeberg
+2026-04-02 23:36:13 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in kylemmkay/deezer-engine on codeberg
+2026-04-02 23:36:13 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in musikinformatik/SuperDirt on codeberg
+2026-04-02 23:36:14 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in Freeyourgadget/Gadgetbridge on codeberg
+2026-04-02 23:36:15 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in blackmagic-debug/stlink-tool on codeberg
+2026-04-02 23:36:15 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in thetwom/Tuner on codeberg
+2026-04-02 23:36:16 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in r-poulsen/samler on codeberg
+2026-04-02 23:36:17 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in haydn/typesetter on codeberg
+2026-04-02 23:36:18 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in kensand/kensand.net on codeberg
+2026-04-02 23:36:18 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in saturn-sync/saturn on codeberg
+2026-04-02 23:36:19 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in ckruse/burp on codeberg
+2026-04-02 23:36:20 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in ckruse/recipes_frontend on codeberg
+2026-04-02 23:36:21 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in clambin/actions on codeberg
+2026-04-02 23:36:21 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in libreboot/lbwww-img on codeberg
+2026-04-02 23:36:22 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in SteppedOnLego/FATE on codeberg
+2026-04-02 23:36:23 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in rhoskal/midnite on codeberg
+2026-04-02 23:36:23 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in Codeberg/Documentation on codeberg
+2026-04-02 23:36:24 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in mmibbetson/mcpeek on codeberg
+2026-04-02 23:36:25 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in Brickcode/bricks.db89d021-viviers.fish-tracker on codeberg
+2026-04-02 23:36:25 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in atollk/NiceGooey on codeberg
+2026-04-02 23:36:26 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in sybnex/infrastructure on codeberg
+2026-04-02 23:36:27 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in sf3_wiscon/Zambia on codeberg
+2026-04-02 23:36:28 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in ziglang/zig on codeberg
+2026-04-02 23:36:28 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in dl-alexandre/zig on codeberg
+2026-04-02 23:36:29 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in skillpoint/home-ops on codeberg
+2026-04-02 23:36:30 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in isotop7/proviant on codeberg
+2026-04-02 23:36:30 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in Kieeps/kubernetes on codeberg
+2026-04-02 23:36:31 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in studenterforpalestina/event-bot on codeberg
+2026-04-02 23:36:32 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in forgejo/website on codeberg
+2026-04-02 23:36:32 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in drangus/minni on codeberg
+2026-04-02 23:36:33 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in iyzsong/gam4980 on codeberg
+2026-04-02 23:36:34 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by yarikoptic in iyzsong/anarch-libretro on codeberg
+2026-04-02 23:36:47 [INFO] improveit_dashboard.controllers.discovery: Discovered 43 candidate repos for DimitriPapadopoulos on codeberg
+2026-04-02 23:36:48 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in datalad/datasalad on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/datalad/datasalad/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:49 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in datalad/datalad-core on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/datalad/datalad-core/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:49 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in datalad/git-lad on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/datalad/git-lad/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:50 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in datalad/datalad-handbook on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/datalad/datalad-handbook/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:51 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in datalad/datalad-handbook-artwork on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/datalad/datalad-handbook-artwork/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:52 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in gentoo/gentoo on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/gentoo/gentoo/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:52 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in rzacharias/fileclaw on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/rzacharias/fileclaw/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:53 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in fhs/katawa-shoujo-re-engineered on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/fhs/katawa-shoujo-re-engineered/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:54 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in christopher-besch/docker_setups on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/christopher-besch/docker_setups/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:54 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in mikf/gallery-dl on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/mikf/gallery-dl/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:55 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in parsley-creature/additional-gallery-dl-extractors on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/parsley-creature/additional-gallery-dl-extractors/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:56 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in kylemmkay/deezer-engine on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/kylemmkay/deezer-engine/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:56 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in musikinformatik/SuperDirt on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/musikinformatik/SuperDirt/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:57 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in Freeyourgadget/Gadgetbridge on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/Freeyourgadget/Gadgetbridge/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:58 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in blackmagic-debug/stlink-tool on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/blackmagic-debug/stlink-tool/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:59 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in thetwom/Tuner on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/thetwom/Tuner/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:36:59 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in r-poulsen/samler on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/r-poulsen/samler/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:00 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in haydn/typesetter on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/haydn/typesetter/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:01 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in kensand/kensand.net on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/kensand/kensand.net/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:01 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in saturn-sync/saturn on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/saturn-sync/saturn/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:02 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in ckruse/burp on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/ckruse/burp/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:03 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in ckruse/recipes_frontend on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/ckruse/recipes_frontend/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:04 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in clambin/actions on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/clambin/actions/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:04 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in libreboot/lbwww-img on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/libreboot/lbwww-img/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:05 [INFO] improveit_dashboard.controllers.gitea_client: Found 0 PRs by DimitriPapadopoulos in SteppedOnLego/FATE on codeberg
+2026-04-02 23:37:06 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in rhoskal/midnite on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/rhoskal/midnite/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:06 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in Codeberg/Documentation on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/Codeberg/Documentation/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:07 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in mmibbetson/mcpeek on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/mmibbetson/mcpeek/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:08 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in Brickcode/bricks.db89d021-viviers.fish-tracker on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/Brickcode/bricks.db89d021-viviers.fish-tracker/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:08 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in atollk/NiceGooey on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/atollk/NiceGooey/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:09 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in sybnex/infrastructure on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/sybnex/infrastructure/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:10 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in sf3_wiscon/Zambia on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/sf3_wiscon/Zambia/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:10 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in ziglang/zig on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/ziglang/zig/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:11 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in dl-alexandre/zig on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/dl-alexandre/zig/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:12 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in skillpoint/home-ops on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/skillpoint/home-ops/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:12 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in forgejo/forgejo on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/forgejo/forgejo/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:13 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in isotop7/proviant on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/isotop7/proviant/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:14 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in Kieeps/kubernetes on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/Kieeps/kubernetes/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:15 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in studenterforpalestina/event-bot on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/studenterforpalestina/event-bot/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:15 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in forgejo/website on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/forgejo/website/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:16 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in drangus/minni on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/drangus/minni/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:17 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in iyzsong/gam4980 on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/iyzsong/gam4980/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:17 [WARNING] improveit_dashboard.controllers.discovery: Failed to search PRs in iyzsong/anarch-libretro on codeberg: 400 Client Error: Bad Request for url: https://codeberg.org/api/v1/repos/iyzsong/anarch-libretro/pulls?state=all&poster=DimitriPapadopoulos&page=1&limit=50
+2026-04-02 23:37:17 [INFO] improveit_dashboard.controllers.discovery: Found 5 PRs to process across all forges
+2026-04-02 23:37:34 [WARNING] improveit_dashboard.controllers.discovery: Failed to fetch CI status for codeberg/MIRAPIE/MIRAPIE#20: 'NoneType' object is not iterable
+2026-04-02 23:38:00 [INFO] improveit_dashboard.controllers.persistence: Saving model to ../data/repositories.json
+2026-04-02 23:38:00 [INFO] improveit_dashboard.controllers.persistence: Saved 4 repositories to ../data/repositories.json
+2026-04-02 23:38:00 [INFO] improveit_dashboard.controllers.discovery: Discovery complete: 5 new PRs, 0 updated, 0 merged
+
+Discovery complete:
+  New repositories: 4
+  New PRs: 5
+  Updated PRs: 0
+  Newly merged: 0
+  Newly closed: 0
+  Total processed: 5
+  API calls: 123
+2026-04-02 23:38:00 [INFO] improveit_dashboard.cli: Generating dashboard views...
+2026-04-02 23:38:00 [INFO] improveit_dashboard.cli: Generating dashboard views...
+2026-04-02 23:38:00 [INFO] improveit_dashboard.controllers.persistence: Loading model from ../data/repositories.json
+2026-04-02 23:38:00 [INFO] improveit_dashboard.controllers.persistence: Loaded 4 repositories
+2026-04-02 23:38:00 [INFO] improveit_dashboard.cli: Override inrupt/solid-common-vocab-rdf: welcoming (Maintainer thanked contributor and implemented changes themselves)
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generating dashboard: ../README.md
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generated dashboard with 2 users, 5 PRs
+Generated: ../README.md
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.reports: Generating reports for yarikoptic
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.reports: Generated 5 files for yarikoptic with 5 PRs
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.reports: Generating reports for DimitriPapadopoulos
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.reports: Generated 5 files for DimitriPapadopoulos with 0 PRs
+Generated: ../READMEs/yarikoptic.md
+Generated: ../READMEs/yarikoptic/draft.md
+Generated: ../READMEs/yarikoptic/open.md
+Generated: ../READMEs/yarikoptic/merged.md
+Generated: ../READMEs/yarikoptic/closed.md
+Generated: ../READMEs/DimitriPapadopoulos.md
+Generated: ../READMEs/DimitriPapadopoulos/draft.md
+Generated: ../READMEs/DimitriPapadopoulos/open.md
+Generated: ../READMEs/DimitriPapadopoulos/merged.md
+Generated: ../READMEs/DimitriPapadopoulos/closed.md
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generated ../Summaries/responsiveness/welcoming.md with 1 repositories
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generated ../Summaries/responsiveness/selective.md with 0 repositories
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generated ../Summaries/responsiveness/unresponsive.md with 0 repositories
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generated ../Summaries/responsiveness/hostile.md with 0 repositories
+2026-04-02 23:38:00 [INFO] improveit_dashboard.views.dashboard: Generated ../Summaries/responsiveness/insufficient_data.md with 3 repositories
+Generated: ../Summaries/responsiveness/welcoming.md
+Generated: ../Summaries/responsiveness/selective.md
+Generated: ../Summaries/responsiveness/unresponsive.md
+Generated: ../Summaries/responsiveness/hostile.md
+Generated: ../Summaries/responsiveness/insufficient_data.md
+2026-04-02 23:38:00 [INFO] improveit_dashboard.cli: Creating git commit...
+No changes to commit
+

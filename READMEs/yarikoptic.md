@@ -1,49 +1,51 @@
 # PRs by yarikoptic
 
-*Last updated: 2026-03-21 12:29 UTC*
+*Last updated: 2026-05-09 00:54 UTC*
 
 [< Back to Dashboard](../README.md)
 
 ## Summary
 
-- **[Draft](yarikoptic/draft.md)**: 11 PRs
-- **[Open](yarikoptic/open.md)**: 119 PRs
-- **[Merged](yarikoptic/merged.md)**: 153 PRs
-- **[Closed](yarikoptic/closed.md)**: 62 PRs
-- **Total**: 345 PRs
+- **[Draft](yarikoptic/draft.md)**: 13 PRs
+- **[Open](yarikoptic/open.md)**: 146 PRs
+- **[Merged](yarikoptic/merged.md)**: 181 PRs
+- **[Closed](yarikoptic/closed.md)**: 86 PRs
+- **Total**: 426 PRs
 
 ## Needs Your Response
 
 PRs where maintainers have responded and are waiting for your action:
 
-- [readthedocs/readthedocs.org#11195](https://github.com/readthedocs/readthedocs.org/pull/11195): Add codespell: config + action (to detect new typos) and make it fix a good number of them (*waiting 128 days*) [conflicts] [CI failing]
+- [nipy/nipype#3550](https://github.com/nipy/nipype/pull/3550): Add github action to shellcheck master on push and PRs (*waiting 779 days*) [conflicts] [CI failing]
+  > @yarikoptic Reran so you can check the output.
+- [readthedocs/readthedocs.org#11195](https://github.com/readthedocs/readthedocs.org/pull/11195): Add codespell: config + action (to detect new typos) and make it fix a good number of them (*waiting 287 days*) [conflicts] [CI failing]
   > > There is an odd "variable" `syntaxt` which I didn't fix since seems would require transition and smells like it is on purpose:
 
 This is indeed a typo that I made when I created the model's field `...
-- [singularityhub/singularity-hpc#670](https://github.com/singularityhub/singularity-hpc/pull/670): Add codespell (config, precommit, workflow) and make it fix typos (*waiting 156 days*) [conflicts] [CI pending]
+- [ionelmc/pytest-benchmark#254](https://github.com/ionelmc/pytest-benchmark/pull/254): Add codespell support (config, pre-commit), workflow + and make it fix some typos (*waiting 45 days*) [conflicts] [CI pending]
+  > I think `crate-ci/typos` from #304 superseded this?
+- [schuetzgroup/fret-analysis#1](https://github.com/schuetzgroup/fret-analysis/pull/1): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 280 days*) [CI pending]
+  > Is there a reason to run `codespell-problem-matcher` explicitly? From my (limited) understanding it seems like it is integrated into `actions-codespell` anyhow.
+- [singularityhub/singularity-hpc#670](https://github.com/singularityhub/singularity-hpc/pull/670): Add codespell (config, precommit, workflow) and make it fix typos (*waiting 316 days*) [conflicts] [CI pending]
   > If you have interest! I didn't comment because it's marked as a Draft. Let me know when it's ready for review.
-- [holtzy/The-Python-Graph-Gallery#517](https://github.com/holtzy/The-Python-Graph-Gallery/pull/517): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 160 days*) [conflicts] [CI pending]
+- [holtzy/The-Python-Graph-Gallery#517](https://github.com/holtzy/The-Python-Graph-Gallery/pull/517): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 319 days*) [conflicts] [CI pending]
   > Very interesting.
 It would be a great way to improve the website. I'll try to find some time to apply this, but probably needs to be applied by bulk of files, progressively.
 Thanks!
-- [nipy/nipype#3550](https://github.com/nipy/nipype/pull/3550): Add github action to shellcheck master on push and PRs (*waiting 619 days*) [CI failing]
-  > @yarikoptic Reran so you can check the output.
-- [duckdb/duckdb#19817](https://github.com/duckdb/duckdb/pull/19817): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 10 days*) [CI failing]
-  > Yes, looks good to me 
-- [google/styleguide#951](https://github.com/google/styleguide/pull/951): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 15 days*) 
-  > can you attach a full run with these settings against the existing docs ?  or are they all clean other than the fixes you included ?
-- [paperwm/PaperWM#1071](https://github.com/paperwm/PaperWM/pull/1071): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 63 days*) [CI failing]
-  > Yes, all PRs should go to `develop`.
+- [google/styleguide#951](https://github.com/google/styleguide/pull/951): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 78 days*) 
+  > i've queued up fixes internally for the various guides and will circle back once they land
+- [napari/napari#7619](https://github.com/napari/napari/pull/7619): Add codespell support (config, workflow to detect/not fix) and make it fix few typos (*waiting 45 days*) [conflicts]
+  > Yeh. If you have time, it is a good moment to rush with this PR.
+- [neuroscout/neuroscout#1106](https://github.com/neuroscout/neuroscout/pull/1106): codespell: config, action + typos fixed (*waiting 1041 days*) [CI pending]
+  > :warning: Please install the !['codecov app svg image'](https://github.com/codecov/engineering-team/assets/152432831/e90313f4-9d3a-4b63-8b54-cfe14e7ec20d) to ensure uploads and comments are reliably p...
+- [lark-parser/lark#1392](https://github.com/lark-parser/lark/pull/1392): codespell: move and adjust configuration to pyproject.toml, fix few new typos (*waiting 46 days*) 
+  > Honestly I don't remember what it was about, maybe I misunderstood.
 
-I wasn't involved with the decision to set up the branches how they are now (See [CONTRIBUTING.md](https://github.com/paperwm/PaperWM/blob/release/CONTRIBUTING....
-- [Proryanator/encoder-benchmark#71](https://github.com/Proryanator/encoder-benchmark/pull/71): Add codespell support (config, workflow to detect/not fix) and make it fix few typos (*waiting 72 days*) [CI pending]
-  > > odd... not that much was ran overall. Some times github CI makes me wonder ;-)
+Overall I'm leaning towards merging it. I'm not sure about adding the `tomli` dependency, so I might remove that part.
 
-Me too me too, I'm a Gitlab CI kind of guy at work 😆 
-- [schuetzgroup/fret-analysis#1](https://github.com/schuetzgroup/fret-analysis/pull/1): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 121 days*) [CI pending]
-  > Is there a reason to run `codespell-problem-matcher` explicitly? From my (limited) understanding it seems like it is integrated into `actions-codespell` anyhow.
-- [NeuroML/Documentation#208](https://github.com/NeuroML/Documentation/pull/208): Add codespell support (config, workflow to detect/not fix) and make it fix few typos (*waiting 418 days*) [CI pending]
-  > Thanks @yarikoptic, we'll check through this and merge. Has been useful in other repos, but some of the files here are autogenerated and just need to be excluded from the checks. 
-- [pypa/hatch#1726](https://github.com/pypa/hatch/pull/1726): Add codespell support (config, workflow to detect/not fix)  (*waiting 430 days*) [CI pending]
-  > As an aside, https://github.com/crate-ci/typos is also a great tool for this.
+Anyway,...
+- [0atman/noboilerplate#78](https://github.com/0atman/noboilerplate/pull/78): Add codespell support (config, workflow to detect/not fix) and make it fix few typos (*waiting 108 days*) [CI pending]
+  > @yarikoptic-test @yarikoptic thanks again, leave this PR open but ignore it for now, this will remind me to integrate languagetool, which is what I use locally. (I'd rather have the same rules everywh...
+- [github/github-mcp-server#1072](https://github.com/github/github-mcp-server/pull/1072): Add codespell support (config, workflow to detect/not fix) and make it fix some typos (*waiting 128 days*) [CI pending]
+  > @yarikoptic it wasn't approved by anyone on the actual team, we will get back to it. Thanks for the contribution.
 

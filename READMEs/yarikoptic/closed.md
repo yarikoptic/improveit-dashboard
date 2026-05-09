@@ -1,15 +1,39 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2025-12-18 06:23 UTC*
+*Last updated: 2026-05-09 00:54 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 62 PRs
+**Total**: 86 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | [#588](https://github.com/fastapi/sqlmodel/pull/588) | 👷 Add codespell workflow + fix some t... | codespell | 2023-04-26 | 2026-05-05 | - | 4 | Closing this as we now have https://github.com/... |
+| [cosanlab/py-feat](https://github.com/cosanlab/py-feat) | [#207](https://github.com/cosanlab/py-feat/pull/207) | Add codespell: workflow, config + mak... | codespell | 2024-02-26 | 2026-05-03 | - | 17 | Thanks for the codespell workflow + bulk typo f... |
+| [fsfe/reuse-tool](https://github.com/fsfe/reuse-tool) | [#1283](https://github.com/fsfe/reuse-tool/pull/1283) | Add codespell support with configurat... | codespell | 2026-04-26 | 2026-04-27 | - | 5 | I believe the project moved over to Codeberg: h... |
+| [schappim/macOCR](https://github.com/schappim/macOCR) | [#37](https://github.com/schappim/macOCR/pull/37) | Add codespell support (config, workfl... | codespell | 2024-07-21 | 2026-04-20 | - | 7 | Thank you for the thorough contribution, @yarik... |
+| [duckdb/duckdb](https://github.com/duckdb/duckdb) | [#19817](https://github.com/duckdb/duckdb/pull/19817) | Add codespell support (config, workfl... | codespell | 2025-11-17 | 2026-04-18 | - | 188 | Yes, looks good to me |
+| [pyiron/pysqa](https://github.com/pyiron/pysqa) | [#457](https://github.com/pyiron/pysqa/pull/457) | Add codespell support (config, workfl... | codespell | 2025-08-29 | 2026-04-11 | - | 5 | - |
+| [Pagefind/pagefind](https://github.com/Pagefind/pagefind) | [#1028](https://github.com/Pagefind/pagefind/pull/1028) | Add codespell support with configurat... | codespell | 2026-03-03 | 2026-04-05 | - | 10 | Hey, I appreciate the PR though for now I'm goi... |
+| [jimmc414/Kosmos](https://github.com/jimmc414/Kosmos) | [#83](https://github.com/jimmc414/Kosmos/pull/83) | Add codespell support with configurat... | codespell | 2026-02-12 | 2026-04-04 | - | 4 | - |
+| [authelia/authelia](https://github.com/authelia/authelia) | [#11607](https://github.com/authelia/authelia/pull/11607) | Add codespell support with configurat... | codespell | 2026-04-01 | 2026-04-01 | - | 19 | Given the need for updates upstream in our CI n... |
+| [readthedocs/common](https://github.com/readthedocs/common) | [#212](https://github.com/readthedocs/common/pull/212) | Pre-commit configuration for codespell | codespell | 2024-03-08 | 2026-04-01 | - | 1 | - |
+| [cmd-ntrf/jupyter-lmod](https://github.com/cmd-ntrf/jupyter-lmod) | [#84](https://github.com/cmd-ntrf/jupyter-lmod/pull/84) | Add codespell support (config, workfl... | codespell | 2025-06-21 | 2026-03-27 | - | 5 | - |
+| [PyAV-Org/PyAV](https://github.com/PyAV-Org/PyAV) | [#2201](https://github.com/PyAV-Org/PyAV/pull/2201) | Add codespell support with configurat... | codespell | 2026-03-16 | 2026-03-16 | - | 4 | See #2202 |
+| [Old-Man-Programmer/tree](https://github.com/Old-Man-Programmer/tree) | [#27](https://github.com/Old-Man-Programmer/tree/pull/27) | chore: add codespell support (config,... | codespell | 2026-01-12 | 2026-03-16 | - | 3 | I appreciate the effort, but I don't really use... |
+| [chaoss/grimoirelab](https://github.com/chaoss/grimoirelab) | [#830](https://github.com/chaoss/grimoirelab/pull/830) | Add codespell support with configurat... | codespell | 2026-03-13 | 2026-03-13 | - | 27 | Thanks but we aren't interested on adding this ... |
+| [google/A2UI](https://github.com/google/A2UI) | [#546](https://github.com/google/A2UI/pull/546) | chore: add codespell support (config,... | codespell | 2026-01-25 | 2026-03-11 | - | 8 | Closing — this has gone stale with merge confli... |
+| [caddyserver/caddy](https://github.com/caddyserver/caddy) | [#6872](https://github.com/caddyserver/caddy/pull/6872) | Add codespell support (config, workfl... | codespell | 2025-03-04 | 2026-03-01 | - | 8 | Yeah of course, no blame. It's our own fault fo... |
+| [nilearn/poia](https://github.com/nilearn/poia) | [#9](https://github.com/nilearn/poia/pull/9) | Add codespell support (config, workfl... | codespell | 2026-02-24 | 2026-02-24 | - | 1 | - |
+| [potpie-ai/potpie](https://github.com/potpie-ai/potpie) | [#407](https://github.com/potpie-ai/potpie/pull/407) | Add codespell support (config, workfl... | codespell | 2025-05-22 | 2026-02-23 | - | 19 | Thanks for the contribution here. We didn’t end... |
+| [entireio/cli](https://github.com/entireio/cli) | [#357](https://github.com/entireio/cli/pull/357) | Add codespell support with configuration | codespell | 2026-02-16 | 2026-02-16 | - | 2 | Thanks @yarikoptic for taking the time to prepa... |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#1692](https://github.com/openclaw/openclaw/pull/1692) | chore: add codespell support (config,... | codespell | 2026-01-25 | 2026-01-31 | - | 9 | The codespell setup looks good, but @Lukavyi is... |
+| [pypa/hatch](https://github.com/pypa/hatch) | [#1726](https://github.com/pypa/hatch/pull/1726) | Add codespell support (config, workfl... | codespell | 2024-09-18 | 2026-01-27 | - | 2 | As an aside, https://github.com/crate-ci/typos ... |
+| [derailed/k9s](https://github.com/derailed/k9s) | [#3719](https://github.com/derailed/k9s/pull/3719) | chore: add codespell support (config,... | codespell | 2025-12-12 | 2026-01-20 | - | 3 | - |
+| [robert-mcdermott/ai-knowledge-graph](https://github.com/robert-mcdermott/ai-knowledge-graph) | [#3](https://github.com/robert-mcdermott/ai-knowledge-graph/pull/3) | Add codespell support (config, workfl... | codespell | 2025-04-14 | 2025-12-27 | - | 4 | - |
 | [jquast/blessed](https://github.com/jquast/blessed) | [#278](https://github.com/jquast/blessed/pull/278) | Add codespell support (config, workfl... | codespell | 2024-12-13 | 2025-09-15 | - | 13 | followed up by #293 and merged, thanks |
 | [derailed/k9s](https://github.com/derailed/k9s) | [#3604](https://github.com/derailed/k9s/pull/3604) | Add codespell support (config, workfl... | codespell | 2025-10-03 | 2025-12-12 | - | 3 | - |
+| [knorrie/python-btrfs](https://github.com/knorrie/python-btrfs) | [#44](https://github.com/knorrie/python-btrfs/pull/44) | Add codespell support (workflow, conf... | codespell | 2023-11-03 | 2025-11-30 | - | 7 | Hey! Thanks for this suggestion. What I ended u... |
 | [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | [#1](https://github.com/neurolabusc/niivue-binder/pull/1) | Add codespell support (config, workfl... | codespell | 2025-11-27 | 2025-11-28 | - | 4 | @yarikoptic added your suggestion after resolvi... |
 | [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | Add codespell: config, workflow (to a... | codespell | 2023-12-06 | 2025-11-21 | - | 73 | > is it the `swagger/` directories? > > what is... |
 | [Mergifyio/daiquiri](https://github.com/Mergifyio/daiquiri) | [#82](https://github.com/Mergifyio/daiquiri/pull/82) | Add codespell support (config, workfl... | codespell | 2024-10-29 | 2025-11-18 | - | 5 | - |
@@ -31,7 +55,7 @@
 | [vocalpy/vocalpy](https://github.com/vocalpy/vocalpy) | [#194](https://github.com/vocalpy/vocalpy/pull/194) | Add codespell support (config, workfl... | codespell | 2024-11-14 | 2025-07-14 | - | 16 | - |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | [#311](https://github.com/OpenSPG/KAG/pull/311) | Add codespell support (config, workfl... | codespell | 2025-01-20 | 2025-06-27 | - | 5 | - |
 | [garciadias/Neuroharmony](https://github.com/garciadias/Neuroharmony) | [#7](https://github.com/garciadias/Neuroharmony/pull/7) | Add codespell support (config, workfl... | codespell | 2025-06-23 | 2025-06-23 | - | 4 | - |
-| [inveniosoftware/invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) | [#3027](https://github.com/inveniosoftware/invenio-app-rdm/pull/3027) | Add codespell support (config, workfl... | codespell | 2025-04-16 | 2025-06-10 | - | 14 | Thank you for your contribution. We appreciate ... |
+| [inveniosoftware/invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) | [#3027](https://github.com/inveniosoftware/invenio-app-rdm/pull/3027) | Add codespell support (config, workfl... | codespell | 2025-04-16 | 2025-06-10 | - | 14 | - |
 | [niivue/ipyniivue](https://github.com/niivue/ipyniivue) | [#132](https://github.com/niivue/ipyniivue/pull/132) | Add codespell support (config, workfl... | codespell | 2025-04-04 | 2025-06-04 | - | 4 | Closing this as stale...can be reopened in the ... |
 | [robert-mcdermott/uve](https://github.com/robert-mcdermott/uve) | [#4](https://github.com/robert-mcdermott/uve/pull/4) | Add codespell support (config, workfl... | codespell | 2025-04-14 | 2025-06-03 | - | 3 | - |
 | [AppDaemon/appdaemon](https://github.com/AppDaemon/appdaemon) | [#2161](https://github.com/AppDaemon/appdaemon/pull/2161) | Add codespell support (config, workfl... | codespell | 2024-11-24 | 2025-05-26 | - | 25 | Thanks, but it's already in and released :) |

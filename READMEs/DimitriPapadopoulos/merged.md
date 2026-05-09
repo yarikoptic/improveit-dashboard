@@ -1,13 +1,20 @@
 # Merged PRs by DimitriPapadopoulos
 
-*Last updated: 2025-12-02 19:01 UTC*
+*Last updated: 2026-05-09 00:54 UTC*
 
 [< Back to DimitriPapadopoulos summary](../DimitriPapadopoulos.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 44 PRs
+**Total**: 51 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [sarugaku/resolvelib](https://github.com/sarugaku/resolvelib) | [#202](https://github.com/sarugaku/resolvelib/pull/202) | Fix typos found by codespell | codespell | 2026-02-12 | 2026-03-13 | @uranusjr | 1 | 5 | - | - |
+| [poldracklab/pydeface](https://github.com/poldracklab/pydeface) | [#61](https://github.com/poldracklab/pydeface/pull/61) | Fix typos found by codespell | codespell | 2026-03-03 | 2026-03-04 | @effigies | 1 | 2 | - | - |
+| [python-poetry/poetry](https://github.com/python-poetry/poetry) | [#10684](https://github.com/python-poetry/poetry/pull/10684) | Fix typos found by codespell | codespell | 2026-01-09 | 2026-01-10 | @radoering | 1 | 2 | - | - |
+| [prettytable/prettytable](https://github.com/prettytable/prettytable) | [#442](https://github.com/prettytable/prettytable/pull/442) | Fix typos found by codespell | codespell | 2026-01-25 | 2026-01-25 | @hugovk | 1 | 1 | - | - |
+| [raimon49/pip-licenses](https://github.com/raimon49/pip-licenses) | [#259](https://github.com/raimon49/pip-licenses/pull/259) | Fix typo found by codespell | codespell | 2026-01-17 | 2026-01-18 | @reactive-firewall | 1 | 1 | - | ## 🛑 Hold 🤔 there is an issue with the python 3... |
+| [OpenMS/pyopenms_viz](https://github.com/OpenMS/pyopenms_viz) | [#138](https://github.com/OpenMS/pyopenms_viz/pull/138) | Fix typos found by codespell | codespell | 2026-01-16 | 2026-01-17 | @singjc | 2 | 7 | - | - |
+| [kaitai-io/kaitai_struct_formats](https://github.com/kaitai-io/kaitai_struct_formats) | [#726](https://github.com/kaitai-io/kaitai_struct_formats/pull/726) | Fix typos (mostly) found by codespell | codespell | 2026-01-10 | 2026-01-10 | @generalmimon | 3 | 20 | - | @DimitriPapadopoulos: > There are other typos i... |
 | [neurospin/neurospin_to_bids](https://github.com/neurospin/neurospin_to_bids) | [#64](https://github.com/neurospin/neurospin_to_bids/pull/64) | Fix typos found by codespell | codespell | 2025-11-28 | 2025-11-28 | @DimitriPapadopoulos | 1 | 2 | - | - |
 | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx) | [#13992](https://github.com/sphinx-doc/sphinx/pull/13992) | Fix typos found by codespell | codespell | 2025-10-26 | 2025-11-24 | @AA-Turner | 1 | 5 | - | - |
 | [dask/distributed](https://github.com/dask/distributed) | [#9145](https://github.com/dask/distributed/pull/9145) | Fix typos found by codespell | codespell | 2025-11-14 | 2025-11-19 | @jacobtomlinson | 2 | 17 | - | - |

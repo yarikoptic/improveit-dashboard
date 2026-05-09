@@ -1,12 +1,12 @@
 # Insufficient Data Repositories
 
-*Last updated: 2025-12-18 06:23 UTC*
+*Last updated: 2026-05-09 00:54 UTC*
 
 [< Back to Dashboard](../../README.md)
 
 **Category**: Insufficient Data
 **Description**: Not enough PRs to categorize reliably
-**Count**: 336 repositories
+**Count**: 410 repositories
 
 ## Repositories
 
@@ -19,13 +19,18 @@
 | [aeon-toolkit/aeon](https://github.com/aeon-toolkit/aeon) | 1 | 1 | 0 | 100% | 15.2d |
 | [aio-libs/yarl](https://github.com/aio-libs/yarl) | 1 | 0 | 1 | 0% | 244.7d |
 | [airweave-ai/airweave](https://github.com/airweave-ai/airweave) | 1 | 1 | 0 | 100% | 11h |
+| [akamhy/videohash](https://github.com/akamhy/videohash) | 1 | 0 | 0 | - | - |
+| [AkariAsai/OpenScholar](https://github.com/AkariAsai/OpenScholar) | 1 | 0 | 0 | - | - |
 | [AllenNeuralDynamics/aind-ephys-pipeline](https://github.com/AllenNeuralDynamics/aind-ephys-pipeline) | 1 | 1 | 0 | 100% | 0h |
 | [allysonlister/swo](https://github.com/allysonlister/swo) | 1 | 0 | 0 | - | - |
+| [amq92/simple_slurm](https://github.com/amq92/simple_slurm) | 1 | 0 | 0 | - | - |
 | [andrewjahn/AndysBrainBook](https://github.com/andrewjahn/AndysBrainBook) | 1 | 1 | 0 | 100% | - |
 | [anjany/verse](https://github.com/anjany/verse) | 1 | 0 | 0 | - | - |
 | [Annotation-Garden/HEDit](https://github.com/Annotation-Garden/HEDit) | 1 | 1 | 0 | 100% | - |
 | [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) | 1 | 0 | 1 | 0% | 1h |
 | [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | 1 | 0 | 0 | - | - |
+| [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review) | 1 | 0 | 0 | - | - |
+| [apache/incubator-devlake](https://github.com/apache/incubator-devlake) | 1 | 1 | 0 | 100% | 20h |
 | [aplbrain/neuvue-app](https://github.com/aplbrain/neuvue-app) | 1 | 1 | 0 | 100% | 14.0d |
 | [AppDaemon/appdaemon](https://github.com/AppDaemon/appdaemon) | 1 | 0 | 1 | 0% | 122.3d |
 | [apptainer/apptainer-userdocs](https://github.com/apptainer/apptainer-userdocs) | 1 | 0 | 0 | - | - |
@@ -37,11 +42,14 @@
 | [astewartau/dicompare](https://github.com/astewartau/dicompare) | 1 | 1 | 0 | 100% | 46.3d |
 | [athms/learning-from-brains](https://github.com/athms/learning-from-brains) | 1 | 0 | 0 | - | - |
 | [Australian-Epilepsy-Project/protocol_qc](https://github.com/Australian-Epilepsy-Project/protocol_qc) | 1 | 0 | 0 | - | - |
+| [authelia/authelia](https://github.com/authelia/authelia) | 1 | 0 | 1 | 0% | 1h |
 | [auto-pi-lot/autopilot](https://github.com/auto-pi-lot/autopilot) | 1 | 0 | 0 | - | - |
+| [awslabs/open-data-registry](https://github.com/awslabs/open-data-registry) | 1 | 0 | 0 | - | - |
 | [bats-core/bats-assert](https://github.com/bats-core/bats-assert) | 1 | 0 | 1 | 0% | 15.9d |
 | [bats-core/bats-file](https://github.com/bats-core/bats-file) | 1 | 1 | 0 | 100% | 801.3d |
 | [bbfrederick/rapidtide](https://github.com/bbfrederick/rapidtide) | 1 | 1 | 0 | 100% | 0h |
 | [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | 1 | 0 | 0 | - | 23.5d |
+| [BIDS-flux/BIDS-flux-docs](https://github.com/BIDS-flux/BIDS-flux-docs) | 1 | 0 | 0 | - | - |
 | [bids-standard/bids-examples](https://github.com/bids-standard/bids-examples) | 1 | 1 | 0 | 100% | - |
 | [bids-standard/bids-specification](https://github.com/bids-standard/bids-specification) | 1 | 1 | 0 | 100% | - |
 | [bids-standard/bids2nda](https://github.com/bids-standard/bids2nda) | 1 | 1 | 0 | 100% | - |
@@ -52,12 +60,13 @@
 | [brain-score/core](https://github.com/brain-score/core) | 1 | 0 | 0 | - | - |
 | [brain-score/language](https://github.com/brain-score/language) | 1 | 0 | 0 | - | - |
 | [brain-score/vision](https://github.com/brain-score/vision) | 1 | 0 | 0 | - | - |
+| [brainiak/rt-cloud](https://github.com/brainiak/rt-cloud) | 1 | 1 | 0 | 100% | - |
 | [brainlife/amaretti](https://github.com/brainlife/amaretti) | 1 | 0 | 0 | - | - |
 | [brainstem-org/brainstem_python_api_tools](https://github.com/brainstem-org/brainstem_python_api_tools) | 1 | 0 | 0 | - | - |
 | [brainstem-org/brainstem_support](https://github.com/brainstem-org/brainstem_support) | 1 | 1 | 0 | 100% | 23h |
 | [btel/svg_utils](https://github.com/btel/svg_utils) | 1 | 0 | 0 | - | - |
 | [BuildLore/academic-file-converter](https://github.com/BuildLore/academic-file-converter) | 1 | 0 | 1 | 0% | - |
-| [caddyserver/caddy](https://github.com/caddyserver/caddy) | 1 | 0 | 0 | - | 0h |
+| [caddyserver/caddy](https://github.com/caddyserver/caddy) | 1 | 0 | 1 | 0% | 362.0d |
 | [calebweinreb/SNUB](https://github.com/calebweinreb/SNUB) | 1 | 0 | 0 | - | - |
 | [camel-ai/camel](https://github.com/camel-ai/camel) | 1 | 1 | 0 | 100% | - |
 | [camel-ai/owl](https://github.com/camel-ai/owl) | 1 | 1 | 0 | 100% | - |
@@ -67,25 +76,32 @@
 | [celery/billiard](https://github.com/celery/billiard) | 1 | 1 | 0 | 100% | 7.8d |
 | [CenterForOpenScience/gravyvalet](https://github.com/CenterForOpenScience/gravyvalet) | 1 | 0 | 0 | - | - |
 | [certbot/certbot](https://github.com/certbot/certbot) | 1 | 1 | 0 | 100% | 3.3d |
+| [charmoniumQ/PROBE](https://github.com/charmoniumQ/PROBE) | 1 | 1 | 0 | 100% | - |
+| [chef/bento](https://github.com/chef/bento) | 1 | 0 | 0 | - | 1h |
 | [childmindresearch/bids2table](https://github.com/childmindresearch/bids2table) | 1 | 0 | 1 | 0% | 229.3d |
 | [christian-monch/dump-things-server](https://github.com/christian-monch/dump-things-server) | 1 | 1 | 0 | 100% | 13.7d |
 | [cline/cline](https://github.com/cline/cline) | 1 | 1 | 0 | 100% | - |
-| [cmd-ntrf/jupyter-lmod](https://github.com/cmd-ntrf/jupyter-lmod) | 1 | 0 | 0 | - | - |
+| [cmd-ntrf/jupyter-lmod](https://github.com/cmd-ntrf/jupyter-lmod) | 1 | 0 | 1 | 0% | - |
 | [CodeBoarding/CodeBoarding](https://github.com/CodeBoarding/CodeBoarding) | 1 | 1 | 0 | 100% | 5h |
 | [codemeta/codemeta](https://github.com/codemeta/codemeta) | 1 | 1 | 0 | 100% | - |
 | [ColinVDB/BMAT](https://github.com/ColinVDB/BMAT) | 1 | 0 | 0 | - | - |
 | [con/nwb2bids](https://github.com/con/nwb2bids) | 1 | 1 | 0 | 100% | 568.6d |
+| [con/open-brain-consent](https://github.com/con/open-brain-consent) | 1 | 1 | 0 | 100% | - |
 | [con/utils](https://github.com/con/utils) | 1 | 0 | 1 | 0% | - |
+| [conda-forge/miniforge](https://github.com/conda-forge/miniforge) | 1 | 1 | 0 | 100% | - |
 | [conda-incubator/conda-store](https://github.com/conda-incubator/conda-store) | 1 | 0 | 0 | - | - |
 | [containers/bubblewrap](https://github.com/containers/bubblewrap) | 1 | 0 | 0 | - | - |
 | [containers/podman](https://github.com/containers/podman) | 1 | 1 | 0 | 100% | 12h |
 | [copier-org/copier](https://github.com/copier-org/copier) | 1 | 1 | 0 | 100% | 8h |
 | [cortex-lab/allenCCF](https://github.com/cortex-lab/allenCCF) | 1 | 0 | 0 | - | - |
 | [cortex-lab/phy](https://github.com/cortex-lab/phy) | 1 | 1 | 0 | 100% | 2.0d |
+| [cosanlab/py-feat](https://github.com/cosanlab/py-feat) | 1 | 0 | 1 | 0% | 797.1d |
 | [CPernet/metaprivBIDS](https://github.com/CPernet/metaprivBIDS) | 1 | 1 | 0 | 100% | 3.4d |
 | [cruft/cruft](https://github.com/cruft/cruft) | 1 | 0 | 0 | - | - |
 | [cthoyt/pystow](https://github.com/cthoyt/pystow) | 1 | 0 | 1 | 0% | 2h |
 | [Cyan4973/FiniteStateEntropy](https://github.com/Cyan4973/FiniteStateEntropy) | 1 | 1 | 0 | 100% | - |
+| [dagster-io/dagster](https://github.com/dagster-io/dagster) | 1 | 0 | 0 | - | - |
+| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | 1 | 0 | 0 | - | - |
 | [dandi/dandi-hub](https://github.com/dandi/dandi-hub) | 1 | 1 | 0 | 100% | 222.1d |
 | [dandi/dandisets-linkml-status-tools](https://github.com/dandi/dandisets-linkml-status-tools) | 1 | 1 | 0 | 100% | - |
 | [dandi/llm-analysis](https://github.com/dandi/llm-analysis) | 1 | 0 | 0 | - | - |
@@ -94,91 +110,124 @@
 | [dask/distributed](https://github.com/dask/distributed) | 1 | 1 | 0 | 100% | - |
 | [DataBiosphere/dsub](https://github.com/DataBiosphere/dsub) | 1 | 0 | 0 | - | 3h |
 | [datacite/schema](https://github.com/datacite/schema) | 1 | 0 | 1 | 0% | - |
+| [datalab-to/marker](https://github.com/datalab-to/marker) | 1 | 0 | 0 | - | - |
 | [datalad/datalad-core](https://github.com/datalad/datalad-core) | 1 | 0 | 1 | 0% | 14h |
 | [datalad/datalad-fuse](https://github.com/datalad/datalad-fuse) | 1 | 1 | 0 | 100% | - |
 | [datalad/datalad-installer](https://github.com/datalad/datalad-installer) | 1 | 1 | 0 | 100% | - |
 | [datalad/datalad-neuroimaging](https://github.com/datalad/datalad-neuroimaging) | 1 | 1 | 0 | 100% | 0h |
 | [datalad/datalad-registry](https://github.com/datalad/datalad-registry) | 1 | 1 | 0 | 100% | - |
+| [DCAN-Labs/SLURM_wrappers](https://github.com/DCAN-Labs/SLURM_wrappers) | 1 | 0 | 0 | - | - |
 | [DeepLabCut/DeepLabCut](https://github.com/DeepLabCut/DeepLabCut) | 1 | 1 | 0 | 100% | - |
+| [Demmenie/videohash2](https://github.com/Demmenie/videohash2) | 1 | 0 | 0 | - | - |
 | [dh-tech/hugo-bibliography](https://github.com/dh-tech/hugo-bibliography) | 1 | 1 | 0 | 100% | 31.1d |
 | [DigitalBrainProject/home](https://github.com/DigitalBrainProject/home) | 1 | 0 | 0 | - | - |
 | [DigitalSlideArchive/HistomicsTK](https://github.com/DigitalSlideArchive/HistomicsTK) | 1 | 1 | 0 | 100% | 1h |
+| [dipy/dipy](https://github.com/dipy/dipy) | 1 | 0 | 0 | - | - |
 | [DMPRoadmap/roadmap](https://github.com/DMPRoadmap/roadmap) | 1 | 0 | 0 | - | 9.0d |
-| [duckdb/duckdb](https://github.com/duckdb/duckdb) | 1 | 0 | 0 | - | 1.6d |
+| [duckdb/duckdb](https://github.com/duckdb/duckdb) | 1 | 0 | 1 | 0% | 1.6d |
 | [earth-mover/icechunk](https://github.com/earth-mover/icechunk) | 1 | 1 | 0 | 100% | 1h |
 | [EBISPOT/DUO](https://github.com/EBISPOT/DUO) | 1 | 0 | 0 | - | - |
+| [en-wl/wordlist](https://github.com/en-wl/wordlist) | 1 | 0 | 1 | 0% | 8.8d |
 | [ensemble2/ensemble_eeg](https://github.com/ensemble2/ensemble_eeg) | 1 | 1 | 0 | 100% | - |
+| [entireio/cli](https://github.com/entireio/cli) | 1 | 0 | 1 | 0% | 0h |
+| [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | 1 | 0 | 0 | - | - |
 | [facebook/zstd](https://github.com/facebook/zstd) | 1 | 1 | 0 | 100% | - |
+| [facebookincubator/submitit](https://github.com/facebookincubator/submitit) | 1 | 0 | 0 | - | - |
+| [facebookresearch/exca](https://github.com/facebookresearch/exca) | 1 | 1 | 0 | 100% | 16h |
+| [facebookresearch/neuroai](https://github.com/facebookresearch/neuroai) | 1 | 1 | 0 | 100% | 18h |
 | [fail2ban/fail2ban](https://github.com/fail2ban/fail2ban) | 1 | 1 | 0 | 100% | 5.8d |
 | [FAIRplus/the-fair-cookbook](https://github.com/FAIRplus/the-fair-cookbook) | 1 | 0 | 0 | - | - |
 | [FAIRsharing/fairsharing.github.io](https://github.com/FAIRsharing/fairsharing.github.io) | 1 | 1 | 0 | 100% | - |
 | [fangfufu/Linux-Fake-Background-Webcam](https://github.com/fangfufu/Linux-Fake-Background-Webcam) | 1 | 1 | 0 | 100% | - |
 | [FantasticFiasco/action-update-license-year](https://github.com/FantasticFiasco/action-update-license-year) | 1 | 0 | 1 | 0% | 7.9d |
-| [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | 1 | 0 | 0 | - | - |
+| [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | 1 | 0 | 1 | 0% | 1104.8d |
 | [fedbiomed/fedbiomed](https://github.com/fedbiomed/fedbiomed) | 1 | 1 | 0 | 100% | - |
 | [feilong/hyperalignment](https://github.com/feilong/hyperalignment) | 1 | 0 | 1 | 0% | 12h |
 | [fieldtrip/fieldtrip](https://github.com/fieldtrip/fieldtrip) | 1 | 1 | 0 | 100% | - |
 | [flatironinstitute/neurosift](https://github.com/flatironinstitute/neurosift) | 1 | 1 | 0 | 100% | - |
+| [flyteorg/flyte-sdk](https://github.com/flyteorg/flyte-sdk) | 1 | 1 | 0 | 100% | - |
 | [fmralign/fmralign](https://github.com/fmralign/fmralign) | 1 | 1 | 0 | 100% | 20h |
 | [fradav/quarto-revealjs-animate](https://github.com/fradav/quarto-revealjs-animate) | 1 | 0 | 0 | - | - |
 | [FreeRADIUS/freeradius-client](https://github.com/FreeRADIUS/freeradius-client) | 1 | 0 | 0 | - | - |
+| [fsfe/reuse-tool](https://github.com/fsfe/reuse-tool) | 1 | 0 | 1 | 0% | 1.3d |
 | [fsfe/reuse-website](https://github.com/fsfe/reuse-website) | 1 | 0 | 0 | - | - |
 | [fsspec/sshfs](https://github.com/fsspec/sshfs) | 1 | 1 | 0 | 100% | - |
 | [fwupd/fwupd](https://github.com/fwupd/fwupd) | 1 | 0 | 1 | 0% | 0h |
+| [GabrielKP/enc](https://github.com/GabrielKP/enc) | 1 | 0 | 0 | - | - |
+| [gallantlab/cottoncandy](https://github.com/gallantlab/cottoncandy) | 1 | 1 | 0 | 100% | 22.0d |
 | [garciadias/Neuroharmony](https://github.com/garciadias/Neuroharmony) | 1 | 0 | 1 | 0% | - |
-| [GEANT/CAT](https://github.com/GEANT/CAT) | 1 | 1 | 0 | 100% | 8h |
+| [GeiserX/Telegram-Archive](https://github.com/GeiserX/Telegram-Archive) | 1 | 1 | 0 | 100% | - |
 | [GenomicsStandardsConsortium/mixs](https://github.com/GenomicsStandardsConsortium/mixs) | 1 | 0 | 1 | 0% | 207.9d |
 | [geteduroam/android-app](https://github.com/geteduroam/android-app) | 1 | 1 | 0 | 100% | - |
 | [geteduroam/apple-app](https://github.com/geteduroam/apple-app) | 1 | 0 | 0 | - | - |
 | [geteduroam/ionic-app](https://github.com/geteduroam/ionic-app) | 1 | 0 | 1 | 0% | - |
+| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | 1 | 0 | 0 | - | - |
 | [github/copilot-cli](https://github.com/github/copilot-cli) | 1 | 0 | 1 | 0% | 39.7d |
 | [github/git-sizer](https://github.com/github/git-sizer) | 1 | 0 | 1 | 0% | 114.8d |
 | [github/github-mcp-server](https://github.com/github/github-mcp-server) | 1 | 0 | 0 | - | 8.7d |
 | [gnab/remark](https://github.com/gnab/remark) | 1 | 0 | 0 | - | 12h |
 | [gogs/gogs](https://github.com/gogs/gogs) | 1 | 0 | 0 | - | - |
-| [gohugoio/hugo](https://github.com/gohugoio/hugo) | 1 | 0 | 1 | 0% | 0h |
+| [gohugoio/hugo](https://github.com/gohugoio/hugo) | 1 | 0 | 1 | 0% | 16h |
 | [google-deepmind/alphafold](https://github.com/google-deepmind/alphafold) | 1 | 0 | 1 | 0% | 576.8d |
 | [google/snappy](https://github.com/google/snappy) | 1 | 0 | 0 | - | - |
 | [google/spatial-media](https://github.com/google/spatial-media) | 1 | 0 | 0 | - | - |
 | [google/styleguide](https://github.com/google/styleguide) | 1 | 0 | 0 | - | 0h |
 | [google/tensorstore](https://github.com/google/tensorstore) | 1 | 1 | 0 | 100% | 7.9d |
+| [grobidOrg/grobid](https://github.com/grobidOrg/grobid) | 1 | 1 | 0 | 100% | 5.2d |
 | [GSA/data.gov](https://github.com/GSA/data.gov) | 1 | 0 | 1 | 0% | 156.1d |
 | [GSA/datagov-11ty](https://github.com/GSA/datagov-11ty) | 1 | 0 | 1 | 0% | 162.0d |
 | [guildai/guildai](https://github.com/guildai/guildai) | 1 | 0 | 0 | - | - |
+| [h2non/jsonpath-ng](https://github.com/h2non/jsonpath-ng) | 1 | 0 | 0 | - | - |
 | [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | 1 | 1 | 0 | 100% | 354.6d |
 | [HarmonizedMRI/PulCeq](https://github.com/HarmonizedMRI/PulCeq) | 1 | 1 | 0 | 100% | 829.0d |
+| [harvard-edge/cs249r_book](https://github.com/harvard-edge/cs249r_book) | 1 | 1 | 0 | 100% | 28.9d |
 | [hed-standard/CTagger](https://github.com/hed-standard/CTagger) | 1 | 0 | 1 | 0% | 12.3d |
 | [HIP-infrastructure/Bidsificator](https://github.com/HIP-infrastructure/Bidsificator) | 1 | 1 | 0 | 100% | 61.9d |
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 1 | 1 | 0 | 100% | - |
 | [holtzy/The-Python-Graph-Gallery](https://github.com/holtzy/The-Python-Graph-Gallery) | 1 | 0 | 0 | - | 2.3d |
 | [hsolbrig/PyShEx](https://github.com/hsolbrig/PyShEx) | 1 | 0 | 0 | - | - |
 | [IHTSDO/sct-browser-frontend](https://github.com/IHTSDO/sct-browser-frontend) | 1 | 0 | 0 | - | - |
+| [INCATools/ontology-access-kit](https://github.com/INCATools/ontology-access-kit) | 1 | 1 | 0 | 100% | 13.6d |
 | [incf-nidash/PyNIDM](https://github.com/incf-nidash/PyNIDM) | 1 | 1 | 0 | 100% | - |
 | [INTERSECT-SDK/python-sdk](https://github.com/INTERSECT-SDK/python-sdk) | 1 | 1 | 0 | 100% | 2h |
-| [inveniosoftware/invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) | 1 | 0 | 1 | 0% | 55.1d |
+| [inveniosoftware/invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) | 1 | 0 | 1 | 0% | - |
 | [inyutin/aiohttp_retry](https://github.com/inyutin/aiohttp_retry) | 1 | 1 | 0 | 100% | 627.1d |
-| [ionelmc/pytest-benchmark](https://github.com/ionelmc/pytest-benchmark) | 1 | 0 | 0 | - | - |
-| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | 1 | 0 | 1 | 0% | 0h |
+| [ionelmc/pytest-benchmark](https://github.com/ionelmc/pytest-benchmark) | 1 | 0 | 0 | - | 808.0d |
+| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | 1 | 0 | 1 | 0% | 4.7d |
 | [jannisborn/paperscraper](https://github.com/jannisborn/paperscraper) | 1 | 1 | 0 | 100% | - |
+| [jimmc414/Kosmos](https://github.com/jimmc414/Kosmos) | 1 | 0 | 1 | 0% | - |
 | [joblib/joblib](https://github.com/joblib/joblib) | 1 | 1 | 0 | 100% | 47.7d |
 | [jonbmartin/pulpy](https://github.com/jonbmartin/pulpy) | 1 | 0 | 0 | - | - |
+| [jpanther/congo](https://github.com/jpanther/congo) | 1 | 0 | 0 | - | - |
 | [jquast/blessed](https://github.com/jquast/blessed) | 1 | 0 | 1 | 0% | 10h |
 | [jquery/jquery](https://github.com/jquery/jquery) | 1 | 1 | 0 | 100% | 215.1d |
 | [jshttp/mime-db](https://github.com/jshttp/mime-db) | 1 | 1 | 0 | 100% | 685.3d |
+| [K-Dense-AI/claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer) | 1 | 0 | 0 | - | - |
+| [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) | 1 | 0 | 0 | - | - |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 1 | 0 | 0 | - | - |
+| [kaitai-io/kaitai_struct_formats](https://github.com/kaitai-io/kaitai_struct_formats) | 1 | 1 | 0 | 100% | 4h |
 | [keepassxreboot/keepassxc](https://github.com/keepassxreboot/keepassxc) | 1 | 0 | 1 | 0% | - |
-| [kestra-io/kestra](https://github.com/kestra-io/kestra) | 1 | 0 | 0 | - | 21h |
+| [kestra-io/kestra](https://github.com/kestra-io/kestra) | 1 | 1 | 0 | 100% | 21h |
+| [knorrie/python-btrfs](https://github.com/knorrie/python-btrfs) | 1 | 0 | 1 | 0% | 10.1d |
 | [knuedd/datalad-slurm](https://github.com/knuedd/datalad-slurm) | 1 | 1 | 0 | 100% | 15.8d |
 | [koumoul-dev/vuetify-jsonschema-form](https://github.com/koumoul-dev/vuetify-jsonschema-form) | 1 | 0 | 1 | 0% | - |
 | [Kron4ek/Conty](https://github.com/Kron4ek/Conty) | 1 | 1 | 0 | 100% | - |
+| [kucherenko/jscpd](https://github.com/kucherenko/jscpd) | 1 | 0 | 0 | - | - |
 | [lamyj/dicomifier](https://github.com/lamyj/dicomifier) | 1 | 0 | 0 | - | - |
+| [lark-parser/lark](https://github.com/lark-parser/lark) | 1 | 0 | 0 | - | 768.0d |
+| [Leaflet/Leaflet](https://github.com/Leaflet/Leaflet) | 1 | 0 | 0 | - | - |
 | [leil-io/saunafs](https://github.com/leil-io/saunafs) | 1 | 1 | 0 | 100% | 3.9d |
-| [Lestropie/IP-freely](https://github.com/Lestropie/IP-freely) | 1 | 0 | 0 | - | 79.0d |
+| [Lestropie/IP-freely](https://github.com/Lestropie/IP-freely) | 1 | 1 | 0 | 100% | 79.0d |
+| [libfuse/pyfuse3](https://github.com/libfuse/pyfuse3) | 1 | 1 | 0 | 100% | 5h |
 | [libgit2/pygit2](https://github.com/libgit2/pygit2) | 1 | 1 | 0 | 100% | - |
 | [litestar-org/litestar](https://github.com/litestar-org/litestar) | 1 | 0 | 1 | 0% | 2h |
+| [lobennett/neuro_workflow](https://github.com/lobennett/neuro_workflow) | 1 | 1 | 0 | 100% | - |
 | [lotus-data/lotus](https://github.com/lotus-data/lotus) | 1 | 0 | 0 | - | - |
 | [lumina-ai-inc/chunkr](https://github.com/lumina-ai-inc/chunkr) | 1 | 1 | 0 | 100% | - |
 | [Macquarie-MEG-Research/Biscuit](https://github.com/Macquarie-MEG-Research/Biscuit) | 1 | 0 | 0 | - | - |
 | [magland/neurosift-mcps](https://github.com/magland/neurosift-mcps) | 1 | 1 | 0 | 100% | - |
 | [magland/qp](https://github.com/magland/qp) | 1 | 1 | 0 | 100% | - |
+| [magland/remfile](https://github.com/magland/remfile) | 1 | 0 | 0 | - | - |
 | [makeplane/plane](https://github.com/makeplane/plane) | 1 | 1 | 0 | 100% | 0h |
 | [mapping-commons/sssom](https://github.com/mapping-commons/sssom) | 1 | 1 | 0 | 100% | 29.3d |
 | [marmotgraph/marmotgraph-core](https://github.com/marmotgraph/marmotgraph-core) | 1 | 0 | 0 | - | - |
@@ -186,6 +235,7 @@
 | [mathworks/MATLAB-support-for-Zarr-files](https://github.com/mathworks/MATLAB-support-for-Zarr-files) | 1 | 1 | 0 | 100% | 18h |
 | [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | 1 | 0 | 1 | 0% | 20h |
 | [MEDFormat/MEDC](https://github.com/MEDFormat/MEDC) | 1 | 0 | 0 | - | - |
+| [mercure-imaging/mercure](https://github.com/mercure-imaging/mercure) | 1 | 1 | 0 | 100% | 6.8d |
 | [Mergifyio/daiquiri](https://github.com/Mergifyio/daiquiri) | 1 | 0 | 1 | 0% | - |
 | [mermaid-js/mermaid](https://github.com/mermaid-js/mermaid) | 1 | 0 | 0 | - | - |
 | [metadatacenter/cedar-artifact-library](https://github.com/metadatacenter/cedar-artifact-library) | 1 | 0 | 0 | - | - |
@@ -197,6 +247,7 @@
 | [moderncv/moderncv](https://github.com/moderncv/moderncv) | 1 | 1 | 0 | 100% | - |
 | [monarch-initiative/ontogpt](https://github.com/monarch-initiative/ontogpt) | 1 | 1 | 0 | 100% | 5h |
 | [MouseLand/facemap](https://github.com/MouseLand/facemap) | 1 | 0 | 0 | - | - |
+| [MRI-Lab-Graz/prism-studio](https://github.com/MRI-Lab-Graz/prism-studio) | 1 | 0 | 0 | - | - |
 | [mrirecon/bart](https://github.com/mrirecon/bart) | 1 | 1 | 0 | 100% | - |
 | [mritogether/mritogether.github.io](https://github.com/mritogether/mritogether.github.io) | 1 | 1 | 0 | 100% | - |
 | [mrlt8/docker-wyze-bridge](https://github.com/mrlt8/docker-wyze-bridge) | 1 | 0 | 0 | - | - |
@@ -209,18 +260,21 @@
 | [nektos/act](https://github.com/nektos/act) | 1 | 0 | 0 | - | - |
 | [NERSC/podman-hpc](https://github.com/NERSC/podman-hpc) | 1 | 0 | 1 | 0% | 38.4d |
 | [netinvent/command_runner](https://github.com/netinvent/command_runner) | 1 | 1 | 0 | 100% | 15h |
+| [neurobagel/bagel-cli](https://github.com/neurobagel/bagel-cli) | 1 | 1 | 0 | 100% | 19.9d |
 | [neurodatascience/NeuroCI](https://github.com/neurodatascience/NeuroCI) | 1 | 0 | 0 | - | - |
 | [neuroinformatics-unit/movement](https://github.com/neuroinformatics-unit/movement) | 1 | 1 | 0 | 100% | 5h |
 | [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | 1 | 0 | 1 | 0% | 1.8d |
 | [NeuromatchAcademy/course-content](https://github.com/NeuromatchAcademy/course-content) | 1 | 1 | 0 | 100% | 12.6d |
 | [NeuroML/Documentation](https://github.com/NeuroML/Documentation) | 1 | 0 | 0 | - | 7.4d |
 | [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | 1 | 0 | 0 | - | - |
+| [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | 1 | 0 | 0 | - | 14.0d |
 | [neurospin/neurospin_to_bids](https://github.com/neurospin/neurospin_to_bids) | 1 | 1 | 0 | 100% | - |
 | [neurostuff/neurostore](https://github.com/neurostuff/neurostore) | 1 | 1 | 0 | 100% | - |
 | [niivue/brain2print](https://github.com/niivue/brain2print) | 1 | 0 | 0 | - | - |
 | [niivue/ipyniivue](https://github.com/niivue/ipyniivue) | 1 | 0 | 1 | 0% | 60.9d |
 | [niivue/niivue](https://github.com/niivue/niivue) | 1 | 1 | 0 | 100% | - |
 | [niivue/niivue-vscode](https://github.com/niivue/niivue-vscode) | 1 | 1 | 0 | 100% | 19h |
+| [nilearn/poia](https://github.com/nilearn/poia) | 1 | 0 | 1 | 0% | - |
 | [nipreps/nipreps.github.io](https://github.com/nipreps/nipreps.github.io) | 1 | 1 | 0 | 100% | - |
 | [notroj/cadaver](https://github.com/notroj/cadaver) | 1 | 1 | 0 | 100% | 81.8d |
 | [oconnor663/duct.py](https://github.com/oconnor663/duct.py) | 1 | 0 | 0 | - | - |
@@ -228,6 +282,7 @@
 | [OHBA-analysis/osl-dynamics](https://github.com/OHBA-analysis/osl-dynamics) | 1 | 1 | 0 | 100% | 1.0d |
 | [ohbm/hackathon2025](https://github.com/ohbm/hackathon2025) | 1 | 1 | 0 | 100% | 0h |
 | [ohbm/ossig](https://github.com/ohbm/ossig) | 1 | 1 | 0 | 100% | 77.1d |
+| [Old-Man-Programmer/tree](https://github.com/Old-Man-Programmer/tree) | 1 | 0 | 1 | 0% | 63.4d |
 | [olifolkerd/tabulator](https://github.com/olifolkerd/tabulator) | 1 | 0 | 0 | - | - |
 | [ome/ome-model](https://github.com/ome/ome-model) | 1 | 1 | 0 | 100% | 2.9d |
 | [open-ephys-plugins/nwb-format](https://github.com/open-ephys-plugins/nwb-format) | 1 | 0 | 0 | - | - |
@@ -235,7 +290,9 @@
 | [open-webui/docs](https://github.com/open-webui/docs) | 1 | 0 | 1 | 0% | - |
 | [openai/codex](https://github.com/openai/codex) | 1 | 1 | 0 | 100% | 1.9d |
 | [opencitations/website](https://github.com/opencitations/website) | 1 | 0 | 0 | - | - |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | 1 | 0 | 1 | 0% | 6.4d |
 | [openMetadataInitiative/bids2openminds](https://github.com/openMetadataInitiative/bids2openminds) | 1 | 1 | 0 | 100% | - |
+| [OpenMS/pyopenms_viz](https://github.com/OpenMS/pyopenms_viz) | 1 | 1 | 0 | 100% | - |
 | [openneuropet/outreach](https://github.com/openneuropet/outreach) | 1 | 1 | 0 | 100% | - |
 | [openslide/openslide](https://github.com/openslide/openslide) | 1 | 1 | 0 | 100% | 0h |
 | [OpenSPG/KAG](https://github.com/OpenSPG/KAG) | 1 | 0 | 1 | 0% | - |
@@ -248,10 +305,13 @@
 | [ourresearch/openalex-guts](https://github.com/ourresearch/openalex-guts) | 1 | 0 | 0 | - | - |
 | [p2p-ld/numpydantic](https://github.com/p2p-ld/numpydantic) | 1 | 0 | 0 | - | - |
 | [P403n1x87/austin](https://github.com/P403n1x87/austin) | 1 | 0 | 1 | 0% | 15h |
+| [Pagefind/pagefind](https://github.com/Pagefind/pagefind) | 1 | 0 | 1 | 0% | 32.4d |
+| [pangaea-data-publisher/fuji](https://github.com/pangaea-data-publisher/fuji) | 1 | 0 | 0 | - | - |
 | [Panopto/panopto-api-python-examples](https://github.com/Panopto/panopto-api-python-examples) | 1 | 0 | 0 | - | - |
 | [paquiteau/patch-denoising](https://github.com/paquiteau/patch-denoising) | 1 | 1 | 0 | 100% | 5h |
 | [peak/s5cmd](https://github.com/peak/s5cmd) | 1 | 0 | 0 | - | - |
 | [PennLINC/babs](https://github.com/PennLINC/babs) | 1 | 1 | 0 | 100% | - |
+| [Persistent-Hardware-Descriptor-Project/imaging-phd](https://github.com/Persistent-Hardware-Descriptor-Project/imaging-phd) | 1 | 0 | 0 | - | - |
 | [photoprism/photoprism](https://github.com/photoprism/photoprism) | 1 | 1 | 0 | 100% | 0h |
 | [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | 1 | 0 | 0 | - | - |
 | [physiopy/physiopy.github.io](https://github.com/physiopy/physiopy.github.io) | 1 | 0 | 0 | - | - |
@@ -260,44 +320,49 @@
 | [PLAYG0N/mkdocs-panzoom](https://github.com/PLAYG0N/mkdocs-panzoom) | 1 | 1 | 0 | 100% | 3h |
 | [plenoptic-org/plenoptic](https://github.com/plenoptic-org/plenoptic) | 1 | 1 | 0 | 100% | 1h |
 | [poldrack/BetterCodeBetterScience](https://github.com/poldrack/BetterCodeBetterScience) | 1 | 1 | 0 | 100% | 0h |
+| [poldracklab/pydeface](https://github.com/poldracklab/pydeface) | 1 | 1 | 0 | 100% | - |
 | [PolusAI/microjson](https://github.com/PolusAI/microjson) | 1 | 1 | 0 | 100% | - |
-| [potpie-ai/potpie](https://github.com/potpie-ai/potpie) | 1 | 0 | 0 | - | - |
+| [potpie-ai/potpie](https://github.com/potpie-ai/potpie) | 1 | 0 | 1 | 0% | 276.5d |
+| [prettytable/prettytable](https://github.com/prettytable/prettytable) | 1 | 1 | 0 | 100% | - |
 | [Proryanator/encoder-benchmark](https://github.com/Proryanator/encoder-benchmark) | 1 | 0 | 0 | - | 83.5d |
 | [psadil/qcapp](https://github.com/psadil/qcapp) | 1 | 1 | 0 | 100% | 23h |
+| [psf/requests](https://github.com/psf/requests) | 1 | 0 | 0 | - | - |
 | [psych-ds/psychds-validator](https://github.com/psych-ds/psychds-validator) | 1 | 1 | 0 | 100% | - |
 | [psychoinformatics-de/rdm-course](https://github.com/psychoinformatics-de/rdm-course) | 1 | 1 | 0 | 100% | - |
 | [psychoinformatics-de/shacl-vue](https://github.com/psychoinformatics-de/shacl-vue) | 1 | 1 | 0 | 100% | 1.7d |
 | [pulse2percept/pulse2percept](https://github.com/pulse2percept/pulse2percept) | 1 | 0 | 0 | - | 36.5d |
 | [pulseq/pulseq](https://github.com/pulseq/pulseq) | 1 | 0 | 0 | - | - |
+| [PyAV-Org/PyAV](https://github.com/PyAV-Org/PyAV) | 1 | 0 | 1 | 0% | 4h |
 | [PyCQA/bandit](https://github.com/PyCQA/bandit) | 1 | 0 | 0 | - | 92.0d |
 | [pydantic/logfire](https://github.com/pydantic/logfire) | 1 | 1 | 0 | 100% | - |
 | [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) | 1 | 1 | 0 | 100% | - |
 | [pydata/xarray](https://github.com/pydata/xarray) | 1 | 1 | 0 | 100% | 0h |
 | [pydicom/pydicom](https://github.com/pydicom/pydicom) | 1 | 0 | 1 | 0% | 6h |
 | [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | 1 | 0 | 0 | - | - |
-| [pyiron/pysqa](https://github.com/pyiron/pysqa) | 1 | 0 | 0 | - | - |
+| [pyinvoke/invoke](https://github.com/pyinvoke/invoke) | 1 | 0 | 0 | - | - |
+| [pyiron/pysqa](https://github.com/pyiron/pysqa) | 1 | 0 | 1 | 0% | - |
 | [pynapple-org/pynapple](https://github.com/pynapple-org/pynapple) | 1 | 0 | 1 | 0% | 116.0d |
 | [pyout/pyout](https://github.com/pyout/pyout) | 1 | 1 | 0 | 100% | - |
 | [pypa/abi3audit](https://github.com/pypa/abi3audit) | 1 | 1 | 0 | 100% | - |
 | [pypa/packaging](https://github.com/pypa/packaging) | 1 | 1 | 0 | 100% | 1.5d |
 | [pypa/setuptools-scm](https://github.com/pypa/setuptools-scm) | 1 | 0 | 1 | 0% | 2h |
 | [pyparsing/pyparsing](https://github.com/pyparsing/pyparsing) | 1 | 0 | 0 | - | 11h |
-| [python-poetry/poetry](https://github.com/python-poetry/poetry) | 1 | 1 | 0 | 100% | - |
 | [python/peps](https://github.com/python/peps) | 1 | 1 | 0 | 100% | 6h |
 | [quarto-dev/quarto](https://github.com/quarto-dev/quarto) | 1 | 0 | 0 | - | 1h |
+| [raimon49/pip-licenses](https://github.com/raimon49/pip-licenses) | 1 | 1 | 0 | 100% | 1h |
 | [Rayzeq/quick-settings-audio-panel](https://github.com/Rayzeq/quick-settings-audio-panel) | 1 | 1 | 0 | 100% | - |
-| [rclone/rclone](https://github.com/rclone/rclone) | 1 | 1 | 0 | 100% | - |
-| [readthedocs/common](https://github.com/readthedocs/common) | 1 | 0 | 0 | - | - |
 | [readthedocs/readthedocs.org](https://github.com/readthedocs/readthedocs.org) | 1 | 0 | 0 | - | 20h |
-| [ReproNim/ReproInventory](https://github.com/ReproNim/ReproInventory) | 1 | 1 | 0 | 100% | - |
 | [ReproNim/segstats_jsonld](https://github.com/ReproNim/segstats_jsonld) | 1 | 0 | 0 | - | - |
 | [ReproNim/SumarizeFmriprep](https://github.com/ReproNim/SumarizeFmriprep) | 1 | 1 | 0 | 100% | - |
-| [robert-mcdermott/ai-knowledge-graph](https://github.com/robert-mcdermott/ai-knowledge-graph) | 1 | 0 | 0 | - | - |
+| [robert-mcdermott/ai-knowledge-graph](https://github.com/robert-mcdermott/ai-knowledge-graph) | 1 | 0 | 1 | 0% | - |
 | [robert-mcdermott/uve](https://github.com/robert-mcdermott/uve) | 1 | 0 | 1 | 0% | - |
+| [ruc-datalab/DeepAnalyze](https://github.com/ruc-datalab/DeepAnalyze) | 1 | 0 | 0 | - | - |
 | [rustyrussell/ccan](https://github.com/rustyrussell/ccan) | 1 | 0 | 0 | - | - |
 | [s-ccs/LSLAutoBIDS](https://github.com/s-ccs/LSLAutoBIDS) | 1 | 1 | 0 | 100% | 18.2d |
+| [sarugaku/resolvelib](https://github.com/sarugaku/resolvelib) | 1 | 1 | 0 | 100% | - |
 | [saulpw/visidata](https://github.com/saulpw/visidata) | 1 | 1 | 0 | 100% | - |
 | [sccn/labstreaminglayer](https://github.com/sccn/labstreaminglayer) | 1 | 1 | 0 | 100% | - |
+| [schappim/macOCR](https://github.com/schappim/macOCR) | 1 | 0 | 1 | 0% | 637.6d |
 | [schej-it/timeful.app](https://github.com/schej-it/timeful.app) | 1 | 0 | 0 | - | - |
 | [scholarly-python-package/scholarly](https://github.com/scholarly-python-package/scholarly) | 1 | 1 | 0 | 100% | 181.1d |
 | [schuetzgroup/fret-analysis](https://github.com/schuetzgroup/fret-analysis) | 1 | 0 | 0 | - | 7h |
@@ -314,24 +379,30 @@
 | [singularityhub/singularity-hpc](https://github.com/singularityhub/singularity-hpc) | 1 | 0 | 0 | - | 492.2d |
 | [skrub-data/skrub](https://github.com/skrub-data/skrub) | 1 | 1 | 0 | 100% | 2.4d |
 | [skupperproject/skupper](https://github.com/skupperproject/skupper) | 1 | 1 | 0 | 100% | 1h |
+| [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | 1 | 0 | 0 | - | - |
+| [sourcebot-dev/sourcebot](https://github.com/sourcebot-dev/sourcebot) | 1 | 0 | 0 | - | - |
+| [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | 1 | 0 | 0 | - | - |
 | [spatialaudio/python-sounddevice](https://github.com/spatialaudio/python-sounddevice) | 1 | 0 | 1 | 0% | 9.9d |
 | [spatialtopology/spacetop-prep](https://github.com/spatialtopology/spacetop-prep) | 1 | 0 | 0 | - | - |
 | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx) | 1 | 1 | 0 | 100% | - |
 | [SpikeInterface/probeinterface](https://github.com/SpikeInterface/probeinterface) | 1 | 1 | 0 | 100% | 2.8d |
-| [SpikeInterface/spikeinterface-gui](https://github.com/SpikeInterface/spikeinterface-gui) | 1 | 0 | 0 | - | - |
+| [SpikeInterface/spikeinterface-gui](https://github.com/SpikeInterface/spikeinterface-gui) | 1 | 1 | 0 | 100% | 102.0d |
 | [spoonsso/dannce](https://github.com/spoonsso/dannce) | 1 | 0 | 0 | - | - |
+| [stamped-principles/stamped-examples](https://github.com/stamped-principles/stamped-examples) | 1 | 1 | 0 | 100% | - |
 | [stanford-oval/storm](https://github.com/stanford-oval/storm) | 1 | 0 | 0 | - | - |
-| [stratusadv/dandy](https://github.com/stratusadv/dandy) | 1 | 0 | 0 | - | - |
+| [stratusadv/dandy](https://github.com/stratusadv/dandy) | 1 | 1 | 0 | 100% | 81.7d |
 | [stuchalk/scidata](https://github.com/stuchalk/scidata) | 1 | 1 | 0 | 100% | - |
 | [sullo/nikto](https://github.com/sullo/nikto) | 1 | 1 | 0 | 100% | - |
 | [talmolab/sleap](https://github.com/talmolab/sleap) | 1 | 0 | 1 | 0% | - |
 | [TimeleapLabs/ghostfs](https://github.com/TimeleapLabs/ghostfs) | 1 | 0 | 0 | - | - |
+| [tsmdt/whisply](https://github.com/tsmdt/whisply) | 1 | 0 | 0 | - | - |
 | [turbot/steampipe](https://github.com/turbot/steampipe) | 1 | 0 | 1 | 0% | 0h |
-| [UNFmontreal/forbids](https://github.com/UNFmontreal/forbids) | 1 | 0 | 0 | - | - |
+| [UNFmontreal/forbids](https://github.com/UNFmontreal/forbids) | 1 | 1 | 0 | 100% | - |
 | [urllib3/urllib3](https://github.com/urllib3/urllib3) | 1 | 0 | 1 | 0% | 17.2d |
 | [v4l2loopback/v4l2loopback](https://github.com/v4l2loopback/v4l2loopback) | 1 | 0 | 0 | - | - |
 | [venkateshhs/eCRF](https://github.com/venkateshhs/eCRF) | 1 | 1 | 0 | 100% | - |
 | [VikOlliver/Quirkey](https://github.com/VikOlliver/Quirkey) | 1 | 0 | 0 | - | - |
+| [vitejs/vite](https://github.com/vitejs/vite) | 1 | 0 | 0 | - | - |
 | [vocalpy/vocalpy](https://github.com/vocalpy/vocalpy) | 1 | 0 | 1 | 0% | - |
 | [vsoch/oci-python](https://github.com/vsoch/oci-python) | 1 | 1 | 0 | 100% | - |
 | [WheelockLab/NetworkLevelAnalysis](https://github.com/WheelockLab/NetworkLevelAnalysis) | 1 | 0 | 0 | - | - |
@@ -339,70 +410,73 @@
 | [whitphx/stlite](https://github.com/whitphx/stlite) | 1 | 1 | 0 | 100% | - |
 | [WireGuard/wgctrl-go](https://github.com/WireGuard/wgctrl-go) | 1 | 1 | 0 | 100% | - |
 | [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) | 1 | 1 | 0 | 100% | 1.7d |
+| [xyflow/xyflow](https://github.com/xyflow/xyflow) | 1 | 1 | 0 | 100% | 17.0d |
 | [yarikoptic-gitmate/aspera-api-examples](https://github.com/yarikoptic-gitmate/aspera-api-examples) | 1 | 0 | 0 | - | - |
 | [yarikoptic/davfs2](https://github.com/yarikoptic/davfs2) | 1 | 0 | 0 | - | - |
 | [yarikoptic/ondemand](https://github.com/yarikoptic/ondemand) | 1 | 0 | 0 | - | - |
+| [yte-template-engine/yte](https://github.com/yte-template-engine/yte) | 1 | 0 | 0 | - | - |
 | [YttriLab/B-SOID](https://github.com/YttriLab/B-SOID) | 1 | 0 | 0 | - | - |
 | [zarr-developers/numcodecs](https://github.com/zarr-developers/numcodecs) | 1 | 1 | 0 | 100% | 5.4d |
 | [zauberzeug/nicegui](https://github.com/zauberzeug/nicegui) | 1 | 1 | 0 | 100% | 0h |
 | [zenodo/zenodo-rdm](https://github.com/zenodo/zenodo-rdm) | 1 | 0 | 0 | - | - |
 | [zotero/zotero-connectors](https://github.com/zotero/zotero-connectors) | 1 | 1 | 0 | 100% | 11h |
 | [zotero/zotero-google-docs-integration](https://github.com/zotero/zotero-google-docs-integration) | 1 | 1 | 0 | 100% | - |
+| [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt) | 1 | 0 | 0 | - | 105.9d |
 
 ## PRs in These Repositories
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
-| [Annotation-Garden/HEDit](https://github.com/Annotation-Garden/HEDit) | [#51](https://github.com/Annotation-Garden/HEDit/pull/51) | merged | codespell | - | - |
-| [kestra-io/kestra](https://github.com/kestra-io/kestra) | [#12912](https://github.com/kestra-io/kestra/pull/12912) | open | codespell | 21h | Hey @loicmathieu, can you check if th... |
-| [jquast/blessed](https://github.com/jquast/blessed) | [#278](https://github.com/jquast/blessed/pull/278) | closed | codespell | 10h | followed up by #293 and merged, thanks |
+| [stamped-principles/stamped-examples](https://github.com/stamped-principles/stamped-examples) | [#26](https://github.com/stamped-principles/stamped-examples/pull/26) | merged | codespell | - | - |
+| [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | open | codespell | - | - |
+| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | open | codespell | - | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | open | codespell | - | - |
-| [aristidb/aws](https://github.com/aristidb/aws) | [#291](https://github.com/aristidb/aws/pull/291) | open | codespell | 371.8d | FWIW, I have cherry-picked the two co... |
-| [HarmonizedMRI/PulCeq](https://github.com/HarmonizedMRI/PulCeq) | [#7](https://github.com/HarmonizedMRI/PulCeq/pull/7) | merged | codespell | 829.0d | Excellent, thanks! |
-| [FreeRADIUS/freeradius-client](https://github.com/FreeRADIUS/freeradius-client) | [#121](https://github.com/FreeRADIUS/freeradius-client/pull/121) | open | codespell | - | - |
-| [lamyj/dicomifier](https://github.com/lamyj/dicomifier) | [#58](https://github.com/lamyj/dicomifier/pull/58) | open | codespell | - | - |
-| [gogs/gogs](https://github.com/gogs/gogs) | [#7514](https://github.com/gogs/gogs/pull/7514) | open | codespell | - | - |
-| [mrlt8/docker-wyze-bridge](https://github.com/mrlt8/docker-wyze-bridge) | [#1515](https://github.com/mrlt8/docker-wyze-bridge/pull/1515) | open | codespell | - | - |
-| [openssbd/bdz](https://github.com/openssbd/bdz) | [#4](https://github.com/openssbd/bdz/pull/4) | open | codespell | - | - |
-| [PyCQA/bandit](https://github.com/PyCQA/bandit) | [#1243](https://github.com/PyCQA/bandit/pull/1243) | open | codespell | 92.0d | Thanks for the contribution, but I do... |
-| [spoonsso/dannce](https://github.com/spoonsso/dannce) | [#158](https://github.com/spoonsso/dannce/pull/158) | open | codespell | - | - |
-| [IHTSDO/sct-browser-frontend](https://github.com/IHTSDO/sct-browser-frontend) | [#89](https://github.com/IHTSDO/sct-browser-frontend/pull/89) | open | codespell | - | - |
-| [mritogether/mritogether.github.io](https://github.com/mritogether/mritogether.github.io) | [#99](https://github.com/mritogether/mritogether.github.io/pull/99) | merged | codespell | - | - |
-| [github/github-mcp-server](https://github.com/github/github-mcp-server) | [#1072](https://github.com/github/github-mcp-server/pull/1072) | open | codespell | 8.7d | في خميس، 18 سبتمبر، 2025 في 1:59 م، ك... |
-| [Lestropie/IP-freely](https://github.com/Lestropie/IP-freely) | [#12](https://github.com/Lestropie/IP-freely/pull/12) | open | codespell | 79.0d | Do you want to resolve the conflicts ... |
-| [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | [#7](https://github.com/BIC-MNI/mni-7t-dicom-to-bids/pull/7) | open | codespell | 23.5d | Hi, thank you for your PR. Sorry for ... |
-| [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | [#1](https://github.com/neurolabusc/niivue-binder/pull/1) | closed | codespell | 1.8d | @yarikoptic added your suggestion aft... |
-| [neurospin/neurospin_to_bids](https://github.com/neurospin/neurospin_to_bids) | [#64](https://github.com/neurospin/neurospin_to_bids/pull/64) | merged | codespell | - | - |
-| [whitphx/stlite](https://github.com/whitphx/stlite) | [#1726](https://github.com/whitphx/stlite/pull/1726) | merged | codespell | - | - |
-| [zotero/zotero-google-docs-integration](https://github.com/zotero/zotero-google-docs-integration) | [#86](https://github.com/zotero/zotero-google-docs-integration/pull/86) | merged | codespell | - | - |
-| [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx) | [#13992](https://github.com/sphinx-doc/sphinx/pull/13992) | merged | codespell | - | - |
-| [SpikeInterface/spikeinterface-gui](https://github.com/SpikeInterface/spikeinterface-gui) | [#215](https://github.com/SpikeInterface/spikeinterface-gui/pull/215) | open | codespell | - | - |
-| [simplefin/simplefin.github.com](https://github.com/simplefin/simplefin.github.com) | [#30](https://github.com/simplefin/simplefin.github.com/pull/30) | open | codespell | - | - |
-| [actualbudget/actual](https://github.com/actualbudget/actual) | [#6237](https://github.com/actualbudget/actual/pull/6237) | merged | codespell | - | - |
-| [duckdb/duckdb](https://github.com/duckdb/duckdb) | [#19817](https://github.com/duckdb/duckdb/pull/19817) | open | codespell | 1.6d | Yes, looks good to me |
-| [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | [#15437](https://github.com/iterate-ch/cyberduck/pull/15437) | closed | codespell | 0h | > is it the `swagger/` directories? >... |
-| [stratusadv/dandy](https://github.com/stratusadv/dandy) | [#75](https://github.com/stratusadv/dandy/pull/75) | open | codespell | - | - |
-| [dask/distributed](https://github.com/dask/distributed) | [#9145](https://github.com/dask/distributed/pull/9145) | merged | codespell | - | - |
-| [brain-bican/bkbit](https://github.com/brain-bican/bkbit) | [#71](https://github.com/brain-bican/bkbit/pull/71) | merged | codespell | - | - |
-| [Mergifyio/daiquiri](https://github.com/Mergifyio/daiquiri) | [#82](https://github.com/Mergifyio/daiquiri/pull/82) | closed | codespell | - | - |
-| [MouseLand/facemap](https://github.com/MouseLand/facemap) | [#170](https://github.com/MouseLand/facemap/pull/170) | open | codespell | - | - |
-| [astewartau/dicompare](https://github.com/astewartau/dicompare) | [#17](https://github.com/astewartau/dicompare/pull/17) | merged | codespell | 46.3d | Thanks for that! |
-| [zauberzeug/nicegui](https://github.com/zauberzeug/nicegui) | [#5368](https://github.com/zauberzeug/nicegui/pull/5368) | merged | codespell | 0h | @yarikoptic Is it really a good idea ... |
-| [hed-standard/CTagger](https://github.com/hed-standard/CTagger) | [#16](https://github.com/hed-standard/CTagger/pull/16) | closed | codespell | 12.3d | Do not merge until exclusions are rev... |
-| [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | open | codespell | 0h | can you attach a full run with these ... |
-| [zotero/zotero-connectors](https://github.com/zotero/zotero-connectors) | [#590](https://github.com/zotero/zotero-connectors/pull/590) | merged | codespell | 11h | Thanks! |
-| [github/copilot-cli](https://github.com/github/copilot-cli) | [#200](https://github.com/github/copilot-cli/pull/200) | closed | codespell | 39.7d | spam |
-| [physiopy/physiopy.github.io](https://github.com/physiopy/physiopy.github.io) | [#72](https://github.com/physiopy/physiopy.github.io/pull/72) | open | codespell | - | - |
-| [nektos/act](https://github.com/nektos/act) | [#5924](https://github.com/nektos/act/pull/5924) | open | codespell | - | - |
-| [sullo/nikto](https://github.com/sullo/nikto) | [#880](https://github.com/sullo/nikto/pull/880) | merged | codespell | - | - |
-| [magland/qp](https://github.com/magland/qp) | [#1](https://github.com/magland/qp/pull/1) | merged | codespell | - | - |
-| [con/nwb2bids](https://github.com/con/nwb2bids) | [#4](https://github.com/con/nwb2bids/pull/4) | merged | codespell | 568.6d | @yarikoptic You can ignore any pings ... |
-| [openMetadataInitiative/bids2openminds](https://github.com/openMetadataInitiative/bids2openminds) | [#80](https://github.com/openMetadataInitiative/bids2openminds/pull/80) | merged | codespell | - | - |
-| [mkitti/simple_image_formats](https://github.com/mkitti/simple_image_formats) | [#1](https://github.com/mkitti/simple_image_formats/pull/1) | open | codespell | - | - |
-| [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | [#3602](https://github.com/hakimel/reveal.js/pull/3602) | merged | codespell | 354.6d | Good addition, thanks! I'll rebuild t... |
-| [planetmarshall/pillow-jpls](https://github.com/planetmarshall/pillow-jpls) | [#18](https://github.com/planetmarshall/pillow-jpls/pull/18) | open | codespell | - | - |
-| [OSC/ondemand](https://github.com/OSC/ondemand) | [#4671](https://github.com/OSC/ondemand/pull/4671) | merged | codespell | 0h | > FWIW, what helps me at times is to ... |
-| [yarikoptic/ondemand](https://github.com/yarikoptic/ondemand) | [#1](https://github.com/yarikoptic/ondemand/pull/1) | open | codespell | - | - |
+| [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | open | codespell | 0h | i've queued up fixes internally for t... |
+| [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | [#1431](https://github.com/pyinfra-dev/pyinfra/pull/1431) | open | shellcheck | - | - |
+| [grobidOrg/grobid](https://github.com/grobidOrg/grobid) | [#1365](https://github.com/grobidOrg/grobid/pull/1365) | merged | codespell | 5.2d | Thank you! I will check shortly. Righ... |
+| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | open | codespell | - | - |
+| [napari/napari](https://github.com/napari/napari) | [#7619](https://github.com/napari/napari/pull/7619) | open | codespell | 1.4d | Yeh. If you have time, it is a good m... |
+| [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | [#588](https://github.com/fastapi/sqlmodel/pull/588) | closed | codespell | 1104.8d | Closing this as we now have https://g... |
+| [facebookresearch/neuroai](https://github.com/facebookresearch/neuroai) | [#14](https://github.com/facebookresearch/neuroai/pull/14) | merged | codespell | 18h | Merging, thank you ! |
+| [cosanlab/py-feat](https://github.com/cosanlab/py-feat) | [#207](https://github.com/cosanlab/py-feat/pull/207) | closed | codespell | 797.1d | Thanks for the codespell workflow + b... |
+| [facebookresearch/exca](https://github.com/facebookresearch/exca) | [#242](https://github.com/facebookresearch/exca/pull/242) | merged | codespell | 16h | Wonderful thanks @yarikoptic ! |
+| [BIDS-flux/BIDS-flux-docs](https://github.com/BIDS-flux/BIDS-flux-docs) | [#2](https://github.com/BIDS-flux/BIDS-flux-docs/pull/2) | open | codespell | - | - |
+| [fsfe/reuse-tool](https://github.com/fsfe/reuse-tool) | [#1283](https://github.com/fsfe/reuse-tool/pull/1283) | closed | codespell | 1.3d | I believe the project moved over to C... |
+| [DCAN-Labs/SLURM_wrappers](https://github.com/DCAN-Labs/SLURM_wrappers) | [#25](https://github.com/DCAN-Labs/SLURM_wrappers/pull/25) | open | codespell | - | - |
+| [facebookincubator/submitit](https://github.com/facebookincubator/submitit) | [#1815](https://github.com/facebookincubator/submitit/pull/1815) | open | codespell | - | - |
+| [yte-template-engine/yte](https://github.com/yte-template-engine/yte) | [#72](https://github.com/yte-template-engine/yte/pull/72) | open | codespell | - | - |
+| [pangaea-data-publisher/fuji](https://github.com/pangaea-data-publisher/fuji) | [#589](https://github.com/pangaea-data-publisher/fuji/pull/589) | open | codespell | - | - |
+| [Persistent-Hardware-Descriptor-Project/imaging-phd](https://github.com/Persistent-Hardware-Descriptor-Project/imaging-phd) | [#3](https://github.com/Persistent-Hardware-Descriptor-Project/imaging-phd/pull/3) | open | codespell | - | - |
+| [schappim/macOCR](https://github.com/schappim/macOCR) | [#37](https://github.com/schappim/macOCR/pull/37) | closed | codespell | 637.6d | Thank you for the thorough contributi... |
+| [MRI-Lab-Graz/prism-studio](https://github.com/MRI-Lab-Graz/prism-studio) | [#37](https://github.com/MRI-Lab-Graz/prism-studio/pull/37) | open | codespell | - | - |
+| [duckdb/duckdb](https://github.com/duckdb/duckdb) | [#19817](https://github.com/duckdb/duckdb/pull/19817) | closed | codespell | 1.6d | Yes, looks good to me |
+| [brainiak/rt-cloud](https://github.com/brainiak/rt-cloud) | [#103](https://github.com/brainiak/rt-cloud/pull/103) | merged | codespell | - | - |
+| [SpikeInterface/spikeinterface-gui](https://github.com/SpikeInterface/spikeinterface-gui) | [#215](https://github.com/SpikeInterface/spikeinterface-gui/pull/215) | merged | codespell | 102.0d | I am a poor diactator. I don't have a... |
+| [lobennett/neuro_workflow](https://github.com/lobennett/neuro_workflow) | [#1](https://github.com/lobennett/neuro_workflow/pull/1) | merged | codespell | - | - |
+| [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt) | [#2191](https://github.com/zylon-ai/private-gpt/pull/2191) | open | codespell | 105.9d | Stale pull request |
+| [psf/requests](https://github.com/psf/requests) | [#6400](https://github.com/psf/requests/pull/6400) | open | codespell | - | - |
+| [amq92/simple_slurm](https://github.com/amq92/simple_slurm) | [#50](https://github.com/amq92/simple_slurm/pull/50) | open | codespell | - | - |
+| [conda-forge/miniforge](https://github.com/conda-forge/miniforge) | [#866](https://github.com/conda-forge/miniforge/pull/866) | merged | codespell | - | - |
+| [pyiron/pysqa](https://github.com/pyiron/pysqa) | [#457](https://github.com/pyiron/pysqa/pull/457) | closed | codespell | - | - |
+| [Leaflet/Leaflet](https://github.com/Leaflet/Leaflet) | [#10021](https://github.com/Leaflet/Leaflet/pull/10021) | open | codespell | - | - |
+| [kucherenko/jscpd](https://github.com/kucherenko/jscpd) | [#782](https://github.com/kucherenko/jscpd/pull/782) | open | codespell | - | - |
+| [K-Dense-AI/claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer) | [#20](https://github.com/K-Dense-AI/claude-scientific-writer/pull/20) | open | codespell | - | - |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | [#123](https://github.com/K-Dense-AI/scientific-agent-skills/pull/123) | open | codespell | - | - |
+| [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) | [#7](https://github.com/K-Dense-AI/karpathy/pull/7) | open | codespell | - | - |
+| [flyteorg/flyte-sdk](https://github.com/flyteorg/flyte-sdk) | [#853](https://github.com/flyteorg/flyte-sdk/pull/853) | merged | codespell | - | - |
+| [pyinvoke/invoke](https://github.com/pyinvoke/invoke) | [#1058](https://github.com/pyinvoke/invoke/pull/1058) | open | codespell | - | - |
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | [#121](https://github.com/HKUDS/nanobot/pull/121) | merged | codespell | - | - |
+| [Pagefind/pagefind](https://github.com/Pagefind/pagefind) | [#1028](https://github.com/Pagefind/pagefind/pull/1028) | closed | codespell | 32.4d | Hey, I appreciate the PR though for n... |
+| [harvard-edge/cs249r_book](https://github.com/harvard-edge/cs249r_book) | [#1215](https://github.com/harvard-edge/cs249r_book/pull/1215) | merged | codespell | 28.9d | @all-contributors please add @yarikop... |
+| [jimmc414/Kosmos](https://github.com/jimmc414/Kosmos) | [#83](https://github.com/jimmc414/Kosmos/pull/83) | closed | codespell | - | - |
+| [INCATools/ontology-access-kit](https://github.com/INCATools/ontology-access-kit) | [#671](https://github.com/INCATools/ontology-access-kit/pull/671) | merged | codespell | 13.6d | I rebased, this introduced a new test... |
+| [authelia/authelia](https://github.com/authelia/authelia) | [#11607](https://github.com/authelia/authelia/pull/11607) | closed | codespell | 1h | Given the need for updates upstream i... |
+| [readthedocs/readthedocs.org](https://github.com/readthedocs/readthedocs.org) | [#11195](https://github.com/readthedocs/readthedocs.org/pull/11195) | draft | codespell | 20h | > There is an odd "variable" `syntaxt... |
+| [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | [#1106](https://github.com/neuroscout/neuroscout/pull/1106) | open | codespell | 14.0d | :warning: Please install the !['codec... |
+| [libfuse/pyfuse3](https://github.com/libfuse/pyfuse3) | [#132](https://github.com/libfuse/pyfuse3/pull/132) | merged | codespell | 5h | Would you like to apply the same chan... |
+| [h2non/jsonpath-ng](https://github.com/h2non/jsonpath-ng) | [#226](https://github.com/h2non/jsonpath-ng/pull/226) | open | codespell | - | - |
+| [sourcebot-dev/sourcebot](https://github.com/sourcebot-dev/sourcebot) | [#1055](https://github.com/sourcebot-dev/sourcebot/pull/1055) | open | codespell | - | - |
+| [cmd-ntrf/jupyter-lmod](https://github.com/cmd-ntrf/jupyter-lmod) | [#84](https://github.com/cmd-ntrf/jupyter-lmod/pull/84) | closed | codespell | - | - |
 
-*Showing 50 of 336 PRs*
+*Showing 50 of 410 PRs*
 

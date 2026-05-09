@@ -1,13 +1,15 @@
 # Open PRs by DimitriPapadopoulos
 
-*Last updated: 2025-12-18 06:23 UTC*
+*Last updated: 2026-05-09 00:54 UTC*
 
 [< Back to DimitriPapadopoulos summary](../DimitriPapadopoulos.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 6 PRs
+**Total**: 8 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | MNT: bump codespell | codespell | 2026-05-07 | 26 | 1 (0) | Maintainer | CI:FAIL | - | pre-commit | - |
+| [GEANT/CAT](https://github.com/GEANT/CAT) | [#347](https://github.com/GEANT/CAT/pull/347) | Fix typos found by codespell and typos | codespell | 2026-01-05 | 47 | 0 (0) | No response | CI:FAIL | - | - | - |
 | [FreeRADIUS/freeradius-client](https://github.com/FreeRADIUS/freeradius-client) | [#121](https://github.com/FreeRADIUS/freeradius-client/pull/121) | Fix typos found by codespell | codespell | 2024-05-08 | 1 | 0 (0) | No response | CI:... | - | - | - |
 | [lamyj/dicomifier](https://github.com/lamyj/dicomifier) | [#58](https://github.com/lamyj/dicomifier/pull/58) | Fix typos found by codespell | codespell | 2024-09-23 | 3 | 0 (0) | No response | CI:... | - | - | - |
 | [planetmarshall/pillow-jpls](https://github.com/planetmarshall/pillow-jpls) | [#18](https://github.com/planetmarshall/pillow-jpls/pull/18) | Fix typos found by codespell | codespell | 2023-10-13 | 2 | 0 (0) | No response | CI:... | - | - | - |
