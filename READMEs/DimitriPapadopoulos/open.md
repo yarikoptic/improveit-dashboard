@@ -1,13 +1,14 @@
 # Open PRs by DimitriPapadopoulos
 
-*Last updated: 2026-05-09 00:54 UTC*
+*Last updated: 2026-05-14 02:27 UTC*
 
 [< Back to DimitriPapadopoulos summary](../DimitriPapadopoulos.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 8 PRs
+**Total**: 9 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | [#33930](https://github.com/scikit-learn/scikit-learn/pull/33930) | codespell → typos | codespell | 2026-05-04 | 6 | 1 (1) | You (2d) | CI:OK | - | github-actions, pre-commit | Thanks for the PR @DimitriPapadopoulos. So comp... |
 | [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | MNT: bump codespell | codespell | 2026-05-07 | 26 | 1 (0) | Maintainer | CI:FAIL | - | pre-commit | - |
 | [GEANT/CAT](https://github.com/GEANT/CAT) | [#347](https://github.com/GEANT/CAT/pull/347) | Fix typos found by codespell and typos | codespell | 2026-01-05 | 47 | 0 (0) | No response | CI:FAIL | - | - | - |
 | [FreeRADIUS/freeradius-client](https://github.com/FreeRADIUS/freeradius-client) | [#121](https://github.com/FreeRADIUS/freeradius-client/pull/121) | Fix typos found by codespell | codespell | 2024-05-08 | 1 | 0 (0) | No response | CI:... | - | - | - |

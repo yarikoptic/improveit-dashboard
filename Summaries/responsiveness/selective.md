@@ -1,6 +1,6 @@
 # Selective Repositories
 
-*Last updated: 2026-05-09 00:54 UTC*
+*Last updated: 2026-05-14 02:27 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -34,14 +34,14 @@
 | [ReproNim/ReproInventory](https://github.com/ReproNim/ReproInventory) | 2 | 2 | 0 | 100% | - |
 | [ReproNim/repronim.org](https://github.com/ReproNim/repronim.org) | 2 | 2 | 0 | 100% | - |
 | [ReproNim/reprostim](https://github.com/ReproNim/reprostim) | 2 | 2 | 0 | 100% | - |
-| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | 5 | 4 | 0 | 100% | 66.8d |
+| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | 5 | 4 | 0 | 100% | 46.9d |
 | [talmolab/sleap-io](https://github.com/talmolab/sleap-io) | 2 | 1 | 1 | 50% | - |
 
 ## PRs in These Repositories
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
-| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | [#33930](https://github.com/scikit-learn/scikit-learn/pull/33930) | draft | codespell | - | - |
+| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | [#33930](https://github.com/scikit-learn/scikit-learn/pull/33930) | open | codespell | 7.1d | Thanks for the PR @DimitriPapadopoulo... |
 | [GEANT/CAT](https://github.com/GEANT/CAT) | [#347](https://github.com/GEANT/CAT/pull/347) | open | codespell | - | - |
 | [ReproNim/ReproInventory](https://github.com/ReproNim/ReproInventory) | [#39](https://github.com/ReproNim/ReproInventory/pull/39) | merged | codespell | - | - |
 | [nipy/nipype](https://github.com/nipy/nipype) | [#3550](https://github.com/nipy/nipype/pull/3550) | draft | shellcheck | 377.1d | @yarikoptic Reran so you can check th... |
