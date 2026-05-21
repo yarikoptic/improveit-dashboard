@@ -1,6 +1,6 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-05-09 00:54 UTC*
+*Last updated: 2026-05-21 02:33 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -8,11 +8,12 @@
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | RF: configure skips for codespell in ... | codespell | 2026-05-21 | 2 | 0 (0) | No response | CI:... | - | pre-commit | - |
+| [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | Add codespell support (config, workfl... | codespell | 2025-06-06 | 8 | 3 (1) | Maintainer | CI:... | Yes | codespell-config, github-actions | Hey @yarikoptic , so sorry for circling back to... |
 | [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | Add codespell support with configurat... | codespell | 2026-05-08 | 10 | 1 (0) | Maintainer | CI:OK | - | codespell-config, github-actions | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | Add codespell support (config, workfl... | codespell | 2025-11-04 | 39 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | Add codespell support (config, workfl... | codespell | 2025-11-14 | 7 | 4 (3) | You (78d) | CI:OK | - | codespell-config, github-actions | i've queued up fixes internally for the various... |
 | [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | [#1431](https://github.com/pyinfra-dev/pyinfra/pull/1431) | Add shellcheck support (workflow to d... | shellcheck | 2025-08-12 | 4 | 0 (0) | No response | CI:FAIL | Yes | github-actions, shellcheck-config | - |
-| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | Fixup permissions (and pre-commit - s... | codespell | 2026-05-05 | 38 | 1 (0) | Maintainer | CI:FAIL Main:OK | - | - | - |
 | [napari/napari](https://github.com/napari/napari) | [#7619](https://github.com/napari/napari/pull/7619) | Add codespell support (config, workfl... | codespell | 2025-02-18 | 83 | 34 (24) | You (45d) | CI:OK Main:OK | Yes | github-actions, pre-commit | Yeh. If you have time, it is a good moment to r... |
 | [BIDS-flux/BIDS-flux-docs](https://github.com/BIDS-flux/BIDS-flux-docs) | [#2](https://github.com/BIDS-flux/BIDS-flux-docs/pull/2) | chore: add codespell support (config,... | codespell | 2026-01-15 | 13 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [DCAN-Labs/SLURM_wrappers](https://github.com/DCAN-Labs/SLURM_wrappers) | [#25](https://github.com/DCAN-Labs/SLURM_wrappers/pull/25) | Add codespell support with configurat... | codespell | 2026-04-24 | 8 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
@@ -97,7 +98,6 @@
 | [brainstem-org/brainstem_python_api_tools](https://github.com/brainstem-org/brainstem_python_api_tools) | [#13](https://github.com/brainstem-org/brainstem_python_api_tools/pull/13) | Add codespell support (config, workfl... | codespell | 2025-07-30 | 5 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [DigitalBrainProject/home](https://github.com/DigitalBrainProject/home) | [#1](https://github.com/DigitalBrainProject/home/pull/1) | Add codespell support (config, workfl... | codespell | 2025-07-29 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | [#356](https://github.com/anthropics/claude-code-action/pull/356) | Add codespell support (config, workfl... | codespell | 2025-07-29 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
-| [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | Add codespell support (config, workfl... | codespell | 2025-06-06 | 8 | 1 (0) | Maintainer | CI:... | Yes | codespell-config, github-actions | - |
 | [apptainer/apptainer-userdocs](https://github.com/apptainer/apptainer-userdocs) | [#342](https://github.com/apptainer/apptainer-userdocs/pull/342) | Add codespell support (config, workfl... | codespell | 2025-06-22 | 12 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [MathOnco/valis](https://github.com/MathOnco/valis) | [#185](https://github.com/MathOnco/valis/pull/185) | Add codespell support (config, workfl... | codespell | 2025-02-20 | 38 | 1 (0) | Maintainer | CI:... | Yes | github-actions | - |
 | [WheelockLab/NetworkLevelAnalysis](https://github.com/WheelockLab/NetworkLevelAnalysis) | [#125](https://github.com/WheelockLab/NetworkLevelAnalysis/pull/125) | Add codespell support (config, workfl... | codespell | 2025-06-21 | 20 | 0 (0) | No response | CI:... | Yes | github-actions | - |

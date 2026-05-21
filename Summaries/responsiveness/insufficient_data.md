@@ -1,12 +1,12 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-05-09 00:54 UTC*
+*Last updated: 2026-05-21 02:33 UTC*
 
 [< Back to Dashboard](../../README.md)
 
 **Category**: Insufficient Data
 **Description**: Not enough PRs to categorize reliably
-**Count**: 410 repositories
+**Count**: 411 repositories
 
 ## Repositories
 
@@ -101,7 +101,7 @@
 | [cthoyt/pystow](https://github.com/cthoyt/pystow) | 1 | 0 | 1 | 0% | 2h |
 | [Cyan4973/FiniteStateEntropy](https://github.com/Cyan4973/FiniteStateEntropy) | 1 | 1 | 0 | 100% | - |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | 1 | 0 | 0 | - | - |
-| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | 1 | 0 | 0 | - | - |
+| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | 1 | 1 | 0 | 100% | - |
 | [dandi/dandi-hub](https://github.com/dandi/dandi-hub) | 1 | 1 | 0 | 100% | 222.1d |
 | [dandi/dandisets-linkml-status-tools](https://github.com/dandi/dandisets-linkml-status-tools) | 1 | 1 | 0 | 100% | - |
 | [dandi/llm-analysis](https://github.com/dandi/llm-analysis) | 1 | 0 | 0 | - | - |
@@ -266,7 +266,7 @@
 | [neurolabusc/niivue-binder](https://github.com/neurolabusc/niivue-binder) | 1 | 0 | 1 | 0% | 1.8d |
 | [NeuromatchAcademy/course-content](https://github.com/NeuromatchAcademy/course-content) | 1 | 1 | 0 | 100% | 12.6d |
 | [NeuroML/Documentation](https://github.com/NeuroML/Documentation) | 1 | 0 | 0 | - | 7.4d |
-| [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | 1 | 0 | 0 | - | - |
+| [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | 1 | 0 | 0 | - | 348.1d |
 | [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | 1 | 0 | 0 | - | 14.0d |
 | [neurospin/neurospin_to_bids](https://github.com/neurospin/neurospin_to_bids) | 1 | 1 | 0 | 100% | - |
 | [neurostuff/neurostore](https://github.com/neurostuff/neurostore) | 1 | 1 | 0 | 100% | - |
@@ -380,6 +380,7 @@
 | [skrub-data/skrub](https://github.com/skrub-data/skrub) | 1 | 1 | 0 | 100% | 2.4d |
 | [skupperproject/skupper](https://github.com/skupperproject/skupper) | 1 | 1 | 0 | 100% | 1h |
 | [snap-stanford/Biomni](https://github.com/snap-stanford/Biomni) | 1 | 0 | 0 | - | - |
+| [software-gardening/almanack](https://github.com/software-gardening/almanack) | 1 | 0 | 0 | - | - |
 | [sourcebot-dev/sourcebot](https://github.com/sourcebot-dev/sourcebot) | 1 | 0 | 0 | - | - |
 | [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | 1 | 0 | 0 | - | - |
 | [spatialaudio/python-sounddevice](https://github.com/spatialaudio/python-sounddevice) | 1 | 0 | 1 | 0% | 9.9d |
@@ -427,6 +428,9 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | open | codespell | - | - |
+| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | merged | codespell | - | - |
+| [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | open | codespell | 348.1d | Hey @yarikoptic , so sorry for circli... |
 | [stamped-principles/stamped-examples](https://github.com/stamped-principles/stamped-examples) | [#26](https://github.com/stamped-principles/stamped-examples/pull/26) | merged | codespell | - | - |
 | [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | open | codespell | - | - |
 | [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | open | codespell | - | - |
@@ -434,7 +438,6 @@
 | [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | open | codespell | 0h | i've queued up fixes internally for t... |
 | [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | [#1431](https://github.com/pyinfra-dev/pyinfra/pull/1431) | open | shellcheck | - | - |
 | [grobidOrg/grobid](https://github.com/grobidOrg/grobid) | [#1365](https://github.com/grobidOrg/grobid/pull/1365) | merged | codespell | 5.2d | Thank you! I will check shortly. Righ... |
-| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | open | codespell | - | - |
 | [napari/napari](https://github.com/napari/napari) | [#7619](https://github.com/napari/napari/pull/7619) | open | codespell | 1.4d | Yeh. If you have time, it is a good m... |
 | [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | [#588](https://github.com/fastapi/sqlmodel/pull/588) | closed | codespell | 1104.8d | Closing this as we now have https://g... |
 | [facebookresearch/neuroai](https://github.com/facebookresearch/neuroai) | [#14](https://github.com/facebookresearch/neuroai/pull/14) | merged | codespell | 18h | Merging, thank you ! |
@@ -475,8 +478,6 @@
 | [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | [#1106](https://github.com/neuroscout/neuroscout/pull/1106) | open | codespell | 14.0d | :warning: Please install the !['codec... |
 | [libfuse/pyfuse3](https://github.com/libfuse/pyfuse3) | [#132](https://github.com/libfuse/pyfuse3/pull/132) | merged | codespell | 5h | Would you like to apply the same chan... |
 | [h2non/jsonpath-ng](https://github.com/h2non/jsonpath-ng) | [#226](https://github.com/h2non/jsonpath-ng/pull/226) | open | codespell | - | - |
-| [sourcebot-dev/sourcebot](https://github.com/sourcebot-dev/sourcebot) | [#1055](https://github.com/sourcebot-dev/sourcebot/pull/1055) | open | codespell | - | - |
-| [cmd-ntrf/jupyter-lmod](https://github.com/cmd-ntrf/jupyter-lmod) | [#84](https://github.com/cmd-ntrf/jupyter-lmod/pull/84) | closed | codespell | - | - |
 
-*Showing 50 of 410 PRs*
+*Showing 50 of 411 PRs*
 

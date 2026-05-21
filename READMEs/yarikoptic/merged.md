@@ -1,13 +1,14 @@
 # Merged PRs by yarikoptic
 
-*Last updated: 2026-05-09 00:54 UTC*
+*Last updated: 2026-05-21 02:33 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 181 PRs
+**Total**: 182 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | Fixup permissions (and pre-commit - s... | codespell | 2026-05-05 | 2026-05-19 | @yarikoptic-gitmate | 2 | 38 | - | - |
 | [stamped-principles/stamped-examples](https://github.com/stamped-principles/stamped-examples) | [#26](https://github.com/stamped-principles/stamped-examples/pull/26) | Add codespell support with configurat... | codespell | 2026-05-08 | 2026-05-08 | @yarikoptic | 4 | 3 | github-actions | - |
 | [grobidOrg/grobid](https://github.com/grobidOrg/grobid) | [#1365](https://github.com/grobidOrg/grobid/pull/1365) | Add codespell support with configurat... | codespell | 2026-02-07 | 2026-05-06 | @lfoppiano | 7 | 83 | codespell-config, github-actions | Thank you! I will check shortly. Right now the ... |
 | [facebookresearch/neuroai](https://github.com/facebookresearch/neuroai) | [#14](https://github.com/facebookresearch/neuroai/pull/14) | Add codespell support with configurat... | codespell | 2026-04-22 | 2026-05-04 | @jrapin | 5 | 20 | github-actions, pre-commit | Merging, thank you ! |
