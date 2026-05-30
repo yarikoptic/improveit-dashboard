@@ -31,12 +31,11 @@ def determine_pr_status(pr_data: dict[str, Any]) -> PRStatus:
     """
     if pr_data.get("merged"):
         return "merged"
-    elif pr_data.get("state") == "closed":
+    if pr_data.get("state") == "closed":
         return "closed"
-    elif pr_data.get("draft", False):
+    if pr_data.get("draft", False):
         return "draft"
-    else:
-        return "open"
+    return "open"
 
 
 def parse_datetime(dt_str: str | None) -> datetime | None:
@@ -257,7 +256,7 @@ def _process_pr(
 
     # Determine tool type from title
     title = pr_data.get("title", "")
-    tool = cast(ToolType, config.get_tool_for_title(title))
+    tool = cast("ToolType", config.get_tool_for_title(title))
 
     # Determine status
     old_status = existing_pr.status if existing_pr else None

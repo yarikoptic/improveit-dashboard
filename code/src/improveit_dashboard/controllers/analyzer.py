@@ -158,13 +158,12 @@ def _determine_response_status(
     # Check if last non-bot comment is from maintainer
     if last_comment.author_type == "maintainer":
         return "awaiting_submitter"
-    elif last_comment.author_type == "submitter":
+    if last_comment.author_type == "submitter":
         return "awaiting_maintainer"
-    else:
-        # Last comment is bot - look at last human
-        # If maintainer commented after submitter, awaiting submitter
-        # This requires comparing timestamps of last submitter vs maintainer
-        return "awaiting_maintainer"
+    # Last comment is bot - look at last human
+    # If maintainer commented after submitter, awaiting submitter
+    # This requires comparing timestamps of last submitter vs maintainer
+    return "awaiting_maintainer"
 
 
 def detect_automation_types(files: list[dict[str, Any]]) -> list[str]:

@@ -337,10 +337,9 @@ def _format_response_status(pr: PullRequest) -> str:
     if pr.response_status == "awaiting_submitter":
         days = pr.days_awaiting_submitter or 0
         return f"You ({days}d)"
-    elif pr.response_status == "awaiting_maintainer":
+    if pr.response_status == "awaiting_maintainer":
         return "Maintainer"
-    else:
-        return "No response"
+    return "No response"
 
 
 def _format_ci_status(pr: PullRequest) -> str:
