@@ -15,6 +15,7 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 | User | Total | Draft | Open | Merged | Closed |
 |------|-------|-------|------|--------|--------|
+| [cclauss](https://github.com/cclauss) | [66](READMEs/cclauss.md) | 0 | [9](READMEs/cclauss/open.md) | [51](READMEs/cclauss/merged.md) | [6](READMEs/cclauss/closed.md) |
 | [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [66](READMEs/DimitriPapadopoulos.md) | 0 | [9](READMEs/DimitriPapadopoulos/open.md) | [51](READMEs/DimitriPapadopoulos/merged.md) | [6](READMEs/DimitriPapadopoulos/closed.md) |
 | [yarikoptic](https://github.com/yarikoptic) | [427](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [146](READMEs/yarikoptic/open.md) | [182](READMEs/yarikoptic/merged.md) | [86](READMEs/yarikoptic/closed.md) |
 
