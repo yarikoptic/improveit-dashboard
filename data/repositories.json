@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-05-31T02:39:01.869465Z",
+    "last_updated": "2026-05-31T08:36:32.132729Z",
     "last_run": {
-      "started_at": "2026-05-31T02:36:57.181906+00:00",
-      "completed_at": "2026-05-31T02:39:01.869321+00:00",
+      "started_at": "2026-05-31T08:34:30.569208+00:00",
+      "completed_at": "2026-05-31T08:36:32.132598+00:00",
       "mode": "normal",
       "new_repositories": 0,
       "new_prs": 0,
-      "updated_prs": 1,
+      "updated_prs": 0,
       "newly_merged_prs": 0,
       "newly_closed_prs": 0,
-      "total_processed": 1,
-      "api_calls_made": 11,
-      "rate_limit_remaining": 4992,
+      "total_processed": 0,
+      "api_calls_made": 2,
+      "rate_limit_remaining": 29,
       "errors": []
     }
   },
