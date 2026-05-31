@@ -1,6 +1,6 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-05-21 02:33 UTC*
+*Last updated: 2026-05-31 02:39 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -8,6 +8,7 @@
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | Add codespell support (config, workfl... | codespell | 2025-01-06 | 10 | 1 (0) | Maintainer | CI:... | Yes | codespell-config, github-actions | - |
 | [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | RF: configure skips for codespell in ... | codespell | 2026-05-21 | 2 | 0 (0) | No response | CI:... | - | pre-commit | - |
 | [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | Add codespell support (config, workfl... | codespell | 2025-06-06 | 8 | 3 (1) | Maintainer | CI:... | Yes | codespell-config, github-actions | Hey @yarikoptic , so sorry for circling back to... |
 | [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | Add codespell support with configurat... | codespell | 2026-05-08 | 10 | 1 (0) | Maintainer | CI:OK | - | codespell-config, github-actions | - |
@@ -92,7 +93,6 @@
 | [yarikoptic-gitmate/aspera-api-examples](https://github.com/yarikoptic-gitmate/aspera-api-examples) | [#1](https://github.com/yarikoptic-gitmate/aspera-api-examples/pull/1) | Add codespell support (config, workfl... | codespell | 2025-08-21 | 8 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [neurodatascience/NeuroCI](https://github.com/neurodatascience/NeuroCI) | [#5](https://github.com/neurodatascience/NeuroCI/pull/5) | Add codespell CI + fix one new typo | codespell | 2024-03-12 | 3 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [conda-incubator/conda-store](https://github.com/conda-incubator/conda-store) | [#1107](https://github.com/conda-incubator/conda-store/pull/1107) | Add codespell support (config, workfl... | codespell | 2025-08-11 | 24 | 1 (0) | Maintainer | CI:FAIL Main:OK | - | codespell-config, github-actions, pre-commit | - |
-| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | Add codespell support (config, workfl... | codespell | 2025-01-06 | 10 | 1 (0) | Maintainer | CI:... | Yes | codespell-config, github-actions | - |
 | [ourresearch/openalex-guts](https://github.com/ourresearch/openalex-guts) | [#53](https://github.com/ourresearch/openalex-guts/pull/53) | Add codespell support (config, workfl... | codespell | 2024-12-18 | 248 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [p2p-ld/numpydantic](https://github.com/p2p-ld/numpydantic) | [#54](https://github.com/p2p-ld/numpydantic/pull/54) | Add codespell support (config, workfl... | codespell | 2025-08-06 | 12 | 0 (0) | No response | CI:... Main:OK | - | github-actions | - |
 | [brainstem-org/brainstem_python_api_tools](https://github.com/brainstem-org/brainstem_python_api_tools) | [#13](https://github.com/brainstem-org/brainstem_python_api_tools/pull/13) | Add codespell support (config, workfl... | codespell | 2025-07-30 | 5 | 0 (0) | No response | CI:... | Yes | github-actions | - |

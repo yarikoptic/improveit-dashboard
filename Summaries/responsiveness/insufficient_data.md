@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-05-21 02:33 UTC*
+*Last updated: 2026-05-31 02:39 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -428,6 +428,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | open | codespell | - | - |
 | [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | open | codespell | - | - |
 | [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | merged | codespell | - | - |
 | [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | open | codespell | 348.1d | Hey @yarikoptic , so sorry for circli... |
@@ -477,7 +478,6 @@
 | [readthedocs/readthedocs.org](https://github.com/readthedocs/readthedocs.org) | [#11195](https://github.com/readthedocs/readthedocs.org/pull/11195) | draft | codespell | 20h | > There is an odd "variable" `syntaxt... |
 | [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | [#1106](https://github.com/neuroscout/neuroscout/pull/1106) | open | codespell | 14.0d | :warning: Please install the !['codec... |
 | [libfuse/pyfuse3](https://github.com/libfuse/pyfuse3) | [#132](https://github.com/libfuse/pyfuse3/pull/132) | merged | codespell | 5h | Would you like to apply the same chan... |
-| [h2non/jsonpath-ng](https://github.com/h2non/jsonpath-ng) | [#226](https://github.com/h2non/jsonpath-ng/pull/226) | open | codespell | - | - |
 
 *Showing 50 of 411 PRs*
 

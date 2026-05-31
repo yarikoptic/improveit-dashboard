@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-05-30T19:01:39.080749Z",
+    "last_updated": "2026-05-31T02:39:01.869465Z",
     "last_run": {
-      "started_at": "2026-05-30T18:59:37.224227+00:00",
-      "completed_at": "2026-05-30T19:01:39.080618+00:00",
+      "started_at": "2026-05-31T02:36:57.181906+00:00",
+      "completed_at": "2026-05-31T02:39:01.869321+00:00",
       "mode": "normal",
       "new_repositories": 0,
       "new_prs": 0,
-      "updated_prs": 0,
+      "updated_prs": 1,
       "newly_merged_prs": 0,
       "newly_closed_prs": 0,
-      "total_processed": 0,
-      "api_calls_made": 2,
-      "rate_limit_remaining": 29,
+      "total_processed": 1,
+      "api_calls_made": 11,
+      "rate_limit_remaining": 4992,
       "errors": []
     }
   },
@@ -22428,7 +22428,7 @@
       "full_name": "photoprism/photoprism-docs",
       "url": "https://github.com/photoprism/photoprism-docs",
       "accessible": true,
-      "last_checked_at": "2026-05-09T00:52:11.821024+00:00",
+      "last_checked_at": "2026-05-31T02:39:00.148842+00:00",
       "repository_updated_at": null,
       "codespell_prs": [
         191
@@ -22449,7 +22449,7 @@
           "title": "Add codespell support (config, workflow to detect/not fix) and make it fix few typos",
           "author": "yarikoptic",
           "created_at": "2025-01-06T14:33:53+00:00",
-          "updated_at": "2025-08-06T20:33:48+00:00",
+          "updated_at": "2026-05-31T02:32:07+00:00",
           "merged_at": null,
           "closed_at": null,
           "status": "open",
@@ -22471,8 +22471,8 @@
           "time_to_first_response_hours": null,
           "days_awaiting_submitter": null,
           "response_status": "awaiting_maintainer",
-          "etag": "W/\"a5e90e6ae8abd68bb994ede2245397a41f0053056584911517509eadb094c8a9\"",
-          "last_fetched_at": "2026-05-09T00:52:11.821024+00:00",
+          "etag": "W/\"4c863c6f5512fe6da72dc0c06c9e91ca97326c0b1af90013bee4020eedb06300\"",
+          "last_fetched_at": "2026-05-31T02:39:00.148842+00:00",
           "last_developer_comment_body": null,
           "has_conflicts": true,
           "ci_status": "pending",
