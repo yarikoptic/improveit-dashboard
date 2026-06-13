@@ -4,10 +4,10 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Summary
 
-*Last updated: 2026-05-21 02:33 UTC*
+*Last updated: 2026-06-13 02:35 UTC*
 
-- **Repositories tracked**: 447
-- **Total PRs**: 493
+- **Repositories tracked**: 448
+- **Total PRs**: 494
 - **Merged**: 233
 - **Open**: 155
 
@@ -16,7 +16,7 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 | User | Total | Draft | Open | Merged | Closed |
 |------|-------|-------|------|--------|--------|
 | [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [66](READMEs/DimitriPapadopoulos.md) | 0 | [9](READMEs/DimitriPapadopoulos/open.md) | [51](READMEs/DimitriPapadopoulos/merged.md) | [6](READMEs/DimitriPapadopoulos/closed.md) |
-| [yarikoptic](https://github.com/yarikoptic) | [427](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [146](READMEs/yarikoptic/open.md) | [182](READMEs/yarikoptic/merged.md) | [86](READMEs/yarikoptic/closed.md) |
+| [yarikoptic](https://github.com/yarikoptic) | [428](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [146](READMEs/yarikoptic/open.md) | [182](READMEs/yarikoptic/merged.md) | [87](READMEs/yarikoptic/closed.md) |
 
 ## Repository Responsiveness
 
@@ -30,7 +30,7 @@ acceptance rate (percentage of PRs merged vs closed without merge).
 | Selective | [24](Summaries/responsiveness/selective.md) | Moderate response time, reviews carefully before accepting |
 | Unresponsive | [6](Summaries/responsiveness/unresponsive.md) | Slow or no response (>7 days average) |
 | Hostile | [1](Summaries/responsiveness/hostile.md) | Quick rejection without engagement |
-| Insufficient Data | [411](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
+| Insufficient Data | [412](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
 
 ---
 

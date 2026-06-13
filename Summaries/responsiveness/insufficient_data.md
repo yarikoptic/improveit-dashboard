@@ -1,12 +1,12 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-05-31 02:39 UTC*
+*Last updated: 2026-06-13 02:35 UTC*
 
 [< Back to Dashboard](../../README.md)
 
 **Category**: Insufficient Data
 **Description**: Not enough PRs to categorize reliably
-**Count**: 411 repositories
+**Count**: 412 repositories
 
 ## Repositories
 
@@ -99,6 +99,7 @@
 | [CPernet/metaprivBIDS](https://github.com/CPernet/metaprivBIDS) | 1 | 1 | 0 | 100% | 3.4d |
 | [cruft/cruft](https://github.com/cruft/cruft) | 1 | 0 | 0 | - | - |
 | [cthoyt/pystow](https://github.com/cthoyt/pystow) | 1 | 0 | 1 | 0% | 2h |
+| [ctxrs/ctx](https://github.com/ctxrs/ctx) | 1 | 0 | 1 | 0% | - |
 | [Cyan4973/FiniteStateEntropy](https://github.com/Cyan4973/FiniteStateEntropy) | 1 | 1 | 0 | 100% | - |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | 1 | 0 | 0 | - | - |
 | [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | 1 | 1 | 0 | 100% | - |
@@ -428,6 +429,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [ctxrs/ctx](https://github.com/ctxrs/ctx) | [#4](https://github.com/ctxrs/ctx/pull/4) | closed | codespell | - | - |
 | [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | open | codespell | - | - |
 | [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | open | codespell | - | - |
 | [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | merged | codespell | - | - |
@@ -477,7 +479,6 @@
 | [authelia/authelia](https://github.com/authelia/authelia) | [#11607](https://github.com/authelia/authelia/pull/11607) | closed | codespell | 1h | Given the need for updates upstream i... |
 | [readthedocs/readthedocs.org](https://github.com/readthedocs/readthedocs.org) | [#11195](https://github.com/readthedocs/readthedocs.org/pull/11195) | draft | codespell | 20h | > There is an odd "variable" `syntaxt... |
 | [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | [#1106](https://github.com/neuroscout/neuroscout/pull/1106) | open | codespell | 14.0d | :warning: Please install the !['codec... |
-| [libfuse/pyfuse3](https://github.com/libfuse/pyfuse3) | [#132](https://github.com/libfuse/pyfuse3/pull/132) | merged | codespell | 5h | Would you like to apply the same chan... |
 
-*Showing 50 of 411 PRs*
+*Showing 50 of 412 PRs*
 
