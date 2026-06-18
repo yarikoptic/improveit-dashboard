@@ -1,13 +1,14 @@
 # Merged PRs by yarikoptic
 
-*Last updated: 2026-05-21 02:33 UTC*
+*Last updated: 2026-06-18 02:46 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 182 PRs
+**Total**: 183 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [bcmcpher/my-skills](https://github.com/bcmcpher/my-skills) | [#3](https://github.com/bcmcpher/my-skills/pull/3) | Add codespell support with configurat... | codespell | 2026-06-16 | 2026-06-18 | @bcmcpher | 4 | 5 | codespell-config, github-actions | - |
 | [dandi/dandi-cli](https://github.com/dandi/dandi-cli) | [#1853](https://github.com/dandi/dandi-cli/pull/1853) | Fixup permissions (and pre-commit - s... | codespell | 2026-05-05 | 2026-05-19 | @yarikoptic-gitmate | 2 | 38 | - | - |
 | [stamped-principles/stamped-examples](https://github.com/stamped-principles/stamped-examples) | [#26](https://github.com/stamped-principles/stamped-examples/pull/26) | Add codespell support with configurat... | codespell | 2026-05-08 | 2026-05-08 | @yarikoptic | 4 | 3 | github-actions | - |
 | [grobidOrg/grobid](https://github.com/grobidOrg/grobid) | [#1365](https://github.com/grobidOrg/grobid/pull/1365) | Add codespell support with configurat... | codespell | 2026-02-07 | 2026-05-06 | @lfoppiano | 7 | 83 | codespell-config, github-actions | Thank you! I will check shortly. Right now the ... |

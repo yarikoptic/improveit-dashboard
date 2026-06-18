@@ -1,12 +1,12 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-06-13 02:35 UTC*
+*Last updated: 2026-06-18 02:46 UTC*
 
 [< Back to Dashboard](../../README.md)
 
 **Category**: Insufficient Data
 **Description**: Not enough PRs to categorize reliably
-**Count**: 412 repositories
+**Count**: 413 repositories
 
 ## Repositories
 
@@ -48,6 +48,7 @@
 | [bats-core/bats-assert](https://github.com/bats-core/bats-assert) | 1 | 0 | 1 | 0% | 15.9d |
 | [bats-core/bats-file](https://github.com/bats-core/bats-file) | 1 | 1 | 0 | 100% | 801.3d |
 | [bbfrederick/rapidtide](https://github.com/bbfrederick/rapidtide) | 1 | 1 | 0 | 100% | 0h |
+| [bcmcpher/my-skills](https://github.com/bcmcpher/my-skills) | 1 | 1 | 0 | 100% | - |
 | [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | 1 | 0 | 0 | - | 23.5d |
 | [BIDS-flux/BIDS-flux-docs](https://github.com/BIDS-flux/BIDS-flux-docs) | 1 | 0 | 0 | - | - |
 | [bids-standard/bids-examples](https://github.com/bids-standard/bids-examples) | 1 | 1 | 0 | 100% | - |
@@ -429,6 +430,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [bcmcpher/my-skills](https://github.com/bcmcpher/my-skills) | [#3](https://github.com/bcmcpher/my-skills/pull/3) | merged | codespell | - | - |
 | [ctxrs/ctx](https://github.com/ctxrs/ctx) | [#4](https://github.com/ctxrs/ctx/pull/4) | closed | codespell | - | - |
 | [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | open | codespell | - | - |
 | [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | open | codespell | - | - |
@@ -478,7 +480,6 @@
 | [INCATools/ontology-access-kit](https://github.com/INCATools/ontology-access-kit) | [#671](https://github.com/INCATools/ontology-access-kit/pull/671) | merged | codespell | 13.6d | I rebased, this introduced a new test... |
 | [authelia/authelia](https://github.com/authelia/authelia) | [#11607](https://github.com/authelia/authelia/pull/11607) | closed | codespell | 1h | Given the need for updates upstream i... |
 | [readthedocs/readthedocs.org](https://github.com/readthedocs/readthedocs.org) | [#11195](https://github.com/readthedocs/readthedocs.org/pull/11195) | draft | codespell | 20h | > There is an odd "variable" `syntaxt... |
-| [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | [#1106](https://github.com/neuroscout/neuroscout/pull/1106) | open | codespell | 14.0d | :warning: Please install the !['codec... |
 
-*Showing 50 of 412 PRs*
+*Showing 50 of 413 PRs*
 
