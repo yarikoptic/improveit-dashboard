@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-06-25T19:47:37.250712Z",
+    "last_updated": "2026-06-26T02:33:51.709481Z",
     "last_run": {
-      "started_at": "2026-06-25T19:45:34.421474+00:00",
-      "completed_at": "2026-06-25T19:47:37.250584+00:00",
+      "started_at": "2026-06-26T02:31:47.378594+00:00",
+      "completed_at": "2026-06-26T02:33:51.709315+00:00",
       "mode": "normal",
       "new_repositories": 0,
       "new_prs": 0,
-      "updated_prs": 0,
+      "updated_prs": 1,
       "newly_merged_prs": 0,
-      "newly_closed_prs": 0,
-      "total_processed": 0,
-      "api_calls_made": 2,
-      "rate_limit_remaining": 29,
+      "newly_closed_prs": 1,
+      "total_processed": 1,
+      "api_calls_made": 5,
+      "rate_limit_remaining": 4997,
       "errors": []
     }
   },
@@ -14537,7 +14537,7 @@
       "full_name": "git-ai-project/git-ai",
       "url": "https://github.com/git-ai-project/git-ai",
       "accessible": true,
-      "last_checked_at": "2026-05-09T00:46:44.278212+00:00",
+      "last_checked_at": "2026-06-26T02:33:51.031101+00:00",
       "repository_updated_at": null,
       "codespell_prs": [
         1314
@@ -14558,10 +14558,10 @@
           "title": "Add codespell support with configuration and fixes",
           "author": "yarikoptic",
           "created_at": "2026-05-08T13:01:39+00:00",
-          "updated_at": "2026-05-08T14:45:16+00:00",
+          "updated_at": "2026-06-26T00:48:25+00:00",
           "merged_at": null,
-          "closed_at": null,
-          "status": "open",
+          "closed_at": "2026-06-26T00:48:25+00:00",
+          "status": "closed",
           "analysis_status": "analyzed",
           "commit_count": 5,
           "files_changed": 10,
@@ -14569,7 +14569,7 @@
             "codespell-config",
             "github-actions"
           ],
-          "adoption_level": "full_automation",
+          "adoption_level": "rejected",
           "total_comments": 1,
           "submitter_comments": 0,
           "maintainer_comments": 0,
@@ -14579,13 +14579,13 @@
           "last_maintainer_comment_at": null,
           "time_to_first_response_hours": null,
           "days_awaiting_submitter": null,
-          "response_status": "awaiting_maintainer",
-          "etag": "W/\"91d4496215803ccb0f2723088d86d6f94afaa5987843475343d726433952d4cc\"",
-          "last_fetched_at": "2026-05-09T00:46:44.278212+00:00",
+          "response_status": "no_response",
+          "etag": "W/\"6ea104853911905f58a721b48a09b4e3b1d1b9359cb7386d145f4dc07b957ce4\"",
+          "last_fetched_at": "2026-06-26T02:33:51.031101+00:00",
           "last_developer_comment_body": null,
           "has_conflicts": false,
-          "ci_status": "success",
-          "main_branch_ci": "pending",
+          "ci_status": null,
+          "main_branch_ci": null,
           "codespell_workflow_ci": null,
           "closed_by": null
         }

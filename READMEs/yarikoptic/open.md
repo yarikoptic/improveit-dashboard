@@ -1,17 +1,16 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-05-31 02:39 UTC*
+*Last updated: 2026-06-26 02:33 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 146 PRs
+**Total**: 145 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
 | [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | Add codespell support (config, workfl... | codespell | 2025-01-06 | 10 | 1 (0) | Maintainer | CI:... | Yes | codespell-config, github-actions | - |
 | [software-gardening/almanack](https://github.com/software-gardening/almanack) | [#441](https://github.com/software-gardening/almanack/pull/441) | RF: configure skips for codespell in ... | codespell | 2026-05-21 | 2 | 0 (0) | No response | CI:... | - | pre-commit | - |
 | [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | Add codespell support (config, workfl... | codespell | 2025-06-06 | 8 | 3 (1) | Maintainer | CI:... | Yes | codespell-config, github-actions | Hey @yarikoptic , so sorry for circling back to... |
-| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | Add codespell support with configurat... | codespell | 2026-05-08 | 10 | 1 (0) | Maintainer | CI:OK | - | codespell-config, github-actions | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | Add codespell support (config, workfl... | codespell | 2025-11-04 | 39 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | Add codespell support (config, workfl... | codespell | 2025-11-14 | 7 | 4 (3) | You (78d) | CI:OK | - | codespell-config, github-actions | i've queued up fixes internally for the various... |
 | [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | [#1431](https://github.com/pyinfra-dev/pyinfra/pull/1431) | Add shellcheck support (workflow to d... | shellcheck | 2025-08-12 | 4 | 0 (0) | No response | CI:FAIL | Yes | github-actions, shellcheck-config | - |

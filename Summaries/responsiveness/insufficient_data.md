@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-06-18 02:46 UTC*
+*Last updated: 2026-06-26 02:33 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -163,7 +163,7 @@
 | [geteduroam/android-app](https://github.com/geteduroam/android-app) | 1 | 1 | 0 | 100% | - |
 | [geteduroam/apple-app](https://github.com/geteduroam/apple-app) | 1 | 0 | 0 | - | - |
 | [geteduroam/ionic-app](https://github.com/geteduroam/ionic-app) | 1 | 0 | 1 | 0% | - |
-| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | 1 | 0 | 0 | - | - |
+| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | 1 | 0 | 1 | 0% | - |
 | [github/copilot-cli](https://github.com/github/copilot-cli) | 1 | 0 | 1 | 0% | 39.7d |
 | [github/git-sizer](https://github.com/github/git-sizer) | 1 | 0 | 1 | 0% | 114.8d |
 | [github/github-mcp-server](https://github.com/github/github-mcp-server) | 1 | 0 | 0 | - | 8.7d |
@@ -430,6 +430,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | closed | codespell | - | - |
 | [bcmcpher/my-skills](https://github.com/bcmcpher/my-skills) | [#3](https://github.com/bcmcpher/my-skills/pull/3) | merged | codespell | - | - |
 | [ctxrs/ctx](https://github.com/ctxrs/ctx) | [#4](https://github.com/ctxrs/ctx/pull/4) | closed | codespell | - | - |
 | [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | open | codespell | - | - |
@@ -438,7 +439,6 @@
 | [neuroprismlab/BrainEffeX](https://github.com/neuroprismlab/BrainEffeX) | [#33](https://github.com/neuroprismlab/BrainEffeX/pull/33) | open | codespell | 348.1d | Hey @yarikoptic , so sorry for circli... |
 | [stamped-principles/stamped-examples](https://github.com/stamped-principles/stamped-examples) | [#26](https://github.com/stamped-principles/stamped-examples/pull/26) | merged | codespell | - | - |
 | [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | open | codespell | - | - |
-| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | open | codespell | - | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | open | codespell | - | - |
 | [google/styleguide](https://github.com/google/styleguide) | [#951](https://github.com/google/styleguide/pull/951) | open | codespell | 0h | i've queued up fixes internally for t... |
 | [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | [#1431](https://github.com/pyinfra-dev/pyinfra/pull/1431) | open | shellcheck | - | - |

@@ -1,13 +1,14 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2026-06-13 02:35 UTC*
+*Last updated: 2026-06-26 02:33 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 87 PRs
+**Total**: 88 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | Add codespell support with configurat... | codespell | 2026-05-08 | 2026-06-26 | - | 10 | - |
 | [ctxrs/ctx](https://github.com/ctxrs/ctx) | [#4](https://github.com/ctxrs/ctx/pull/4) | Add codespell support (config, workfl... | codespell | 2026-05-12 | 2026-06-13 | - | 2 | - |
 | [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | [#588](https://github.com/fastapi/sqlmodel/pull/588) | 👷 Add codespell workflow + fix some t... | codespell | 2023-04-26 | 2026-05-05 | - | 4 | Closing this as we now have https://github.com/... |
 | [cosanlab/py-feat](https://github.com/cosanlab/py-feat) | [#207](https://github.com/cosanlab/py-feat/pull/207) | Add codespell: workflow, config + mak... | codespell | 2024-02-26 | 2026-05-03 | - | 17 | Thanks for the codespell workflow + bulk typo f... |
