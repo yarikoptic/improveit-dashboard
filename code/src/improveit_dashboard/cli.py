@@ -228,7 +228,7 @@ def _create_commit(message: str) -> int:
 
         print("Created commit with summary:")
         # Print first line of commit message
-        print(f"  {message.split(chr(10))[0]}")
+        print(f"  {message.split(chr(10), maxsplit=1)[0]}")
 
         return 0
 
@@ -310,13 +310,15 @@ def cmd_export(args: argparse.Namespace, config: Configuration) -> int:
         prs = []
         for repo in repositories.values():
             for pr in repo.prs.values():
-                if args.filter == "all":
-                    prs.append(pr)
-                elif args.filter == "needs-response" and pr.response_status == "awaiting_submitter":
-                    prs.append(pr)
-                elif args.filter == "open" and pr.status in ("draft", "open"):
-                    prs.append(pr)
-                elif args.filter == "merged" and pr.status == "merged":
+                if (
+                    args.filter == "all"
+                    or (
+                        args.filter == "needs-response"
+                        and pr.response_status == "awaiting_submitter"
+                    )
+                    or (args.filter == "open" and pr.status in ("draft", "open"))
+                    or (args.filter == "merged" and pr.status == "merged")
+                ):
                     prs.append(pr)
 
         # Export
@@ -521,15 +523,14 @@ def main(argv: list[str] | None = None) -> int:
     # Dispatch command
     if args.command == "update":
         return cmd_update(args, config)
-    elif args.command == "generate":
+    if args.command == "generate":
         return cmd_generate(args, config)
-    elif args.command == "export":
+    if args.command == "export":
         return cmd_export(args, config)
-    elif args.command == "reanalyze":
+    if args.command == "reanalyze":
         return cmd_reanalyze(args, config)
-    else:
-        parser.print_help()
-        return 0
+    parser.print_help()
+    return 0
 
 
 if __name__ == "__main__":

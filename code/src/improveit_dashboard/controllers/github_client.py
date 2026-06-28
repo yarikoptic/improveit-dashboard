@@ -486,9 +486,9 @@ class GitHubClient:
 
         if state == "success":
             return "success"
-        elif state in ("failure", "error"):
+        if state in ("failure", "error"):
             return "failure"
-        elif state == "pending":
+        if state == "pending":
             return "pending"
 
         return None
