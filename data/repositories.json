@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-07-31T19:10:39.446079Z",
+    "last_updated": "2026-08-01T01:59:44.304375Z",
     "last_run": {
-      "started_at": "2026-07-31T19:08:37.787960+00:00",
-      "completed_at": "2026-07-31T19:10:39.445972+00:00",
+      "started_at": "2026-08-01T01:57:38.380463+00:00",
+      "completed_at": "2026-08-01T01:59:44.304229+00:00",
       "mode": "normal",
       "new_repositories": 0,
       "new_prs": 0,
-      "updated_prs": 0,
+      "updated_prs": 1,
       "newly_merged_prs": 0,
       "newly_closed_prs": 0,
-      "total_processed": 0,
-      "api_calls_made": 2,
-      "rate_limit_remaining": 29,
+      "total_processed": 1,
+      "api_calls_made": 10,
+      "rate_limit_remaining": 4992,
       "errors": []
     }
   },
@@ -22202,7 +22202,7 @@
       "full_name": "p2p-ld/numpydantic",
       "url": "https://github.com/p2p-ld/numpydantic",
       "accessible": true,
-      "last_checked_at": "2026-05-09T00:52:17.654262+00:00",
+      "last_checked_at": "2026-08-01T01:59:42.077286+00:00",
       "repository_updated_at": null,
       "codespell_prs": [
         54
@@ -22223,13 +22223,13 @@
           "title": "Add codespell support (config, workflow to detect/not fix) and make it fix some typos",
           "author": "yarikoptic",
           "created_at": "2025-08-06T14:33:10+00:00",
-          "updated_at": "2025-08-06T14:33:10+00:00",
+          "updated_at": "2026-08-01T00:29:12+00:00",
           "merged_at": null,
           "closed_at": null,
           "status": "open",
           "analysis_status": "analyzed",
-          "commit_count": 4,
-          "files_changed": 12,
+          "commit_count": 6,
+          "files_changed": 15,
           "automation_types": [
             "github-actions"
           ],
@@ -22244,8 +22244,8 @@
           "time_to_first_response_hours": null,
           "days_awaiting_submitter": null,
           "response_status": "no_response",
-          "etag": "W/\"a030cb3b29ca3a9ac1008d1479fd046dd30a4c281f8ae6e2a29caf3cfc1ca767\"",
-          "last_fetched_at": "2026-05-09T00:52:17.654262+00:00",
+          "etag": "W/\"34ccd02dccb62bc0b2eb6a218d50af2d528ea966669d2e5fed3a5b8232a1d8bb\"",
+          "last_fetched_at": "2026-08-01T01:59:42.077286+00:00",
           "last_developer_comment_body": null,
           "has_conflicts": false,
           "ci_status": "pending",
