@@ -164,7 +164,7 @@ class Configuration:
                 if isinstance(override_data, dict):
                     # Cast is safe - validation will catch invalid categories
                     category = cast(
-                        BehaviorCategory,
+                        "BehaviorCategory",
                         override_data.get("category", "insufficient_data"),
                     )
                     overrides[repo_name] = RepositoryOverride(
@@ -175,7 +175,7 @@ class Configuration:
                     # Allow shorthand: repo_name: category
                     # Cast is safe - validation will catch invalid categories
                     overrides[repo_name] = RepositoryOverride(
-                        category=cast(BehaviorCategory, override_data)
+                        category=cast("BehaviorCategory", override_data)
                     )
             kwargs["repository_overrides"] = overrides
 
