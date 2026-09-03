@@ -7,6 +7,7 @@
 tracked_users:
   - yarikoptic
   - DimitriPapadopoulos
+  - hartwork
 
 # Tool keywords for PR title matching
 # PRs with these keywords in the title will be tracked

@@ -4,7 +4,7 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Summary
 
-*Last updated: 2026-07-12 01:53 UTC*
+*Last updated: 2026-09-03 21:50 UTC*
 
 - **Repositories tracked**: 450
 - **Total PRs**: 496
@@ -16,6 +16,7 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 | User | Total | Draft | Open | Merged | Closed |
 |------|-------|-------|------|--------|--------|
 | [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [66](READMEs/DimitriPapadopoulos.md) | 0 | [9](READMEs/DimitriPapadopoulos/open.md) | [51](READMEs/DimitriPapadopoulos/merged.md) | [6](READMEs/DimitriPapadopoulos/closed.md) |
+| [hartwork](https://github.com/hartwork) | 0 | 0 | 0 | 0 | 0 |
 | [yarikoptic](https://github.com/yarikoptic) | [430](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [146](READMEs/yarikoptic/open.md) | [183](READMEs/yarikoptic/merged.md) | [88](READMEs/yarikoptic/closed.md) |
 
 ## Repository Responsiveness
