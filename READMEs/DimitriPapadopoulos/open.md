@@ -1,20 +1,18 @@
 # Open PRs by DimitriPapadopoulos
 
-*Last updated: 2026-05-14 02:27 UTC*
+*Last updated: 2026-09-04 00:34 UTC*
 
 [< Back to DimitriPapadopoulos summary](../DimitriPapadopoulos.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 9 PRs
+**Total**: 7 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
-| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | [#33930](https://github.com/scikit-learn/scikit-learn/pull/33930) | codespell → typos | codespell | 2026-05-04 | 6 | 1 (1) | You (2d) | CI:OK | - | github-actions, pre-commit | Thanks for the PR @DimitriPapadopoulos. So comp... |
-| [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | MNT: bump codespell | codespell | 2026-05-07 | 26 | 1 (0) | Maintainer | CI:FAIL | - | pre-commit | - |
-| [GEANT/CAT](https://github.com/GEANT/CAT) | [#347](https://github.com/GEANT/CAT/pull/347) | Fix typos found by codespell and typos | codespell | 2026-01-05 | 47 | 0 (0) | No response | CI:FAIL | - | - | - |
+| [capmar/sxml](https://github.com/capmar/sxml) | [#3](https://github.com/capmar/sxml/pull/3) | Fix typos found by codespell | codespell | 2022-12-19 | 3 | 0 (0) | No response | CI:... | - | - | - |
+| [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | [#33930](https://github.com/scikit-learn/scikit-learn/pull/33930) | codespell → typos | codespell | 2026-05-04 | 6 | 1 (1) | You (115d) | CI:OK Main:OK | Yes | github-actions, pre-commit | Thanks for the PR @DimitriPapadopoulos. So comp... |
+| [nsis-dev/nsis](https://github.com/nsis-dev/nsis) | [#33](https://github.com/nsis-dev/nsis/pull/33) | Fix typos found by codespell and typos | codespell | 2026-05-23 | 12 | 2 (2) | You (102d) | CI:... | Yes | - | Thanks, I fixed most of these (except the LZMA ... |
 | [FreeRADIUS/freeradius-client](https://github.com/FreeRADIUS/freeradius-client) | [#121](https://github.com/FreeRADIUS/freeradius-client/pull/121) | Fix typos found by codespell | codespell | 2024-05-08 | 1 | 0 (0) | No response | CI:... | - | - | - |
-| [lamyj/dicomifier](https://github.com/lamyj/dicomifier) | [#58](https://github.com/lamyj/dicomifier/pull/58) | Fix typos found by codespell | codespell | 2024-09-23 | 3 | 0 (0) | No response | CI:... | - | - | - |
 | [planetmarshall/pillow-jpls](https://github.com/planetmarshall/pillow-jpls) | [#18](https://github.com/planetmarshall/pillow-jpls/pull/18) | Fix typos found by codespell | codespell | 2023-10-13 | 2 | 0 (0) | No response | CI:... | - | - | - |
-| [rustyrussell/ccan](https://github.com/rustyrussell/ccan) | [#99](https://github.com/rustyrussell/ccan/pull/99) | Fix typos detected by codespell | codespell | 2021-12-22 | 55 | 0 (0) | No response | CI:... | - | - | - |
-| [geteduroam/apple-app](https://github.com/geteduroam/apple-app) | [#160](https://github.com/geteduroam/apple-app/pull/160) | Fix typos found by codespell | codespell | 2025-06-25 | 1 | 0 (0) | No response | CI:... Main:FAIL | - | - | - |
-| [google/snappy](https://github.com/google/snappy) | [#170](https://github.com/google/snappy/pull/170) | Fix typos found by codespell | codespell | 2023-07-29 | 3 | 0 (0) | No response | CI:... | - | - | - |
+| [rustyrussell/ccan](https://github.com/rustyrussell/ccan) | [#99](https://github.com/rustyrussell/ccan/pull/99) | Fix typos detected by codespell | codespell | 2021-12-22 | 55 | 0 (0) | No response | CI:... | Yes | - | - |
+| [geteduroam/apple-app](https://github.com/geteduroam/apple-app) | [#160](https://github.com/geteduroam/apple-app/pull/160) | Fix typos found by codespell | codespell | 2025-06-25 | 1 | 0 (0) | No response | CI:... Main:OK | - | - | - |
 

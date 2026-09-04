@@ -1,13 +1,15 @@
 # Merged PRs by DimitriPapadopoulos
 
-*Last updated: 2026-05-09 00:54 UTC*
+*Last updated: 2026-09-04 00:34 UTC*
 
 [< Back to DimitriPapadopoulos summary](../DimitriPapadopoulos.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 51 PRs
+**Total**: 53 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [GEANT/CAT](https://github.com/GEANT/CAT) | [#347](https://github.com/GEANT/CAT/pull/347) | Fix typos found by codespell and typos | codespell | 2026-01-05 | 2026-05-14 | @twoln | 2 | 47 | - | - |
+| [dipy/dipy](https://github.com/dipy/dipy) | [#4014](https://github.com/dipy/dipy/pull/4014) | MNT: bump codespell | codespell | 2026-05-07 | 2026-05-11 | @skoudoro | 3 | 26 | pre-commit | - |
 | [sarugaku/resolvelib](https://github.com/sarugaku/resolvelib) | [#202](https://github.com/sarugaku/resolvelib/pull/202) | Fix typos found by codespell | codespell | 2026-02-12 | 2026-03-13 | @uranusjr | 1 | 5 | - | - |
 | [poldracklab/pydeface](https://github.com/poldracklab/pydeface) | [#61](https://github.com/poldracklab/pydeface/pull/61) | Fix typos found by codespell | codespell | 2026-03-03 | 2026-03-04 | @effigies | 1 | 2 | - | - |
 | [python-poetry/poetry](https://github.com/python-poetry/poetry) | [#10684](https://github.com/python-poetry/poetry/pull/10684) | Fix typos found by codespell | codespell | 2026-01-09 | 2026-01-10 | @radoering | 1 | 2 | - | - |

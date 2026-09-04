@@ -1,6 +1,6 @@
 # PRs by hartwork
 
-*Last updated: 2026-09-03 21:50 UTC*
+*Last updated: 2026-09-04 00:34 UTC*
 
 [< Back to Dashboard](../README.md)
 
@@ -8,9 +8,9 @@
 
 - **Draft**: 0 PRs
 - **Open**: 0 PRs
-- **Merged**: 0 PRs
+- **[Merged](hartwork/merged.md)**: 5 PRs
 - **Closed**: 0 PRs
-- **Total**: 0 PRs
+- **Total**: 5 PRs
 
 ## Needs Your Response
 

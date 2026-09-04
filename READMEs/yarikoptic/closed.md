@@ -1,15 +1,39 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2026-06-26 02:33 UTC*
+*Last updated: 2026-09-04 00:34 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 88 PRs
+**Total**: 113 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | [#7](https://github.com/SPAROntologies/cito/pull/7) | chore: add codespell support (config,... | codespell | 2026-01-31 | 2026-09-03 | - | 18 | Hi @yarikoptic , thank you for the tip! As a ma... |
+| [arp242/zstd](https://github.com/arp242/zstd) | [#6](https://github.com/arp242/zstd/pull/6) | Add codespell support with configurat... | codespell | 2026-08-28 | 2026-08-28 | - | 10 | - |
+| [arp242/goatcounter](https://github.com/arp242/goatcounter) | [#926](https://github.com/arp242/goatcounter/pull/926) | Add codespell support (config, workfl... | codespell | 2026-08-26 | 2026-08-27 | - | 26 | Thanks for the effort, but I'm okay with occasi... |
+| [harbor-framework/terminal-bench-science](https://github.com/harbor-framework/terminal-bench-science) | [#919](https://github.com/harbor-framework/terminal-bench-science/pull/919) | Add codespell support with configurat... | codespell | 2026-08-11 | 2026-08-21 | - | 11 | @ |
+| [oasis-tcs/sarif-spec](https://github.com/oasis-tcs/sarif-spec) | [#787](https://github.com/oasis-tcs/sarif-spec/pull/787) | Add codespell support: expand config,... | codespell | 2026-07-20 | 2026-08-07 | - | 39 | Closing without action. Reasoning: The PR looks... |
+| [pulse2percept/pulse2percept](https://github.com/pulse2percept/pulse2percept) | [#616](https://github.com/pulse2percept/pulse2percept/pull/616) | [ENH] Add codespell support (config, ... | codespell | 2024-05-05 | 2026-08-06 | - | 26 | Thanks for proposing this and for fixing the sp... |
+| [pyparsing/pyparsing](https://github.com/pyparsing/pyparsing) | [#540](https://github.com/pyparsing/pyparsing/pull/540) | Add codespell (config, workflow, pre-... | codespell | 2024-02-14 | 2026-08-03 | - | 9 | Closing - will do better at spell-checking in f... |
+| [photoprism/photoprism-docs](https://github.com/photoprism/photoprism-docs) | [#191](https://github.com/photoprism/photoprism-docs/pull/191) | Add codespell support (config, workfl... | codespell | 2025-01-06 | 2026-07-28 | - | 10 | Thanks for re-running it — much appreciated. Th... |
+| [a2ui-project/a2ui](https://github.com/a2ui-project/a2ui) | [#822](https://github.com/a2ui-project/a2ui/pull/822) | Add codespell support with configurat... | codespell | 2026-03-12 | 2026-07-26 | - | 7 | - |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | [#123](https://github.com/K-Dense-AI/scientific-agent-skills/pull/123) | Add codespell support with configurat... | codespell | 2026-04-06 | 2026-07-25 | - | 3 | Thanks for this, and sorry for the slow respons... |
+| [aces/EEG2BIDS](https://github.com/aces/EEG2BIDS) | [#121](https://github.com/aces/EEG2BIDS/pull/121) | Add codespell support (config, workfl... | codespell | 2024-02-12 | 2026-07-16 | - | 34 | Closing legacy PR. The Codespell configuration ... |
+| [cmusatyalab/openface](https://github.com/cmusatyalab/openface) | [#470](https://github.com/cmusatyalab/openface/pull/470) | Add codespell support with configurat... | codespell | 2026-07-15 | 2026-07-15 | - | 12 | thanks! i don't want codespell in as an action/... |
+| [BIC-MNI/mni-7t-dicom-to-bids](https://github.com/BIC-MNI/mni-7t-dicom-to-bids) | [#7](https://github.com/BIC-MNI/mni-7t-dicom-to-bids/pull/7) | Add codespell support (config, workfl... | codespell | 2025-08-28 | 2026-07-04 | - | 3 | Hi, after coming back to this project, I decide... |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | [#1072](https://github.com/github/github-mcp-server/pull/1072) | Add codespell support (config, workfl... | codespell | 2025-09-09 | 2026-07-02 | - | 4 | @yarikoptic it wasn't approved by anyone on the... |
+| [ESIPFed/science-on-schema.org](https://github.com/ESIPFed/science-on-schema.org) | [#286](https://github.com/ESIPFed/science-on-schema.org/pull/286) | Add codespell support: config, CI wor... | codespell | 2026-06-16 | 2026-06-16 | - | 18 | No thanks. We'll take care of those. |
 | [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | [#1314](https://github.com/git-ai-project/git-ai/pull/1314) | Add codespell support with configurat... | codespell | 2026-05-08 | 2026-06-26 | - | 10 | - |
+| [brain-score/vision](https://github.com/brain-score/vision) | [#1987](https://github.com/brain-score/vision/pull/1987) | Add codespell support (config, workfl... | codespell | 2025-08-21 | 2026-06-12 | - | 77 | - |
 | [ctxrs/ctx](https://github.com/ctxrs/ctx) | [#4](https://github.com/ctxrs/ctx/pull/4) | Add codespell support (config, workfl... | codespell | 2026-05-12 | 2026-06-13 | - | 2 | - |
+| [pyinfra-dev/pyinfra](https://github.com/pyinfra-dev/pyinfra) | [#1431](https://github.com/pyinfra-dev/pyinfra/pull/1431) | Add shellcheck support (workflow to d... | shellcheck | 2025-08-12 | 2026-06-11 | - | 4 | Thanks for this @yarikoptic, and sorry it sat o... |
+| [awslabs/open-data-registry](https://github.com/awslabs/open-data-registry) | [#2991](https://github.com/awslabs/open-data-registry/pull/2991) | chore: add codespell support (config,... | codespell | 2026-01-07 | 2026-06-10 | - | 49 | @yarikoptic, thanks for putting this together. ... |
+| [sourcebot-dev/sourcebot](https://github.com/sourcebot-dev/sourcebot) | [#1055](https://github.com/sourcebot-dev/sourcebot/pull/1055) | Add codespell support with configurat... | codespell | 2026-03-28 | 2026-06-08 | - | 21 | - |
+| [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt) | [#2229](https://github.com/zylon-ai/private-gpt/pull/2229) | chore: add codespell support (config,... | codespell | 2026-05-30 | 2026-06-01 | - | 9 | Thanks for your contributions and effort. We're... |
+| [mermaid-js/mermaid](https://github.com/mermaid-js/mermaid) | [#5294](https://github.com/mermaid-js/mermaid/pull/5294) | Add shellcheck support and robustify ... | shellcheck | 2024-02-16 | 2026-06-01 | - | 4 | Hi @yarikoptic — thank you for this; hardening ... |
+| [flyteorg/flyte](https://github.com/flyteorg/flyte) | [#7121](https://github.com/flyteorg/flyte/pull/7121) | Add codespell config to v2 branch and... | codespell | 2026-03-31 | 2026-05-29 | - | 16 | resubmit against main |
+| [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt) | [#2191](https://github.com/zylon-ai/private-gpt/pull/2191) | chore: add codespell support (config,... | codespell | 2025-12-28 | 2026-05-29 | - | 8 | Stale pull request |
+| [MRI-Lab-Graz/prism-studio](https://github.com/MRI-Lab-Graz/prism-studio) | [#37](https://github.com/MRI-Lab-Graz/prism-studio/pull/37) | Enhance codespell support with config... | codespell | 2026-04-18 | 2026-05-11 | - | 6 | - |
 | [fastapi/sqlmodel](https://github.com/fastapi/sqlmodel) | [#588](https://github.com/fastapi/sqlmodel/pull/588) | 👷 Add codespell workflow + fix some t... | codespell | 2023-04-26 | 2026-05-05 | - | 4 | Closing this as we now have https://github.com/... |
 | [cosanlab/py-feat](https://github.com/cosanlab/py-feat) | [#207](https://github.com/cosanlab/py-feat/pull/207) | Add codespell: workflow, config + mak... | codespell | 2024-02-26 | 2026-05-03 | - | 17 | Thanks for the codespell workflow + bulk typo f... |
 | [fsfe/reuse-tool](https://github.com/fsfe/reuse-tool) | [#1283](https://github.com/fsfe/reuse-tool/pull/1283) | Add codespell support with configurat... | codespell | 2026-04-26 | 2026-04-27 | - | 5 | I believe the project moved over to Codeberg: h... |
@@ -24,6 +48,7 @@
 | [PyAV-Org/PyAV](https://github.com/PyAV-Org/PyAV) | [#2201](https://github.com/PyAV-Org/PyAV/pull/2201) | Add codespell support with configurat... | codespell | 2026-03-16 | 2026-03-16 | - | 4 | See #2202 |
 | [Old-Man-Programmer/tree](https://github.com/Old-Man-Programmer/tree) | [#27](https://github.com/Old-Man-Programmer/tree/pull/27) | chore: add codespell support (config,... | codespell | 2026-01-12 | 2026-03-16 | - | 3 | I appreciate the effort, but I don't really use... |
 | [chaoss/grimoirelab](https://github.com/chaoss/grimoirelab) | [#830](https://github.com/chaoss/grimoirelab/pull/830) | Add codespell support with configurat... | codespell | 2026-03-13 | 2026-03-13 | - | 27 | Thanks but we aren't interested on adding this ... |
+| [a2ui-project/a2ui](https://github.com/a2ui-project/a2ui) | [#546](https://github.com/a2ui-project/a2ui/pull/546) | chore: add codespell support (config,... | codespell | 2026-01-25 | 2026-03-11 | - | 8 | Closing — this has gone stale with merge confli... |
 | [google/A2UI](https://github.com/google/A2UI) | [#546](https://github.com/google/A2UI/pull/546) | chore: add codespell support (config,... | codespell | 2026-01-25 | 2026-03-11 | - | 8 | Closing — this has gone stale with merge confli... |
 | [caddyserver/caddy](https://github.com/caddyserver/caddy) | [#6872](https://github.com/caddyserver/caddy/pull/6872) | Add codespell support (config, workfl... | codespell | 2025-03-04 | 2026-03-01 | - | 8 | Yeah of course, no blame. It's our own fault fo... |
 | [nilearn/poia](https://github.com/nilearn/poia) | [#9](https://github.com/nilearn/poia/pull/9) | Add codespell support (config, workfl... | codespell | 2026-02-24 | 2026-02-24 | - | 1 | - |
