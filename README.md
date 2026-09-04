@@ -4,20 +4,20 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Summary
 
-*Last updated: 2026-09-04 00:34 UTC*
+*Last updated: 2026-09-04 01:21 UTC*
 
-- **Repositories tracked**: 513
-- **Total PRs**: 569
-- **Merged**: 264
-- **Open**: 167
+- **Repositories tracked**: 1065
+- **Total PRs**: 1500
+- **Merged**: 965
+- **Open**: 258
 
 ## Contributors
 
 | User | Total | Draft | Open | Merged | Closed |
 |------|-------|-------|------|--------|--------|
-| [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [73](READMEs/DimitriPapadopoulos.md) | 0 | [7](READMEs/DimitriPapadopoulos/open.md) | [53](READMEs/DimitriPapadopoulos/merged.md) | [13](READMEs/DimitriPapadopoulos/closed.md) |
-| [hartwork](https://github.com/hartwork) | [5](READMEs/hartwork.md) | 0 | 0 | [5](READMEs/hartwork/merged.md) | 0 |
-| [yarikoptic](https://github.com/yarikoptic) | [491](READMEs/yarikoptic.md) | [12](READMEs/yarikoptic/draft.md) | [160](READMEs/yarikoptic/open.md) | [206](READMEs/yarikoptic/merged.md) | [113](READMEs/yarikoptic/closed.md) |
+| [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [538](READMEs/DimitriPapadopoulos.md) | 0 | [23](READMEs/DimitriPapadopoulos/open.md) | [426](READMEs/DimitriPapadopoulos/merged.md) | [89](READMEs/DimitriPapadopoulos/closed.md) |
+| [hartwork](https://github.com/hartwork) | [13](READMEs/hartwork.md) | 0 | 0 | [13](READMEs/hartwork/merged.md) | 0 |
+| [yarikoptic](https://github.com/yarikoptic) | [949](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [235](READMEs/yarikoptic/open.md) | [526](READMEs/yarikoptic/merged.md) | [175](READMEs/yarikoptic/closed.md) |
 
 ## Repository Responsiveness
 
@@ -27,11 +27,11 @@ acceptance rate (percentage of PRs merged vs closed without merge).
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| Welcoming | [6](Summaries/responsiveness/welcoming.md) | Fast response (<48h), high acceptance rate (>70%) |
-| Selective | [26](Summaries/responsiveness/selective.md) | Moderate response time, reviews carefully before accepting |
-| Unresponsive | [9](Summaries/responsiveness/unresponsive.md) | Slow or no response (>7 days average) |
-| Hostile | [3](Summaries/responsiveness/hostile.md) | Quick rejection without engagement |
-| Insufficient Data | [469](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
+| Welcoming | [65](Summaries/responsiveness/welcoming.md) | Fast response (<48h), high acceptance rate (>70%) |
+| Selective | [108](Summaries/responsiveness/selective.md) | Moderate response time, reviews carefully before accepting |
+| Unresponsive | [21](Summaries/responsiveness/unresponsive.md) | Slow or no response (>7 days average) |
+| Hostile | [4](Summaries/responsiveness/hostile.md) | Quick rejection without engagement |
+| Insufficient Data | [867](Summaries/responsiveness/insufficient_data.md) | Not enough PRs to categorize reliably |
 
 ---
 

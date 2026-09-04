@@ -115,6 +115,12 @@ class GitHubClient:
             date_str = updated_since.strftime("%Y-%m-%d")
             query_parts.append(f"updated:>{date_str}")
 
+        # Include keywords server-side to avoid hitting GitHub's 1000-result cap
+        # for prolific contributors. Client-side filtering is kept as a second pass.
+        if keywords:
+            kw_expr = " OR ".join(keywords)
+            query_parts.append(f"({kw_expr}) in:title")
+
         query = " ".join(query_parts)
 
         logger.info(f"Searching PRs for user {username}: {query}")
