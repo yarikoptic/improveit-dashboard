@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-09-04 01:21 UTC*
+*Last updated: 2026-09-05 19:47 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -367,7 +367,7 @@
 | [harbor-framework/harbor](https://github.com/harbor-framework/harbor) | 1 | 0 | 0 | - | - |
 | [HarmonizedMRI/PulCeq](https://github.com/HarmonizedMRI/PulCeq) | 1 | 1 | 0 | 100% | 829.0d |
 | [hartwork/fetchcommandwrapper](https://github.com/hartwork/fetchcommandwrapper) | 1 | 1 | 0 | 100% | - |
-| [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | 1 | 0 | 0 | - | 0h |
+| [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | 1 | 1 | 0 | 100% | 0h |
 | [hartwork/pytocron](https://github.com/hartwork/pytocron) | 1 | 1 | 0 | 100% | - |
 | [hartwork/sandwine](https://github.com/hartwork/sandwine) | 1 | 1 | 0 | 100% | - |
 | [harvard-edge/cs249r_book](https://github.com/harvard-edge/cs249r_book) | 1 | 1 | 0 | 100% | 28.9d |
@@ -884,7 +884,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
-| [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | [#323](https://github.com/hartwork/git-delete-merged-branches/pull/323) | open | codespell | 0h | > that commit is actually non-AI, ori... |
+| [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | [#323](https://github.com/hartwork/git-delete-merged-branches/pull/323) | merged | codespell | 0h | > that commit is actually non-AI, ori... |
 | [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | [#7](https://github.com/SPAROntologies/cito/pull/7) | closed | codespell | 215.0d | Hi @yarikoptic , thank you for the ti... |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | [#33473](https://github.com/dagster-io/dagster/pull/33473) | open | codespell | - | - |
 | [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | open | codespell | - | - |
