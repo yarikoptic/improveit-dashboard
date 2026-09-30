@@ -1,10 +1,10 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-09-05 19:47 UTC*
+*Last updated: 2026-09-30 03:09 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 234 PRs
+**Total**: 233 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
@@ -140,7 +140,6 @@
 | [osfclient/osfclient](https://github.com/osfclient/osfclient) | [#210](https://github.com/osfclient/osfclient/pull/210) | Add codespell support (config, workfl... | codespell | 2025-03-16 | 7 | 0 (0) | No response | CI:... | - | github-actions | - |
 | [EBISPOT/DUO](https://github.com/EBISPOT/DUO) | [#128](https://github.com/EBISPOT/DUO/pull/128) | Add codespell support (config, workfl... | codespell | 2025-03-05 | 8 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [olifolkerd/tabulator](https://github.com/olifolkerd/tabulator) | [#4707](https://github.com/olifolkerd/tabulator/pull/4707) | Add codespell support (config, workfl... | codespell | 2025-03-05 | 17 | 0 (0) | No response | CI:OK | - | codespell-config, github-actions | - |
-| [tabulator-tables/tabulator](https://github.com/tabulator-tables/tabulator) | [#4707](https://github.com/tabulator-tables/tabulator/pull/4707) | Add codespell support (config, workfl... | codespell | 2025-03-05 | 17 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [auto-pi-lot/autopilot](https://github.com/auto-pi-lot/autopilot) | [#213](https://github.com/auto-pi-lot/autopilot/pull/213) | Add codespell support (config, workfl... | codespell | 2025-02-18 | 44 | 0 (0) | No response | CI:... | - | github-actions | - |
 | [fradav/quarto-revealjs-animate](https://github.com/fradav/quarto-revealjs-animate) | [#4](https://github.com/fradav/quarto-revealjs-animate/pull/4) | Add codespell support (config, workfl... | codespell | 2025-02-17 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [quarto-dev/quarto](https://github.com/quarto-dev/quarto) | [#576](https://github.com/quarto-dev/quarto/pull/576) | Add codespell support (config, workfl... | codespell | 2024-10-17 | 21 | 2 (1) | Maintainer | CI:... | Yes | codespell-config, github-actions | Thanks for the PR and the typo fixes. I'm reluc... |

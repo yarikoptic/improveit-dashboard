@@ -1,13 +1,14 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2026-09-04 01:21 UTC*
+*Last updated: 2026-09-30 03:09 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 175 PRs
+**Total**: 176 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [tabulator-tables/tabulator](https://github.com/tabulator-tables/tabulator) | [#4707](https://github.com/tabulator-tables/tabulator/pull/4707) | Add codespell support (config, workfl... | codespell | 2025-03-05 | 2026-09-29 | - | 17 | Hey! Thanks for the contribution, but I don't t... |
 | [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | [#7](https://github.com/SPAROntologies/cito/pull/7) | chore: add codespell support (config,... | codespell | 2026-01-31 | 2026-09-03 | - | 18 | Hi @yarikoptic , thank you for the tip! As a ma... |
 | [arp242/zstd](https://github.com/arp242/zstd) | [#6](https://github.com/arp242/zstd/pull/6) | Add codespell support with configurat... | codespell | 2026-08-28 | 2026-08-28 | - | 10 | - |
 | [arp242/goatcounter](https://github.com/arp242/goatcounter) | [#926](https://github.com/arp242/goatcounter/pull/926) | Add codespell support (config, workfl... | codespell | 2026-08-26 | 2026-08-27 | - | 26 | Thanks for the effort, but I'm okay with occasi... |

@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-09-05 19:47 UTC*
+*Last updated: 2026-09-30 03:09 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -816,7 +816,7 @@
 | [sylabs/singularityce-community](https://github.com/sylabs/singularityce-community) | 1 | 0 | 1 | 0% | 8h |
 | [syncthing/syncthing](https://github.com/syncthing/syncthing) | 1 | 1 | 0 | 100% | 13h |
 | [systemd/systemd](https://github.com/systemd/systemd) | 1 | 1 | 0 | 100% | - |
-| [tabulator-tables/tabulator](https://github.com/tabulator-tables/tabulator) | 1 | 0 | 0 | - | - |
+| [tabulator-tables/tabulator](https://github.com/tabulator-tables/tabulator) | 1 | 0 | 1 | 0% | 573.1d |
 | [talmolab/sleap](https://github.com/talmolab/sleap) | 1 | 0 | 1 | 0% | - |
 | [team-charls/charls](https://github.com/team-charls/charls) | 1 | 1 | 0 | 100% | 2.4d |
 | [templateflow/python-client](https://github.com/templateflow/python-client) | 1 | 1 | 0 | 100% | - |
@@ -884,6 +884,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [tabulator-tables/tabulator](https://github.com/tabulator-tables/tabulator) | [#4707](https://github.com/tabulator-tables/tabulator/pull/4707) | closed | codespell | 573.1d | Hey! Thanks for the contribution, but... |
 | [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | [#323](https://github.com/hartwork/git-delete-merged-branches/pull/323) | merged | codespell | 0h | > that commit is actually non-AI, ori... |
 | [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | [#7](https://github.com/SPAROntologies/cito/pull/7) | closed | codespell | 215.0d | Hi @yarikoptic , thank you for the ti... |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | [#33473](https://github.com/dagster-io/dagster/pull/33473) | open | codespell | - | - |
@@ -933,7 +934,6 @@
 | [chdsbd/kodiak](https://github.com/chdsbd/kodiak) | [#921](https://github.com/chdsbd/kodiak/pull/921) | open | codespell | - | - |
 | [BetterCodeBetterScience/bettercode](https://github.com/BetterCodeBetterScience/bettercode) | [#2](https://github.com/BetterCodeBetterScience/bettercode/pull/2) | open | codespell | - | - |
 | [argoproj/argo-workflows](https://github.com/argoproj/argo-workflows) | [#14454](https://github.com/argoproj/argo-workflows/pull/14454) | draft | codespell | 12h | > > * Sign DCO > > done Thanks > > * ... |
-| [jpanther/congo](https://github.com/jpanther/congo) | [#1155](https://github.com/jpanther/congo/pull/1155) | open | codespell | - | - |
 
 *Showing 50 of 867 PRs*
 
