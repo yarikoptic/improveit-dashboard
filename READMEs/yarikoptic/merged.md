@@ -1,13 +1,14 @@
 # Merged PRs by yarikoptic
 
-*Last updated: 2026-09-05 19:47 UTC*
+*Last updated: 2026-10-03 03:03 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 527 PRs
+**Total**: 528 PRs
 
 | Repository | PR | Title | Tool | Created | Merged | Merged By | Commits | Files | Automation | Last Comment |
 |------------|----|----|------|---------|--------|----------|---------|-------|------------|--------------|
+| [brainbench-org/ibl-bwb](https://github.com/brainbench-org/ibl-bwb) | [#1](https://github.com/brainbench-org/ibl-bwb/pull/1) | chore: add codespell spell-checking | codespell | 2026-09-29 | 2026-10-03 | @AlexandreAndr | 6 | 6 | github-actions, pre-commit | That is already amayzing! |
 | [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | [#323](https://github.com/hartwork/git-delete-merged-branches/pull/323) | Add codespell support (config, workfl... | codespell | 2026-09-02 | 2026-09-04 | @hartwork | 2 | 2 | pre-commit | > that commit is actually non-AI, original scri... |
 | [obophenotype/uberon](https://github.com/obophenotype/uberon) | [#3759](https://github.com/obophenotype/uberon/pull/3759) | Add codespell support with configurat... | codespell | 2026-08-26 | 2026-08-29 | @matentzn | 6 | 24 | codespell-config, github-actions | Thanks @yarikoptic! Still shilling for codespel... |
 | [ondratu/formiko](https://github.com/ondratu/formiko) | [#62](https://github.com/ondratu/formiko/pull/62) | Add codespell for automated spell-che... | codespell | 2026-08-27 | 2026-08-27 | @ondratu | 8 | 13 | github-actions, pre-commit | Thank you! |

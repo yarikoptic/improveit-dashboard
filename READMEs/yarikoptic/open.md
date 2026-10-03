@@ -1,13 +1,15 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-09-30 03:09 UTC*
+*Last updated: 2026-10-03 03:03 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 233 PRs
+**Total**: 235 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [ComputationalPsychiatry/PhysIO](https://github.com/ComputationalPsychiatry/PhysIO) | [#52](https://github.com/ComputationalPsychiatry/PhysIO/pull/52) | Add codespell support with configurat... | codespell | 2026-10-03 | 37 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
+| [citation-file-format/cffconvert](https://github.com/citation-file-format/cffconvert) | [#425](https://github.com/citation-file-format/cffconvert/pull/425) | Add codespell support with configurat... | codespell | 2026-10-03 | 6 | 0 (0) | No response | CI:FAIL | - | github-actions, pre-commit | - |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | [#33473](https://github.com/dagster-io/dagster/pull/33473) | Add codespell support with configurat... | codespell | 2026-02-20 | 245 | 2 (0) | Maintainer | CI:FAIL Main:FAIL | Yes | github-actions, pre-commit | - |
 | [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | Add codespell support with configurat... | codespell | 2026-05-28 | 27 | 2 (0) | Maintainer | CI:... | - | codespell-config, github-actions | - |
 | [obophenotype/uberon](https://github.com/obophenotype/uberon) | [#3762](https://github.com/obophenotype/uberon/pull/3762) | Fix typos in uberon-edit.obo via code... | codespell | 2026-08-30 | 2 | 0 (0) | No response | CI:FAIL | - | codespell-config | - |
