@@ -1,6 +1,6 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-10-03 03:03 UTC*
+*Last updated: 2026-10-09 03:48 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -8,6 +8,7 @@
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | Add codespell support (config, workfl... | codespell | 2025-11-04 | 39 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [ComputationalPsychiatry/PhysIO](https://github.com/ComputationalPsychiatry/PhysIO) | [#52](https://github.com/ComputationalPsychiatry/PhysIO/pull/52) | Add codespell support with configurat... | codespell | 2026-10-03 | 37 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [citation-file-format/cffconvert](https://github.com/citation-file-format/cffconvert) | [#425](https://github.com/citation-file-format/cffconvert/pull/425) | Add codespell support with configurat... | codespell | 2026-10-03 | 6 | 0 (0) | No response | CI:FAIL | - | github-actions, pre-commit | - |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | [#33473](https://github.com/dagster-io/dagster/pull/33473) | Add codespell support with configurat... | codespell | 2026-02-20 | 245 | 2 (0) | Maintainer | CI:FAIL Main:FAIL | Yes | github-actions, pre-commit | - |
@@ -40,7 +41,6 @@
 | [BetterCodeBetterScience/bettercode](https://github.com/BetterCodeBetterScience/bettercode) | [#2](https://github.com/BetterCodeBetterScience/bettercode/pull/2) | Add codespell CI + pre-commit; tighte... | codespell | 2026-07-08 | 6 | 0 (0) | No response | CI:FAIL | - | github-actions, pre-commit | - |
 | [jpanther/congo](https://github.com/jpanther/congo) | [#1155](https://github.com/jpanther/congo/pull/1155) | Add codespell support with configurat... | codespell | 2026-03-05 | 9 | 3 (0) | Maintainer | CI:OK | Yes | codespell-config, github-actions | - |
 | [EDIorg/data-package-best-practices](https://github.com/EDIorg/data-package-best-practices) | [#110](https://github.com/EDIorg/data-package-best-practices/pull/110) | Add codespell support with configurat... | codespell | 2026-07-01 | 11 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
-| [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | Add codespell support (config, workfl... | codespell | 2025-11-04 | 39 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [neuroscout/neuroscout](https://github.com/neuroscout/neuroscout) | [#1106](https://github.com/neuroscout/neuroscout/pull/1106) | codespell: config, action + typos fixed | codespell | 2023-06-16 | 29 | 6 (4) | You (1159d) | CI:... | - | codespell-config, github-actions | :warning: Please install the !['codecov app svg... |
 | [yuezk/GlobalProtect-openconnect](https://github.com/yuezk/GlobalProtect-openconnect) | [#617](https://github.com/yuezk/GlobalProtect-openconnect/pull/617) | Add codespell support: config, CI wor... | codespell | 2026-06-10 | 3 | 0 (0) | No response | CI:OK | - | codespell-config, github-actions | - |
 | [node-red/node-red](https://github.com/node-red/node-red) | [#4530](https://github.com/node-red/node-red/pull/4530) | Fix 22 typos found by codespell | codespell | 2024-01-15 | 38 | 3 (1) | Maintainer | CI:... | Yes | - | Hi @yarikoptic Thanks for this. Some of these h... |
