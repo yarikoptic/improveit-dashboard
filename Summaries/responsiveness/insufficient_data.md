@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-10-09 03:48 UTC*
+*Last updated: 2026-10-17 02:16 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -887,6 +887,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | open | codespell | - | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | open | codespell | - | - |
 | [ComputationalPsychiatry/PhysIO](https://github.com/ComputationalPsychiatry/PhysIO) | [#52](https://github.com/ComputationalPsychiatry/PhysIO/pull/52) | open | codespell | - | - |
 | [citation-file-format/cffconvert](https://github.com/citation-file-format/cffconvert) | [#425](https://github.com/citation-file-format/cffconvert/pull/425) | open | codespell | - | - |
@@ -895,7 +896,6 @@
 | [hartwork/git-delete-merged-branches](https://github.com/hartwork/git-delete-merged-branches) | [#323](https://github.com/hartwork/git-delete-merged-branches/pull/323) | merged | codespell | 0h | > that commit is actually non-AI, ori... |
 | [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | [#7](https://github.com/SPAROntologies/cito/pull/7) | closed | codespell | 215.0d | Hi @yarikoptic , thank you for the ti... |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | [#33473](https://github.com/dagster-io/dagster/pull/33473) | open | codespell | - | - |
-| [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | open | codespell | - | - |
 | [linux-test-project/lcov](https://github.com/linux-test-project/lcov) | [#532](https://github.com/linux-test-project/lcov/pull/532) | merged | codespell | - | - |
 | [roaldarbol/croppy](https://github.com/roaldarbol/croppy) | [#34](https://github.com/roaldarbol/croppy/pull/34) | open | codespell | - | - |
 | [donetick/docs](https://github.com/donetick/docs) | [#8](https://github.com/donetick/docs/pull/8) | open | codespell | - | - |

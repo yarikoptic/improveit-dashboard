@@ -1,6 +1,6 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-10-09 03:48 UTC*
+*Last updated: 2026-10-17 02:16 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
@@ -8,11 +8,11 @@
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | Add codespell support with configurat... | codespell | 2026-05-28 | 27 | 3 (0) | Maintainer | CI:... | - | codespell-config, github-actions | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | Add codespell support (config, workfl... | codespell | 2025-11-04 | 39 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [ComputationalPsychiatry/PhysIO](https://github.com/ComputationalPsychiatry/PhysIO) | [#52](https://github.com/ComputationalPsychiatry/PhysIO/pull/52) | Add codespell support with configurat... | codespell | 2026-10-03 | 37 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [citation-file-format/cffconvert](https://github.com/citation-file-format/cffconvert) | [#425](https://github.com/citation-file-format/cffconvert/pull/425) | Add codespell support with configurat... | codespell | 2026-10-03 | 6 | 0 (0) | No response | CI:FAIL | - | github-actions, pre-commit | - |
 | [dagster-io/dagster](https://github.com/dagster-io/dagster) | [#33473](https://github.com/dagster-io/dagster/pull/33473) | Add codespell support with configurat... | codespell | 2026-02-20 | 245 | 2 (0) | Maintainer | CI:FAIL Main:FAIL | Yes | github-actions, pre-commit | - |
-| [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | Add codespell support with configurat... | codespell | 2026-05-28 | 27 | 2 (0) | Maintainer | CI:... | - | codespell-config, github-actions | - |
 | [obophenotype/uberon](https://github.com/obophenotype/uberon) | [#3762](https://github.com/obophenotype/uberon/pull/3762) | Fix typos in uberon-edit.obo via code... | codespell | 2026-08-30 | 2 | 0 (0) | No response | CI:FAIL | - | codespell-config | - |
 | [roaldarbol/croppy](https://github.com/roaldarbol/croppy) | [#34](https://github.com/roaldarbol/croppy/pull/34) | Add codespell support (config, workfl... | codespell | 2026-08-29 | 3 | 0 (0) | No response | CI:... | - | github-actions | - |
 | [donetick/docs](https://github.com/donetick/docs) | [#8](https://github.com/donetick/docs/pull/8) | Introduce codespell + fix configratio... | codespell | 2026-08-29 | 9 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
