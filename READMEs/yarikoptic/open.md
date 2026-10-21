@@ -1,13 +1,14 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-10-17 02:16 UTC*
+*Last updated: 2026-10-21 02:39 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 235 PRs
+**Total**: 236 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
+| [mantidproject/mantid](https://github.com/mantidproject/mantid) | [#42543](https://github.com/mantidproject/mantid/pull/42543) | Add codespell support with configurat... | codespell | 2026-10-21 | 2007 | 1 (1) | You (0d) | CI:FAIL Main:OK | - | github-actions, pre-commit | Thanks for your submission, yarikoptic. Tests c... |
 | [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | Add codespell support with configurat... | codespell | 2026-05-28 | 27 | 3 (0) | Maintainer | CI:... | - | codespell-config, github-actions | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | Add codespell support (config, workfl... | codespell | 2025-11-04 | 39 | 0 (0) | No response | CI:... | Yes | github-actions | - |
 | [ComputationalPsychiatry/PhysIO](https://github.com/ComputationalPsychiatry/PhysIO) | [#52](https://github.com/ComputationalPsychiatry/PhysIO/pull/52) | Add codespell support with configurat... | codespell | 2026-10-03 | 37 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |

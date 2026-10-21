@@ -1,12 +1,12 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-10-17 02:16 UTC*
+*Last updated: 2026-10-21 02:39 UTC*
 
 [< Back to Dashboard](../../README.md)
 
 **Category**: Insufficient Data
 **Description**: Not enough PRs to categorize reliably
-**Count**: 870 repositories
+**Count**: 871 repositories
 
 ## Repositories
 
@@ -490,6 +490,7 @@
 | [magland/qp](https://github.com/magland/qp) | 1 | 1 | 0 | 100% | - |
 | [magland/remfile](https://github.com/magland/remfile) | 1 | 0 | 0 | - | - |
 | [makeplane/plane](https://github.com/makeplane/plane) | 1 | 1 | 0 | 100% | 0h |
+| [mantidproject/mantid](https://github.com/mantidproject/mantid) | 1 | 0 | 0 | - | 0h |
 | [mapping-commons/sssom](https://github.com/mapping-commons/sssom) | 1 | 1 | 0 | 100% | 29.3d |
 | [mar10/wsgidav](https://github.com/mar10/wsgidav) | 1 | 1 | 0 | 100% | 2.9d |
 | [marimo-team/marimo](https://github.com/marimo-team/marimo) | 1 | 1 | 0 | 100% | 11h |
@@ -887,6 +888,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [mantidproject/mantid](https://github.com/mantidproject/mantid) | [#42543](https://github.com/mantidproject/mantid/pull/42543) | open | codespell | 0h | Thanks for your submission, yarikopti... |
 | [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | open | codespell | - | - |
 | [9001/copyparty](https://github.com/9001/copyparty) | [#981](https://github.com/9001/copyparty/pull/981) | open | codespell | - | - |
 | [ComputationalPsychiatry/PhysIO](https://github.com/ComputationalPsychiatry/PhysIO) | [#52](https://github.com/ComputationalPsychiatry/PhysIO/pull/52) | open | codespell | - | - |
@@ -936,7 +938,6 @@
 | [aces/EEG2BIDS](https://github.com/aces/EEG2BIDS) | [#121](https://github.com/aces/EEG2BIDS/pull/121) | closed | codespell | 885.0d | Closing legacy PR. The Codespell conf... |
 | [cmusatyalab/openface](https://github.com/cmusatyalab/openface) | [#470](https://github.com/cmusatyalab/openface/pull/470) | closed | codespell | 0h | thanks! i don't want codespell in as ... |
 | [olivierfriard/BORIS](https://github.com/olivierfriard/BORIS) | [#982](https://github.com/olivierfriard/BORIS/pull/982) | open | codespell | - | - |
-| [kemerelab/EweGo](https://github.com/kemerelab/EweGo) | [#27](https://github.com/kemerelab/EweGo/pull/27) | open | codespell | - | - |
 
-*Showing 50 of 870 PRs*
+*Showing 50 of 871 PRs*
 

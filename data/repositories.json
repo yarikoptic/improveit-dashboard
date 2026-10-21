@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-10-20T21:03:59.753643Z",
+    "last_updated": "2026-10-21T02:39:09.843743Z",
     "last_run": {
-      "started_at": "2026-10-20T21:00:56.627935+00:00",
-      "completed_at": "2026-10-20T21:03:59.753496+00:00",
+      "started_at": "2026-10-21T02:36:03.608388+00:00",
+      "completed_at": "2026-10-21T02:39:09.843597+00:00",
       "mode": "normal",
-      "new_repositories": 0,
-      "new_prs": 0,
+      "new_repositories": 1,
+      "new_prs": 1,
       "updated_prs": 0,
       "newly_merged_prs": 0,
       "newly_closed_prs": 0,
-      "total_processed": 0,
-      "api_calls_made": 3,
-      "rate_limit_remaining": 29,
+      "total_processed": 1,
+      "api_calls_made": 11,
+      "rate_limit_remaining": 4980,
       "errors": []
     }
   },
@@ -49970,6 +49970,67 @@
           "main_branch_ci": null,
           "codespell_workflow_ci": null,
           "closed_by": "malaterre"
+        }
+      }
+    },
+    "mantidproject/mantid": {
+      "owner": "mantidproject",
+      "name": "mantid",
+      "platform": "github",
+      "full_name": "mantidproject/mantid",
+      "url": "https://github.com/mantidproject/mantid",
+      "accessible": true,
+      "last_checked_at": "2026-10-21T02:39:07.714176+00:00",
+      "repository_updated_at": null,
+      "codespell_prs": [
+        42543
+      ],
+      "shellcheck_prs": [],
+      "other_prs": [],
+      "avg_time_to_first_response_hours": 0.0016666666666666668,
+      "pr_acceptance_rate": 0.0,
+      "avg_engagement_level": 1.0,
+      "behavior_category": "insufficient_data",
+      "prs": {
+        "42543": {
+          "number": 42543,
+          "repository": "mantidproject/mantid",
+          "platform": "github",
+          "url": "https://github.com/mantidproject/mantid/pull/42543",
+          "tool": "codespell",
+          "title": "Add codespell support with configuration and fixes",
+          "author": "yarikoptic",
+          "created_at": "2026-10-21T00:03:39+00:00",
+          "updated_at": "2026-10-21T00:05:27+00:00",
+          "merged_at": null,
+          "closed_at": null,
+          "status": "open",
+          "analysis_status": "analyzed",
+          "commit_count": 8,
+          "files_changed": 2007,
+          "automation_types": [
+            "github-actions",
+            "pre-commit"
+          ],
+          "adoption_level": "full_automation",
+          "total_comments": 1,
+          "submitter_comments": 0,
+          "maintainer_comments": 1,
+          "bot_comments": 0,
+          "last_comment_author": "mantid-builder",
+          "last_comment_is_maintainer": true,
+          "last_maintainer_comment_at": "2026-10-21T00:03:45+00:00",
+          "time_to_first_response_hours": 0.0016666666666666668,
+          "days_awaiting_submitter": 0,
+          "response_status": "awaiting_submitter",
+          "etag": "\"fa27593f4ea9f1e7209c15c549302b18db63964e79c8b339cb9a740cadcda316\"",
+          "last_fetched_at": "2026-10-21T02:39:07.714176+00:00",
+          "last_developer_comment_body": "Thanks for your submission, yarikoptic. Tests can only be initiated by an authorized member of the Mantid team. Please contact us for assistance.",
+          "has_conflicts": false,
+          "ci_status": "failure",
+          "main_branch_ci": "success",
+          "codespell_workflow_ci": null,
+          "closed_by": null
         }
       }
     },

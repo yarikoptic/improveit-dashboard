@@ -1,16 +1,16 @@
 # PRs by yarikoptic
 
-*Last updated: 2026-10-20 21:03 UTC*
+*Last updated: 2026-10-21 02:39 UTC*
 
 [< Back to Dashboard](../README.md)
 
 ## Summary
 
 - **[Draft](yarikoptic/draft.md)**: 13 PRs
-- **[Open](yarikoptic/open.md)**: 235 PRs
+- **[Open](yarikoptic/open.md)**: 236 PRs
 - **[Merged](yarikoptic/merged.md)**: 528 PRs
 - **[Closed](yarikoptic/closed.md)**: 176 PRs
-- **Total**: 952 PRs
+- **Total**: 953 PRs
 
 ## Needs Your Response
 
@@ -32,6 +32,8 @@ This is indeed a typo that I made when I created the model's field `...
   > Very interesting.
 It would be a great way to improve the website. I'll try to find some time to apply this, but probably needs to be applied by bulk of files, progressively.
 Thanks!
+- [mantidproject/mantid#42543](https://github.com/mantidproject/mantid/pull/42543): Add codespell support with configuration and fixes (*waiting 0 days*) [CI failing]
+  > Thanks for your submission, yarikoptic. Tests can only be initiated by an authorized member of the Mantid team. Please contact us for assistance.
 - [EpicGames/lore#68](https://github.com/EpicGames/lore/pull/68): docs: Tune codespell config and fix typos (*waiting 36 days*) [conflicts]
   > @duncangrist You put codespell in place i think, makes sense to you?
 @ajcarberry Ok with you?
