@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-11-10T22:42:50.170017Z",
+    "last_updated": "2026-11-11T03:54:18.075545Z",
     "last_run": {
-      "started_at": "2026-11-10T22:39:46.925960+00:00",
-      "completed_at": "2026-11-10T22:42:50.169919+00:00",
+      "started_at": "2026-11-11T03:51:12.030155+00:00",
+      "completed_at": "2026-11-11T03:54:18.075417+00:00",
       "mode": "normal",
-      "new_repositories": 0,
-      "new_prs": 0,
+      "new_repositories": 1,
+      "new_prs": 1,
       "updated_prs": 0,
       "newly_merged_prs": 0,
       "newly_closed_prs": 0,
-      "total_processed": 0,
-      "api_calls_made": 3,
-      "rate_limit_remaining": 29,
+      "total_processed": 1,
+      "api_calls_made": 11,
+      "rate_limit_remaining": 4891,
       "errors": []
     }
   },
@@ -6528,6 +6528,68 @@
           "main_branch_ci": null,
           "codespell_workflow_ci": null,
           "closed_by": "GeiserX"
+        }
+      }
+    },
+    "Genentech/exohub": {
+      "owner": "Genentech",
+      "name": "exohub",
+      "platform": "github",
+      "full_name": "Genentech/exohub",
+      "url": "https://github.com/Genentech/exohub",
+      "accessible": true,
+      "last_checked_at": "2026-11-11T03:54:16.288061+00:00",
+      "repository_updated_at": null,
+      "codespell_prs": [
+        12
+      ],
+      "shellcheck_prs": [],
+      "other_prs": [],
+      "avg_time_to_first_response_hours": null,
+      "pr_acceptance_rate": 0.0,
+      "avg_engagement_level": 0.0,
+      "behavior_category": "insufficient_data",
+      "prs": {
+        "12": {
+          "number": 12,
+          "repository": "Genentech/exohub",
+          "platform": "github",
+          "url": "https://github.com/Genentech/exohub/pull/12",
+          "tool": "codespell",
+          "title": "Add codespell support with configuration and fixes",
+          "author": "yarikoptic",
+          "created_at": "2026-11-11T03:06:18+00:00",
+          "updated_at": "2026-11-11T03:06:18+00:00",
+          "merged_at": null,
+          "closed_at": null,
+          "status": "open",
+          "analysis_status": "analyzed",
+          "commit_count": 5,
+          "files_changed": 7,
+          "automation_types": [
+            "codespell-config",
+            "github-actions",
+            "pre-commit"
+          ],
+          "adoption_level": "full_automation",
+          "total_comments": 0,
+          "submitter_comments": 0,
+          "maintainer_comments": 0,
+          "bot_comments": 0,
+          "last_comment_author": null,
+          "last_comment_is_maintainer": false,
+          "last_maintainer_comment_at": null,
+          "time_to_first_response_hours": null,
+          "days_awaiting_submitter": null,
+          "response_status": "no_response",
+          "etag": "\"f35b096cdd64acdd4aab1db8b3490411ad9d88dfd3cf1924ab75ae4ed36386f3\"",
+          "last_fetched_at": "2026-11-11T03:54:16.288061+00:00",
+          "last_developer_comment_body": null,
+          "has_conflicts": false,
+          "ci_status": "pending",
+          "main_branch_ci": "pending",
+          "codespell_workflow_ci": null,
+          "closed_by": null
         }
       }
     },
