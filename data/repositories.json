@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "1.0",
-    "last_updated": "2026-11-18T23:45:52.368924Z",
+    "last_updated": "2026-11-19T05:11:17.484074Z",
     "last_run": {
-      "started_at": "2026-11-18T23:42:48.240182+00:00",
-      "completed_at": "2026-11-18T23:45:52.368832+00:00",
+      "started_at": "2026-11-19T05:08:13.487505+00:00",
+      "completed_at": "2026-11-19T05:11:17.483941+00:00",
       "mode": "normal",
       "new_repositories": 0,
       "new_prs": 0,
-      "updated_prs": 0,
+      "updated_prs": 1,
       "newly_merged_prs": 0,
-      "newly_closed_prs": 0,
-      "total_processed": 0,
-      "api_calls_made": 3,
-      "rate_limit_remaining": 29,
+      "newly_closed_prs": 1,
+      "total_processed": 1,
+      "api_calls_made": 6,
+      "rate_limit_remaining": 4997,
       "errors": []
     }
   },
@@ -39140,7 +39140,7 @@
       "full_name": "gbook/squirrel",
       "url": "https://github.com/gbook/squirrel",
       "accessible": true,
-      "last_checked_at": "2026-09-04T01:00:56.079804+00:00",
+      "last_checked_at": "2026-11-19T05:11:16.960481+00:00",
       "repository_updated_at": null,
       "codespell_prs": [
         2
@@ -39161,10 +39161,10 @@
           "title": "codespell: config, workflow + typos fixed",
           "author": "yarikoptic",
           "created_at": "2023-07-13T17:15:28+00:00",
-          "updated_at": "2023-07-13T17:15:28+00:00",
+          "updated_at": "2026-11-19T02:29:05+00:00",
           "merged_at": null,
-          "closed_at": null,
-          "status": "open",
+          "closed_at": "2026-11-19T02:29:05+00:00",
+          "status": "closed",
           "analysis_status": "analyzed",
           "commit_count": 4,
           "files_changed": 10,
@@ -39172,7 +39172,7 @@
             "codespell-config",
             "github-actions"
           ],
-          "adoption_level": "full_automation",
+          "adoption_level": "rejected",
           "total_comments": 0,
           "submitter_comments": 0,
           "maintainer_comments": 0,
@@ -39183,12 +39183,12 @@
           "time_to_first_response_hours": null,
           "days_awaiting_submitter": null,
           "response_status": "no_response",
-          "etag": "W/\"fd94a4c6f5f922c0cca74ad62ae1e9129e95a7ec51044ceed2d8359a4089dda0\"",
-          "last_fetched_at": "2026-09-04T01:00:56.079804+00:00",
+          "etag": "\"96e75f04edd1e6482f4d09896533257c1a79d6dcc1b429ce1fee17b4f5cd8f4c\"",
+          "last_fetched_at": "2026-11-19T05:11:16.960481+00:00",
           "last_developer_comment_body": null,
           "has_conflicts": false,
-          "ci_status": "pending",
-          "main_branch_ci": "pending",
+          "ci_status": null,
+          "main_branch_ci": null,
           "codespell_workflow_ci": null,
           "closed_by": null
         }

@@ -1,10 +1,10 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-11-11 03:54 UTC*
+*Last updated: 2026-11-19 05:11 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 237 PRs
+**Total**: 236 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
@@ -218,7 +218,6 @@
 | [gkiar/fuzzy](https://github.com/gkiar/fuzzy) | [#1](https://github.com/gkiar/fuzzy/pull/1) | codespell: add config and action to c... | codespell | 2023-07-22 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [pulseq/tutorials](https://github.com/pulseq/tutorials) | [#1](https://github.com/pulseq/tutorials/pull/1) | codespell: add config and action to c... | codespell | 2023-07-22 | 11 | 0 (0) | No response | CI:... | Yes | codespell-config, github-actions | - |
 | [flywheel-apps/bids-fmriprep](https://github.com/flywheel-apps/bids-fmriprep) | [#42](https://github.com/flywheel-apps/bids-fmriprep/pull/42) | Hi Andy PR: codespell -- config, work... | codespell | 2023-07-20 | 6 | 0 (0) | No response | CI:... | - | github-actions, pre-commit | - |
-| [gbook/squirrel](https://github.com/gbook/squirrel) | [#2](https://github.com/gbook/squirrel/pull/2) | codespell: config, workflow + typos f... | codespell | 2023-07-13 | 10 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [AntonOsika/CLI-Co-Pilot](https://github.com/AntonOsika/CLI-Co-Pilot) | [#1](https://github.com/AntonOsika/CLI-Co-Pilot/pull/1) | codespell: workflow, config and some ... | codespell | 2023-06-27 | 5 | 1 (0) | Maintainer | CI:... | - | codespell-config, github-actions | - |
 | [BurntSushi/xsv](https://github.com/BurntSushi/xsv) | [#325](https://github.com/BurntSushi/xsv/pull/325) | codespell: config, workflow and some ... | codespell | 2023-06-26 | 5 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [cesarhuret/docGPT](https://github.com/cesarhuret/docGPT) | [#20](https://github.com/cesarhuret/docGPT/pull/20) | codespell: config, workflow, 1 typo f... | codespell | 2023-06-26 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |

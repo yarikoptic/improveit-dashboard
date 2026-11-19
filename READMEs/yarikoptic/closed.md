@@ -1,13 +1,14 @@
 # Closed PRs by yarikoptic
 
-*Last updated: 2026-09-30 03:09 UTC*
+*Last updated: 2026-11-19 05:11 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 176 PRs
+**Total**: 177 PRs
 
 | Repository | PR | Title | Tool | Created | Closed | Closed By | Files | Last Comment |
 |------------|----|----|------|---------|--------|----------|-------|--------------|
+| [gbook/squirrel](https://github.com/gbook/squirrel) | [#2](https://github.com/gbook/squirrel/pull/2) | codespell: config, workflow + typos f... | codespell | 2023-07-13 | 2026-11-19 | - | 10 | - |
 | [tabulator-tables/tabulator](https://github.com/tabulator-tables/tabulator) | [#4707](https://github.com/tabulator-tables/tabulator/pull/4707) | Add codespell support (config, workfl... | codespell | 2025-03-05 | 2026-09-29 | - | 17 | Hey! Thanks for the contribution, but I don't t... |
 | [SPAROntologies/cito](https://github.com/SPAROntologies/cito) | [#7](https://github.com/SPAROntologies/cito/pull/7) | chore: add codespell support (config,... | codespell | 2026-01-31 | 2026-09-03 | - | 18 | Hi @yarikoptic , thank you for the tip! As a ma... |
 | [arp242/zstd](https://github.com/arp242/zstd) | [#6](https://github.com/arp242/zstd/pull/6) | Add codespell support with configurat... | codespell | 2026-08-28 | 2026-08-28 | - | 10 | - |

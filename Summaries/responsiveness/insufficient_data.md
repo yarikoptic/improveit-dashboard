@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-11-11 03:54 UTC*
+*Last updated: 2026-11-19 05:11 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -323,7 +323,7 @@
 | [garciadias/Neuroharmony](https://github.com/garciadias/Neuroharmony) | 1 | 0 | 1 | 0% | - |
 | [garrettmflynn/webnwb](https://github.com/garrettmflynn/webnwb) | 1 | 1 | 0 | 100% | 7.6d |
 | [gaubert/gmvault](https://github.com/gaubert/gmvault) | 1 | 0 | 0 | - | - |
-| [gbook/squirrel](https://github.com/gbook/squirrel) | 1 | 0 | 0 | - | - |
+| [gbook/squirrel](https://github.com/gbook/squirrel) | 1 | 0 | 1 | 0% | - |
 | [gc3pie/gc3pie](https://github.com/gc3pie/gc3pie) | 1 | 0 | 0 | - | 0h |
 | [gdcc/easyDataverse](https://github.com/gdcc/easyDataverse) | 1 | 1 | 0 | 100% | - |
 | [gdcc/pyDataverse](https://github.com/gdcc/pyDataverse) | 1 | 1 | 0 | 100% | - |
@@ -889,6 +889,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [gbook/squirrel](https://github.com/gbook/squirrel) | [#2](https://github.com/gbook/squirrel/pull/2) | closed | codespell | - | - |
 | [Genentech/exohub](https://github.com/Genentech/exohub) | [#12](https://github.com/Genentech/exohub/pull/12) | open | codespell | - | - |
 | [mantidproject/mantid](https://github.com/mantidproject/mantid) | [#42543](https://github.com/mantidproject/mantid/pull/42543) | open | codespell | 0h | Thanks for your submission, yarikopti... |
 | [postalserver/postal](https://github.com/postalserver/postal) | [#3576](https://github.com/postalserver/postal/pull/3576) | open | codespell | - | - |
@@ -938,7 +939,6 @@
 | [renatopp/liac-arff](https://github.com/renatopp/liac-arff) | [#123](https://github.com/renatopp/liac-arff/pull/123) | closed | codespell | - | - |
 | [google/snappy](https://github.com/google/snappy) | [#170](https://github.com/google/snappy/pull/170) | closed | codespell | - | - |
 | [aces/EEG2BIDS](https://github.com/aces/EEG2BIDS) | [#121](https://github.com/aces/EEG2BIDS/pull/121) | closed | codespell | 885.0d | Closing legacy PR. The Codespell conf... |
-| [cmusatyalab/openface](https://github.com/cmusatyalab/openface) | [#470](https://github.com/cmusatyalab/openface/pull/470) | closed | codespell | 0h | thanks! i don't want codespell in as ... |
 
 *Showing 50 of 872 PRs*
 
