@@ -4,12 +4,12 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 
 ## Summary
 
-*Last updated: 2026-11-19 05:11 UTC*
+*Last updated: 2026-11-25 01:48 UTC*
 
 - **Repositories tracked**: 1070
 - **Total PRs**: 1505
-- **Merged**: 967
-- **Open**: 259
+- **Merged**: 968
+- **Open**: 258
 
 ## Contributors
 
@@ -17,7 +17,7 @@ Tracking improveit tool PRs (codespell, shellcheck) across GitHub repositories.
 |------|-------|-------|------|--------|--------|
 | [DimitriPapadopoulos](https://github.com/DimitriPapadopoulos) | [538](READMEs/DimitriPapadopoulos.md) | 0 | [23](READMEs/DimitriPapadopoulos/open.md) | [426](READMEs/DimitriPapadopoulos/merged.md) | [89](READMEs/DimitriPapadopoulos/closed.md) |
 | [hartwork](https://github.com/hartwork) | [13](READMEs/hartwork.md) | 0 | 0 | [13](READMEs/hartwork/merged.md) | 0 |
-| [yarikoptic](https://github.com/yarikoptic) | [954](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [236](READMEs/yarikoptic/open.md) | [528](READMEs/yarikoptic/merged.md) | [177](READMEs/yarikoptic/closed.md) |
+| [yarikoptic](https://github.com/yarikoptic) | [954](READMEs/yarikoptic.md) | [13](READMEs/yarikoptic/draft.md) | [235](READMEs/yarikoptic/open.md) | [529](READMEs/yarikoptic/merged.md) | [177](READMEs/yarikoptic/closed.md) |
 
 ## Repository Responsiveness
 

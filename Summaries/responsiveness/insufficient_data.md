@@ -1,6 +1,6 @@
 # Insufficient Data Repositories
 
-*Last updated: 2026-11-19 05:11 UTC*
+*Last updated: 2026-11-25 01:48 UTC*
 
 [< Back to Dashboard](../../README.md)
 
@@ -118,7 +118,7 @@
 | [brainhack-princeton/handbook](https://github.com/brainhack-princeton/handbook) | 1 | 0 | 0 | - | - |
 | [brainhack-princeton/handbook-code](https://github.com/brainhack-princeton/handbook-code) | 1 | 0 | 0 | - | - |
 | [brainiak/rt-cloud](https://github.com/brainiak/rt-cloud) | 1 | 1 | 0 | 100% | - |
-| [brainlife/abcd-spec](https://github.com/brainlife/abcd-spec) | 1 | 0 | 0 | - | - |
+| [brainlife/abcd-spec](https://github.com/brainlife/abcd-spec) | 1 | 1 | 0 | 100% | - |
 | [brainlife/docs](https://github.com/brainlife/docs) | 1 | 1 | 0 | 100% | - |
 | [brainlife/ezbids](https://github.com/brainlife/ezbids) | 1 | 1 | 0 | 100% | - |
 | [brainlife/warehouse](https://github.com/brainlife/warehouse) | 1 | 1 | 0 | 100% | - |
@@ -889,6 +889,7 @@
 
 | Repository | PR | Status | Tool | Response Time | Last Comment |
 |------------|----|--------|------|---------------|--------------|
+| [brainlife/abcd-spec](https://github.com/brainlife/abcd-spec) | [#34](https://github.com/brainlife/abcd-spec/pull/34) | merged | codespell | - | - |
 | [gbook/squirrel](https://github.com/gbook/squirrel) | [#2](https://github.com/gbook/squirrel/pull/2) | closed | codespell | - | - |
 | [Genentech/exohub](https://github.com/Genentech/exohub) | [#12](https://github.com/Genentech/exohub/pull/12) | open | codespell | - | - |
 | [mantidproject/mantid](https://github.com/mantidproject/mantid) | [#42543](https://github.com/mantidproject/mantid/pull/42543) | open | codespell | 0h | Thanks for your submission, yarikopti... |
@@ -938,7 +939,6 @@
 | [marimo-team/marimo](https://github.com/marimo-team/marimo) | [#10265](https://github.com/marimo-team/marimo/pull/10265) | merged | codespell | 11h | thanks! |
 | [renatopp/liac-arff](https://github.com/renatopp/liac-arff) | [#123](https://github.com/renatopp/liac-arff/pull/123) | closed | codespell | - | - |
 | [google/snappy](https://github.com/google/snappy) | [#170](https://github.com/google/snappy/pull/170) | closed | codespell | - | - |
-| [aces/EEG2BIDS](https://github.com/aces/EEG2BIDS) | [#121](https://github.com/aces/EEG2BIDS/pull/121) | closed | codespell | 885.0d | Closing legacy PR. The Codespell conf... |
 
 *Showing 50 of 872 PRs*
 

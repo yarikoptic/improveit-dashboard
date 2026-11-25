@@ -1,10 +1,10 @@
 # Open PRs by yarikoptic
 
-*Last updated: 2026-11-19 05:11 UTC*
+*Last updated: 2026-11-25 01:48 UTC*
 
 [< Back to yarikoptic summary](../yarikoptic.md) | [< Back to Dashboard](../../README.md)
 
-**Total**: 236 PRs
+**Total**: 235 PRs
 
 | Repository | PR | Title | Tool | Created | Files | Comments | Response | CI | Conflicts | Automation | Last Comment |
 |------------|----|----|------|---------|-------|----------|----------|----|-----------|-----------| --------------|
@@ -189,7 +189,6 @@
 | [dvwz/AtomEyes](https://github.com/dvwz/AtomEyes) | [#1](https://github.com/dvwz/AtomEyes/pull/1) | Add codespell support (config, workfl... | codespell | 2024-05-30 | 2 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [spack/spack](https://github.com/spack/spack) | [#36687](https://github.com/spack/spack/pull/36687) | codespell: config, workflow and some ... | codespell | 2023-04-06 | 28 | 6 (4) | Maintainer | CI:... Main:OK | - | codespell-config, github-actions | I kind of wonder if typo checking is more usefu... |
 | [aide/aide.github.io](https://github.com/aide/aide.github.io) | [#23](https://github.com/aide/aide.github.io/pull/23) | Add codespell support (config, workfl... | codespell | 2024-04-25 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
-| [brainlife/abcd-spec](https://github.com/brainlife/abcd-spec) | [#34](https://github.com/brainlife/abcd-spec/pull/34) | Add codespell support (config, workfl... | codespell | 2024-04-18 | 8 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [ckan/ckan](https://github.com/ckan/ckan) | [#8173](https://github.com/ckan/ckan/pull/8173) | Add codespell (config, workflow) and ... | codespell | 2024-04-09 | 131 | 6 (1) | Maintainer | CI:... Main:OK | Yes | github-actions | It was mentioned on the dev call that depending... |
 | [Friz-zy/awesome-linux-containers](https://github.com/Friz-zy/awesome-linux-containers) | [#41](https://github.com/Friz-zy/awesome-linux-containers/pull/41) | Add codespell support (config, workfl... | codespell | 2024-04-09 | 3 | 0 (0) | No response | CI:... | - | codespell-config, github-actions | - |
 | [microsoft/WSL-DistroLauncher](https://github.com/microsoft/WSL-DistroLauncher) | [#128](https://github.com/microsoft/WSL-DistroLauncher/pull/128) | Add codespell support (config, workfl... | codespell | 2024-03-25 | 3 | 3 (0) | Maintainer | CI:... | - | codespell-config, github-actions | - |
